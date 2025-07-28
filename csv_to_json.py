@@ -60,7 +60,12 @@ for carpeta in carpetas_origen:
 # Unir todos los DataFrames en uno solo
 if todos_los_datos:
     df_total = pd.concat(todos_los_datos, ignore_index=True)
-    df_total.to_json(archivo_salida, orient='records', indent=4)
+    # Crear carpeta de salida si no existe
+    os.makedirs("datos_json", exist_ok=True)
+
+    # Guardar en carpeta datos_json
+    salida_completa = os.path.join("datos_json", archivo_salida)
+    df_total.to_json(salida_completa, orient='records', indent=4)
     print(f"\n✅ Archivo JSON consolidado generado: {archivo_salida}")
 else:
     print("\n⚠️ No se encontraron archivos CSV válidos para procesar.")
