@@ -1,48 +1,60 @@
-name: Convert CSV to JSON
+name: Generar archivos JSON de acciones
 
 on:
+  workflow_dispatch:
   push:
     paths:
-      - 'datos_bmv/**/*.csv'
-      - 'datos_us/**/*.csv'
-      - 'csv_to_json.py'
+      - 'datos_bmv/*.csv'
+      - 'datos_us/*.csv'
+      - 'Stock Data Processing.py'
 
 jobs:
-  build:
+  procesar-y-verificar:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Clonar el repositorio
-      uses: actions/checkout@v3
+      - name: Clonar repositorio
+        uses: actions/checkout@v3
 
-    - name: Configurar Python
-      uses: actions/setup-python@v4
-      with:
-        python-version: '3.x'
+      - name: Configurar Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
 
-    - name: Ejecutar script para convertir CSV a JSON
-      run: python csv_to_json.py
+      - name: Instalar dependencias (si hay)
+        run: |
+          pip install -r requirements.txt || true
 
-    - name: Verificar cambios
-      run: |
-        git config --global user.name 'github-actions'
-        git config --global user.email 'github-actions@github.com'
-        - name: Verificar que los archivos no excedan 100 MB
-        MAX_SIZE=$((100 * 1024 * 1024))
-        for f in datos_json/*.json; do
-          SIZE=$(stat -c%s "$f")
-          echo "Archivo $f tiene tamaño $SIZE bytes"
-          if [ $SIZE -gt $MAX_SIZE ]; then
-            echo "❌ Error: $f excede los 100 MB (limite de GitHub)."
-            exit 1
+      - name: Ejecutar script de procesamiento
+        run: python "Stock Data Processing.py"
+
+      - name: Verificar tamaño de archivos JSON
+        run: |
+          MAX_BYTES=$((100 * 1024 * 1024))
+          FILE1="datos_json/bmv_stock_data.json"
+          FILE2="datos_json/us_stock_data.json"
+
+          for FILE in "$FILE1" "$FILE2"; do
+            SIZE=$(stat --format=%s "$FILE")
+            if [ "$SIZE" -gt "$MAX_BYTES" ]; then
+              echo "❌ El archivo $FILE excede los 100 MB (${SIZE} bytes)"
+              exit 1
+            else
+              echo "✅ $FILE tiene un tamaño aceptable (${SIZE} bytes)"
+            fi
+          done
+
+      - name: Configurar Git
+        run: |
+          git config --global user.name 'github-actions'
+          git config --global user.email 'github-actions@github.com'
+
+      - name: Hacer commit y push si hubo cambios
+        run: |
+          git add datos_json/*.json
+          if git diff --cached --quiet; then
+            echo "No hay cambios que hacer commit."
+          else
+            git commit -m "Actualizar archivos JSON de acciones"
+            git push
           fi
-        done
-        git add datos_json/*.json
-
-        # Comprobar si hay algo para actualizar
-        if git diff --cached --quiet; then
-          echo "No hay cambios para guardar."
-        else
-          git commit -m "Actualizar archivos JSON desde CSV"
-          git push
-        fi
