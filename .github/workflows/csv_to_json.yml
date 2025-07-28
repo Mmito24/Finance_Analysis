@@ -39,9 +39,9 @@ jobs:
         done
         git add datos_json/*.json
 
-        # Comprobar si hay algo para commitear
+        # Comprobar si hay algo para actualizar
         if git diff --cached --quiet; then
-          echo "No hay cambios para commitear."
+          echo "No hay cambios para guardar."
         else
           git commit -m "Actualizar archivos JSON desde CSV"
           git push
