@@ -6,7 +6,7 @@ on:
     paths:
       - 'datos_bmv/*.csv'
       - 'datos_us/*.csv'
-      - 'Stock Data Processing.py'
+      - 'csv_to_json.py'
 
 jobs:
   procesar-y-verificar:
@@ -26,7 +26,7 @@ jobs:
           pip install -r requirements.txt || true
 
       - name: Ejecutar script de procesamiento
-        run: python "Stock Data Processing.py"
+        run: python "csv_to_json.py"
 
       - name: Verificar tamaño de archivos JSON
         run: |
