@@ -47,7 +47,7 @@ for carpeta in carpetas_origen:
 
             # Guardar archivo JSON
             nombre_base = os.path.splitext(os.path.basename(archivo_csv))[0]
-            archivo_salida = os.path.join(carpeta_json, f"{nombre_base}_mongo.json")
+            archivo_salida = os.path.join(carpeta_json, f"{nombre_base}.json")
             df.to_json(archivo_salida, orient='records', indent=4)
 
             print(f"✅ Convertido y guardado: {archivo_salida}")
