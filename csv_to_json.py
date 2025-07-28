@@ -4,10 +4,10 @@ import glob
 
 # Carpeta base del repositorio (ruta relativa)
 carpetas_origen = ["datos_bmv", "datos_us"]
-carpeta_json = "datos_json"
+archivo_salida = "stock_data.json"
 
-# Crear carpeta de salida si no existe
-os.makedirs(carpeta_json, exist_ok=True)
+# Lista para acumular todos los DataFrames
+todos_los_datos = []
 
 # Procesar cada carpeta de origen
 for carpeta in carpetas_origen:
@@ -39,18 +39,28 @@ for carpeta in carpetas_origen:
             # Quitar fila con encabezado de columna como valor
             df = df[df[nuevos_headers[0]] != nuevos_headers[0]]
 
-            # Convertir 'Date' a formato BSON compatible con MongoDB
+            # Convertir fecha a formato BSON
             df[nuevos_headers[0]] = pd.to_datetime(df[nuevos_headers[0]], errors='coerce')
             df[nuevos_headers[0]] = df[nuevos_headers[0]].apply(
                 lambda x: {"$date": x.strftime("%Y-%m-%dT%H:%M:%SZ")} if pd.notnull(x) else None
             )
 
-            # Guardar archivo JSON
+            # Agregar nombre del archivo original como metadato
             nombre_base = os.path.splitext(os.path.basename(archivo_csv))[0]
-            archivo_salida = os.path.join(carpeta_json, f"{nombre_base}.json")
-            df.to_json(archivo_salida, orient='records', indent=4)
+            df["empresa"] = nombre_base
 
-            print(f"✅ Convertido y guardado: {archivo_salida}")
+            # Agregar al conjunto total
+            todos_los_datos.append(df)
+
+            print(f"✅ Procesado: {archivo_csv}")
 
         except Exception as e:
             print(f"❌ Error procesando {archivo_csv}: {e}")
+
+# Unir todos los DataFrames en uno solo
+if todos_los_datos:
+    df_total = pd.concat(todos_los_datos, ignore_index=True)
+    df_total.to_json(archivo_salida, orient='records', indent=4)
+    print(f"\n✅ Archivo JSON consolidado generado: {archivo_salida}")
+else:
+    print("\n⚠️ No se encontraron archivos CSV válidos para procesar.")
