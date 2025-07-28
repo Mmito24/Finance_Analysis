@@ -1,40 +1,48 @@
-name: Convertir CSV a JSON
+name: Convert CSV to JSON
 
 on:
-  workflow_dispatch:  # Permite ejecución manual desde GitHub
+  push:
+    paths:
+      - 'datos_bmv/**/*.csv'
+      - 'datos_us/**/*.csv'
+      - 'csv_to_json.py'
 
 jobs:
-  convertir_csv_a_json:
+  build:
     runs-on: ubuntu-latest
 
     steps:
-    - name: 📥 Clonar el repositorio
+    - name: Clonar el repositorio
       uses: actions/checkout@v3
 
-    - name: 🐍 Configurar Python
+    - name: Configurar Python
       uses: actions/setup-python@v4
       with:
-        python-version: '3.10'
+        python-version: '3.x'
 
-    - name: 📦 Instalar dependencias
-      run: |
-        pip install pandas
+    - name: Ejecutar script para convertir CSV a JSON
+      run: python csv_to_json.py
 
-    - name: 🚀 Ejecutar script de conversión
+    - name: Verificar cambios
       run: |
-        python csv_to_json.py
-
-    - name: 💾 Verificar archivos generados
-      run: |
-        echo "Archivos JSON generados:"
-        ls -l datos_json/
-
-    - name: 🚀 Subir cambios al repositorio
-      run: |
-        git config user.name "github-actions[bot]"
-        git config user.email "github-actions[bot]@users.noreply.github.com"
+        git config --global user.name 'github-actions'
+        git config --global user.email 'github-actions@github.com'
+        - name: Verificar que los archivos no excedan 100 MB
+        MAX_SIZE=$((100 * 1024 * 1024))
+        for f in datos_json/*.json; do
+          SIZE=$(stat -c%s "$f")
+          echo "Archivo $f tiene tamaño $SIZE bytes"
+          if [ $SIZE -gt $MAX_SIZE ]; then
+            echo "❌ Error: $f excede los 100 MB (limite de GitHub)."
+            exit 1
+          fi
+        done
         git add datos_json/*.json
-        git commit -m "Generar archivos JSON desde CSV automáticamente"
-        git push
-      env:
-        GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+        # Comprobar si hay algo para commitear
+        if git diff --cached --quiet; then
+          echo "No hay cambios para commitear."
+        else
+          git commit -m "Actualizar archivos JSON desde CSV"
+          git push
+        fi
