@@ -39,4 +39,15 @@ with open(archivo_salida_bmv, 'w', encoding='utf-8') as f:
 with open(archivo_salida_us, 'w', encoding='utf-8') as f:
     json.dump(datos_us, f, indent=2, ensure_ascii=False)
 
+# Verificar tamaño de archivos
+def verificar_tamano(archivo, limite_bytes=104857600):
+    tamano = os.path.getsize(archivo)
+    if tamano > limite_bytes:
+        print(f"⚠️ Advertencia: {archivo} excede los 100 MB ({tamano / (1024 * 1024):.2f} MB).")
+    else:
+        print(f"✅ {archivo} tiene un tamaño aceptable ({tamano / (1024 * 1024):.2f} MB).")
+
+verificar_tamano(archivo_salida_bmv)
+verificar_tamano(archivo_salida_us)
+
 print("Archivos JSON generados exitosamente.")
