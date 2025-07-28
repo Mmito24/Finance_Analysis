@@ -1,0 +1,40 @@
+name: Convertir CSV a JSON
+
+on:
+  workflow_dispatch:  # Permite ejecución manual desde GitHub
+
+jobs:
+  convertir_csv_a_json:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: 📥 Clonar el repositorio
+      uses: actions/checkout@v3
+
+    - name: 🐍 Configurar Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.10'
+
+    - name: 📦 Instalar dependencias
+      run: |
+        pip install pandas
+
+    - name: 🚀 Ejecutar script de conversión
+      run: |
+        python csv_to_json.py
+
+    - name: 💾 Verificar archivos generados
+      run: |
+        echo "Archivos JSON generados:"
+        ls -l datos_json/
+
+    - name: 🚀 Subir cambios al repositorio
+      run: |
+        git config user.name "github-actions[bot]"
+        git config user.email "github-actions[bot]@users.noreply.github.com"
+        git add datos_json/*.json
+        git commit -m "Generar archivos JSON desde CSV automáticamente"
+        git push
+      env:
+        GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
