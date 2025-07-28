@@ -53,7 +53,8 @@ empresas_bmv = {
     "GIGANTE.MX": "Gigante",
     "GNP.MX": "Grupo Nacional Provincial",
     "HERDEZ.MX": "Herdez",
-    "LABB.MX": "GenommaLabB"
+    "LABB.MX": "GenommaLabB",
+    "BOLSAA.MX": "BolsaMexicanaValores"
 }
 
 hoy = date.today()
