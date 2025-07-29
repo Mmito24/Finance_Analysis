@@ -1,60 +1,40 @@
-name: Generar archivos JSON de acciones
+name: Convertir CSV a JSON
 
 on:
-  workflow_dispatch:
-  push:
-    paths:
-      - 'datos_bmv/*.csv'
-      - 'datos_us/*.csv'
-      - 'csv_to_json.py'
+  workflow_dispatch:  # Permite ejecución manual desde GitHub
 
 jobs:
-  procesar-y-verificar:
+  convertir:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Clonar repositorio
-        uses: actions/checkout@v3
+    - name: Checkout del repositorio
+      uses: actions/checkout@v3
 
-      - name: Configurar Python
-        uses: actions/setup-python@v4
-        with:
-          python-version: '3.10'
+    - name: Configurar Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
 
-      - name: Instalar dependencias (si hay)
-        run: |
-          pip install -r requirements.txt || true
+    - name: Instalar dependencias
+      run: |
+        pip install pandas
 
-      - name: Ejecutar script de procesamiento
-        run: python "csv_to_json.py"
+    - name: Ejecutar script de conversión
+      run: |
+        python procesar_csv_a_json.py
 
-      - name: Verificar tamaño de archivos JSON
-        run: |
-          MAX_BYTES=$((100 * 1024 * 1024))
-          FILE1="datos_json/bmv_stock_data.json"
-          FILE2="datos_json/us_stock_data.json"
-
-          for FILE in "$FILE1" "$FILE2"; do
-            SIZE=$(stat --format=%s "$FILE")
-            if [ "$SIZE" -gt "$MAX_BYTES" ]; then
-              echo "❌ El archivo $FILE excede los 100 MB (${SIZE} bytes)"
-              exit 1
-            else
-              echo "✅ $FILE tiene un tamaño aceptable (${SIZE} bytes)"
-            fi
-          done
-
-      - name: Configurar Git
-        run: |
-          git config --global user.name 'github-actions'
-          git config --global user.email 'github-actions@github.com'
-
-      - name: Hacer commit y push si hubo cambios
-        run: |
-          git add datos_json/*.json
-          if git diff --cached --quiet; then
-            echo "No hay cambios que hacer commit."
+    - name: Verificar tamaño de archivos JSON
+      run: |
+        MAX_BYTES=104857600
+        for archivo in datos_json/*.json; do
+          TAM=$(stat -c %s "$archivo")
+          if [ "$TAM" -gt "$MAX_BYTES" ]; then
+            echo "❌ El archivo $archivo excede los 100 MB permitidos por GitHub (actual: $((TAM / 1048576)) MB)."
+            exit 1
           else
-            git commit -m "Actualizar archivos JSON de acciones"
+            echo "✅ Tamaño de $archivo: $((TAM / 1048576)) MB."
+          fi
+        done
             git push
           fi
