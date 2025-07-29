@@ -1,7 +1,7 @@
 name: Convertir CSV a JSON
 
 on:
-  workflow_dispatch:  # Permite ejecución manual desde GitHub
+  workflow_dispatch:  # Ejecución manual desde GitHub
 
 jobs:
   convertir:
@@ -10,6 +10,8 @@ jobs:
     steps:
     - name: Checkout del repositorio
       uses: actions/checkout@v3
+      with:
+        persist-credentials: true  # Importante para permitir el push
 
     - name: Configurar Python
       uses: actions/setup-python@v4
@@ -22,17 +24,28 @@ jobs:
 
     - name: Ejecutar script de conversión
       run: |
-        python csv_to_json.py
+        python procesar_csv_a_json.py
 
-    - name: Verificar tamaño de archivos JSON
+    - name: Verificar tamaño de archivos JSON (máx 100MB)
       run: |
         MAX_BYTES=104857600
         for archivo in datos_json/*.json; do
           TAM=$(stat -c %s "$archivo")
           if [ "$TAM" -gt "$MAX_BYTES" ]; then
-            echo "❌ El archivo $archivo excede los 100 MB permitidos por GitHub (actual: $((TAM / 1048576)) MB)."
+            echo "❌ El archivo $archivo excede los 100 MB permitidos (actual: $((TAM / 1048576)) MB)."
             exit 1
           else
             echo "✅ Tamaño de $archivo: $((TAM / 1048576)) MB."
           fi
         done
+
+    - name: Configurar Git
+      run: |
+        git config --global user.name "github-actions"
+        git config --global user.email "github-actions@github.com"
+
+    - name: Hacer commit y push de los JSON generados
+      run: |
+        git add datos_json/*.json
+        git commit -m "Actualización automática de archivos JSON para Grafana" || echo "Sin cambios que commitear"
+        git push origin main
