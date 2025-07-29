@@ -8,28 +8,26 @@ carpeta_destino = "datos_json"
 os.makedirs(carpeta_destino, exist_ok=True)
 
 def procesar_archivo(ruta_csv):
-    # Leer sin encabezados
+    # Leer sin encabezado
     df = pd.read_csv(ruta_csv, header=None)
 
-    # Obtener Ticker desde celda B2 (fila 1, columna 1) [índice base 0]
+    # Obtener Ticker desde celda B2 (fila 1, columna 1)
     ticker = str(df.iloc[1, 1]).strip()
 
     # Obtener nombre del archivo como Empresa (sin extensión)
     empresa = os.path.splitext(os.path.basename(ruta_csv))[0]
 
-    # Extraer datos reales (desde la fila 2 en adelante)
+    # Extraer datos reales desde la fila 3 (índice 2)
     data = df.iloc[2:].reset_index(drop=True)
 
-    # Asignar nombres de columnas
+    # Asignar nombres de columna manualmente
     data.columns = ["Date", "Open", "High", "Low", "Close", "Adj Close", "Volume"]
 
-    # Convertir fechas y construir documentos
     registros = []
     for _, row in data.iterrows():
         try:
-            fecha_iso = pd.to_datetime(row["Date"]).strftime("%Y-%m-%dT00:00:00Z")
             registro = {
-                "Date": {"$date": fecha_iso},
+                "Date": str(row["Date"]).strip(),  # SIN conversión de fecha
                 "Open": str(row["Open"]),
                 "High": str(row["High"]),
                 "Low": str(row["Low"]),
@@ -54,7 +52,7 @@ for carpeta in carpetas_origen:
             registros = procesar_archivo(ruta)
             registros_totales.extend(registros)
 
-    # Guardar en archivo JSON por carpeta
+    # Guardar resultados en JSON
     nombre_salida = "bmv_stock_data.json" if carpeta == "datos_bmv" else "us_stock_data.json"
     ruta_salida = os.path.join(carpeta_destino, nombre_salida)
     with open(ruta_salida, "w", encoding="utf-8") as f:
