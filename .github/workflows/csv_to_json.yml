@@ -24,7 +24,7 @@ jobs:
 
     - name: Ejecutar script de conversión
       run: |
-        python procesar_csv_a_json.py
+        python csv_to_json.py
 
     - name: Verificar tamaño de archivos JSON (máx 100MB)
       run: |
