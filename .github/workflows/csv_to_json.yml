@@ -36,5 +36,3 @@ jobs:
             echo "✅ Tamaño de $archivo: $((TAM / 1048576)) MB."
           fi
         done
-            git push
-          fi
