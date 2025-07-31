@@ -58,7 +58,7 @@ empresas_bmv = {
 }
 
 hoy = date.today()
-hace_10_anios = hoy - timedelta(days=365 * 10)
+hace_10_anios = hoy - timedelta(days=365 * 5)
 
 carpeta_salida = "datos_bmv"
 os.makedirs(carpeta_salida, exist_ok=True)
