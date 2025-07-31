@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import yfinance as yf
 import os
 from datetime import date, timedelta
