@@ -108,7 +108,7 @@ empresas_US = {
 hoy = date.today()
 hace_10_anios = hoy - timedelta(days=365 * 5)
 
-carpeta_salida = "datos_US"
+carpeta_salida = "datos_us"
 os.makedirs(carpeta_salida, exist_ok=True)
 
 for ticker, nombre in empresas_US.items():
