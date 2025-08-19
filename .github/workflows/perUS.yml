@@ -1,0 +1,35 @@
+# This workflow will run per_calculatorUS.py script and create FinanzPER_US.json over main/json folder
+
+name: Generar FinanzPER
+
+on:
+  workflow_dispatch: # se puede ejecutar manualmente
+  schedule:
+    - cron: "15 23 * * 1-5" # corre de lunes a viernes a las 23:15 UTC (17:15 México aprox.)
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Configurar Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.10"
+
+      - name: Instalar dependencias
+        run: |
+          pip install yfinance pandas
+
+      - name: Ejecutar script
+        run: python per_calculatorUS.py
+
+      - name: Commit y Push FinanzPER_US.json
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add datos_json/FinanzPER_US.json
+          git commit -m "Actualizar FinanzPER_US.json"
+          git push
