@@ -2,6 +2,8 @@ name: Descargar datos BMV
 
 on:
   workflow_dispatch:  # Permite ejecutarlo manualmente desde GitHub
+  schedule:
+    - cron: '30 21 * * 1-5' # Corre lunes a viernes a las 16:30 hora del centro de México (21:30 UTC)
 
 jobs:
   descargar:
