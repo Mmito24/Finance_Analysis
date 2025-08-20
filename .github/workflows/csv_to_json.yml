@@ -2,6 +2,8 @@ name: Convertir CSV a JSON
 
 on:
   workflow_dispatch:  # Ejecución manual desde GitHub
+  schedule:
+    - cron: '55 21 * * 1-5' # Lunes a viernes a las 16:55 hora del centro de México (21:45 UTC)
 
 jobs:
   convertir:
