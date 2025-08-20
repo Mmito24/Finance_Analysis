@@ -1,6 +1,6 @@
 # This workflow will run per_calculatorUS.py script and create FinanzPER_US.json over main/json folder
 
-name: Generar FinanzPER
+name: Generar FinanzPERus
 
 on:
   workflow_dispatch: # se puede ejecutar manualmente
