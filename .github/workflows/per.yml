@@ -5,7 +5,7 @@ name: Generar FinanzPER
 on:
   workflow_dispatch: # se puede ejecutar manualmente
   schedule:
-    - cron: "0 23 * * 1-5" # corre de lunes a viernes a las 12:00 UTC
+    - cron: "0 23 * * 1-5" # corre de lunes a viernes a las 12:00 UTC (17:00 hrs. Mexico)
 
 jobs:
   build:
