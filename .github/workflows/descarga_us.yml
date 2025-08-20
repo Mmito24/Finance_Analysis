@@ -2,6 +2,8 @@ name: Descargar datos US
 
 on:
   workflow_dispatch:  # Permite ejecutarlo manualmente desde GitHub
+  schedule:
+    - cron: '45 21 * * 1-5' # Lunes a viernes a las 16:45 hora del centro de México (21:45 UTC)
 
 jobs:
   descargar:
