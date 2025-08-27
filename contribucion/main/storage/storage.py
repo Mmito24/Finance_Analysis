@@ -89,7 +89,7 @@ class storage():
         with open(fichero, "w", encoding="utf-8") as f:
             json.dump(resultados, f, ensure_ascii=False, indent=4)
 
-        print("Archivo FinanzPER.json generado correctamente.")
+        print(f"Archivo {nameFile} generado correctamente.")
 
     def saveInJsonAssets(self,listaOrigen,listaDestino):
 
