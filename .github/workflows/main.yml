@@ -1,0 +1,36 @@
+# Este workflow ejecuta main.py automáticamente o manualmente
+name: Ejecutar main.py
+
+on:
+  workflow_dispatch: # Permite ejecutarlo manualmente desde GitHub
+  schedule:
+    - cron: "0 0 * * *" # Ejemplo: corre todos los días a medianoche UTC
+
+jobs:
+  run-main:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Configurar Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.10"  # ajusta si usas otra versión
+
+      - name: Instalar dependencias
+        run: |
+          pip install pandas
+
+      - name: Ejecutar main.py
+        run: python main.py
+
+      # (Opcional) Si main.py genera archivos y quieres guardarlos en el repo:
+      - name: Commit y Push resultados
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add resultados/ || true
+          git commit -m "Actualizar resultados desde main.py" || echo "No hay cambios"
+          git push
