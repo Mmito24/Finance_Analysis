@@ -24,6 +24,7 @@ jobs:
           pip install pandas
           pip install yfinance
           pip install numpy
+          pip install ta
 
       - name: Ejecutar main.py
         run: |
