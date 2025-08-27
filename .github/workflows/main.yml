@@ -24,7 +24,10 @@ jobs:
           pip install pandas
 
       - name: Ejecutar main.py
-        run: python main.py
+        run: |
+          cd contribucion
+          cd main
+          python main.py
 
       # (Opcional) Si main.py genera archivos y quieres guardarlos en el repo:
       - name: Commit y Push resultados
