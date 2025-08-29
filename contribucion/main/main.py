@@ -9,17 +9,17 @@ def main():
     dictBMV = readJson("bolsa_mexicana_de_valores.json").readTickers()
 
     # Almacenamiento de las acciones en carpeta rawData
-    storage(dictBEU,"rawData\\bolsa_estados_unidos").downloadAssetsPrices()
-    storage(dictBMV,"rawData\\bolsa_mexicana_de_valores").downloadAssetsPrices()
+    storage(dictBEU,"rawData/bolsa_estados_unidos").downloadAssetsPrices()
+    storage(dictBMV,"rawData/bolsa_mexicana_de_valores").downloadAssetsPrices()
 
     # Cálculo del PER
-    storage(dictBEU, "dataBases\\indicadores_de_acciones").downloadPertIndicator("FinanzPER_BEU.json")
-    storage(dictBMV, "dataBases\\indicadores_de_acciones").downloadPertIndicator("FinanzPER_BMV.json")
+    storage(dictBEU, "dataBases/indicadores_de_acciones").downloadPertIndicator("FinanzPER_BEU.json")
+    storage(dictBMV, "dataBases/indicadores_de_acciones").downloadPertIndicator("FinanzPER_BMV.json")
 
     # Unión de precios de activos
     storage().saveInJsonAssets(
-        ["rawData\\bolsa_estados_unidos","rawData\\bolsa_mexicana_de_valores"],
-        ["dataBases\\bolsa_estados_unidos","dataBases\\bolsa_mexicana_de_valores"]
+        ["rawData/bolsa_estados_unidos","rawData/bolsa_mexicana_de_valores"],
+        ["dataBases/bolsa_estados_unidos","dataBases/bolsa_mexicana_de_valores"]
     )
 
     # Transformaciones para cálculo de indicadores de trading
