@@ -52,8 +52,8 @@ class tecnicalAnalysis:
 
 
         self.saveInJsonAssets(
-            [f"rawData\\indicadores_de_trading\\{bolsa}"],
-            [f"dataBases\\indicadores_de_trading\\{bolsa}"],
+            [f"rawData/indicadores_de_trading/{bolsa}"],
+            [f"dataBases/indicadores_de_trading/{bolsa}"],
             bolsa
         )
 
