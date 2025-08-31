@@ -9,6 +9,7 @@ import pmdarima as pm
 from joblib import Parallel, delayed
 import time
 import matplotlib.pyplot as plt
+from typing import Optional
 
 warnings.filterwarnings('ignore')
 
@@ -132,7 +133,7 @@ class SARIMAXmodel:
         parametros = self.encontrar_mejor_sarimax_rapido()
         order = parametros["order"]
         seasonal_order = parametros["seasonal_order"]
-        self.periods =periodos_a_predecir
+        self.periods = periodos_a_predecir
 
         print("📋 Parámetros de SARIMAX a utilizar:")
         print(f"  - No estacional (p, d, q): {order}")
@@ -168,10 +169,9 @@ class SARIMAXmodel:
 
             # Unir todos los resultados en un solo DataFrame
 
-
             last_date = self.data['Date'].iloc[-1]
 
-            datesPredicted = pd.date_range(start=last_date + pd.Timedelta(days=1), periods=self.periods)
+            datesPredicted = pd.date_range(start= pd.to_datetime(last_date) + pd.Timedelta(days=1), periods=self.periods)
 
             self.df_predicciones = pd.DataFrame({
                 'Date':datesPredicted,
@@ -222,47 +222,37 @@ class SARIMAXmodel:
             'R2': r2
         }
 
-    def graficar_ajuste(self, periodos_a_predecir=10):
-        if self.resultados is None:
-            print("⚠️ Primero entrena el modelo con 'pronosticar_sarimax()'")
-            return
+    def storagePredictions(self, data: Optional[pd.DataFrame] = None):
 
-        df_final = pd.concat([self.data,self.df_predicciones])
+        datos_trabajo = data.copy() if data is not None else self._data_original.copy()
 
-        # Valores reales
-        reales = self.serie
-        # Ajuste in-sample
-        fitted = self.resultados.fittedvalues
+        if not datos_trabajo.empty:
+            datos_trabajo['ticker'] = self.ticker
+            # Usar solo pathlib.Path para consistencia
+            subcarpeta = self.rutaSalida / self.nombre
+            subcarpeta.mkdir(parents=True, exist_ok=True)
+            ruta_archivo = subcarpeta / f"{self.nombre}_{self.ticker.replace('.MX', '')}_predictions.json"
 
-        # Pronóstico futuro
-        forecast_result = self.resultados.get_forecast(steps=periodos_a_predecir)
-        predicciones_futuro = forecast_result.predicted_mean
-        intervalos_confianza = forecast_result.conf_int()
+            df_total = datos_trabajo
 
-        plt.figure(figsize=(12, 6))
+            # Crear lista documentos para guardar como NDJSON
 
-        lenL = len(self.data)
-        lenU = len(self.data)+periodos_a_predecir
+            with open(ruta_archivo, 'w', encoding='utf-8') as f:
+                for _, row in df_total.iterrows():
+                    date_obj = pd.to_datetime(row['Date'], utc=True)
 
-        # Serie real
-        plt.plot(self.data['Date'], reales, label='Real', color='black', linewidth=1.5)
-        # Ajuste del modelo
-        plt.plot(self.data['Date'], fitted, label='Ajuste modelo (in-sample)', color='red', linestyle='--')
-        # Pronóstico
-        plt.plot(df_final.iloc[lenL:lenU]['Date'], predicciones_futuro, label='Pronóstico', color='blue')
-        # Intervalos de confianza
-        plt.fill_between(
-            df_final.iloc[lenL:lenU]['Date'],
-            intervalos_confianza.iloc[:, 0],
-            intervalos_confianza.iloc[:, 1],
-            color='blue',
-            alpha=0.2,
-            label='Intervalo de confianza'
-        )
+                    document = {
+                        "Date": date_obj.strftime('%Y-%m-%d'),
+                        "ticker": row['ticker'],
+                        "frcst_sarimax_01_mean": float(row["frcst_sarimax_01_mean"]) if pd.notna(row["frcst_sarimax_01_mean"]) else None,
+                        "frcst_sarimax_01_low": float(row["frcst_sarimax_01_low"]) if pd.notna(row["frcst_sarimax_01_low"]) else None,
+                        "frcst_sarimax_01_upper": float(row["frcst_sarimax_01_upper"]) if pd.notna(row["frcst_sarimax_01_upper"]) else None
+                    }
+                    f.write(json.dumps(document, ensure_ascii=False) + "\n")
 
-        plt.title(f"Ajuste y Pronóstico SARIMAX - {self.ticker}")
-        plt.xlabel("Fecha")
-        plt.ylabel("Valor")
-        plt.legend()
-        plt.grid(True)
-        plt.show()
+            print(
+                f"[Almacenamiento Pronósticos] [{self.nombre}] ✅ Guardado como NDJSON compatible MongoDB en: {self.rutaSalida}")
+            print(f"[Almacenamiento Pronósticos] Total documentos: {len(df_total)}")
+
+        else:
+            print(f"[Almacenamiento Pronósticos] [{self.nombre}] ⚠️ No se encontraron datos para {self.ticker}")
