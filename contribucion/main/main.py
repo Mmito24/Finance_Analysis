@@ -1,6 +1,7 @@
 from read.readJson import readJson
 from storage.storage import storage
 from transformation.tecnicalAnalysis import tecnicalAnalysis
+from prediction.predictionIterator import predictionIterator
 
 def main():
 
@@ -26,5 +27,10 @@ def main():
 
     tecnicalAnalysis(dictBEU,None).calculateTradingIndicators("bolsa_estados_unidos")
     tecnicalAnalysis(dictBMV,None).calculateTradingIndicators("bolsa_mexicana_de_valores")
+
+    # Pronóstico de las acciones
+
+    predictionIterator(dictBEU,"bolsa_estados_unidos")
+    predictionIterator(dictBMV, "bolsa_mexicana_de_valores")
 
 main()
