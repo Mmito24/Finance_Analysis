@@ -1,14 +1,10 @@
 import pandas as pd
 from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
-from statsmodels.tsa.stattools import adfuller, acf, pacf
+from statsmodels.tsa.stattools import acf
 import numpy as np
-import itertools
 from statsmodels.tsa.statespace.sarimax import SARIMAX
 import warnings
 import pmdarima as pm
-from joblib import Parallel, delayed
-import time
-import matplotlib.pyplot as plt
 from typing import Optional
 
 warnings.filterwarnings('ignore')
