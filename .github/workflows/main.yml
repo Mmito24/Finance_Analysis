@@ -27,6 +27,9 @@ jobs:
           pip install yfinance
           pip install numpy
           pip install ta
+          pip install sklearn
+          pip install statsmodels
+          pip install pmdarima
 
       - name: Ejecutar main.py
         run: |
