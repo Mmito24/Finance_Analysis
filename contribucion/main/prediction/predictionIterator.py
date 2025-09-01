@@ -1,8 +1,8 @@
 from pathlib import Path
 import pandas as pd
 
-from SARIMAXmodel import SARIMAXmodel
-from savePredictions import savePredictions
+from prediction.SARIMAXmodel import SARIMAXmodel
+from prediction.savePredictions import savePredictions
 
 
 def predictionIterator(empresas_bmv,bolsa):
