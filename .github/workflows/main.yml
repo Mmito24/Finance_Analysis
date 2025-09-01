@@ -27,6 +27,7 @@ jobs:
           pip install yfinance
           pip install numpy
           pip install ta
+          pip install sklearn
 
       - name: Ejecutar main.py
         run: |
