@@ -23,13 +23,9 @@ jobs:
 
       - name: Instalar dependencias
         run: |
-          pip install pandas
-          pip install yfinance
-          pip install numpy
-          pip install ta
-          pip install scikit-learn
-          pip install statsmodels
-          pip install pmdarima
+          
+          python -m pip install --upgrade pip
+          pip install -r contribucion/requirements.txt
 
       - name: Ejecutar main.py
         run: |
