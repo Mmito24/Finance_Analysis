@@ -1,8 +1,8 @@
 from pathlib import Path
 import pandas as pd
 
-import SARIMAX
-import savePredictions
+from SARIMAXmodel import *
+from savePredictions import *
 
 
 def predictionIterator(empresas_bmv,bolsa):
@@ -29,7 +29,7 @@ def predictionIterator(empresas_bmv,bolsa):
             if col not in ["Date", "Ticker"]:
                 df[col] = pd.to_numeric(df[col], errors="coerce")
 
-        prediccion = SARIMAX.SARIMAXmodel(df, nombre)
+        prediccion = SARIMAXmodel(df, nombre)
 
         pronostico = prediccion.pronosticar_sarimax(60)
         evaluacion = prediccion.evaluar_modelo()
