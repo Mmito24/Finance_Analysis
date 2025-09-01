@@ -27,7 +27,7 @@ jobs:
           pip install yfinance
           pip install numpy
           pip install ta
-          pip install sklearn
+          pip install scikit-learn
           pip install statsmodels
           pip install pmdarima
 
