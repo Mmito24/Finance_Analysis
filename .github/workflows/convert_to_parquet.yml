@@ -25,15 +25,15 @@ jobs:
 
       - name: Convert JSON to Parquet
         run: |
-          mkdir -p Finance_Analysis/datos_json
+          mkdir -p datos_json
           python - <<EOF
           import pandas as pd
 
           files = {
-              "Finance_Analysis/contribucion/test/dataBases/indicadores_de_trading/bolsa_estados_unidos/bolsa_estados_unidos_ind_trading.json": 
-              "Finance_Analysis/datos_json/bolsa_estados_unidos_ind_trading.parquet",
-              "Finance_Analysis/contribucion/test/dataBases/indicadores_de_trading/bolsa_mexicana_de_valores/bolsa_mexicana_de_valores_ind_trading.json": 
-              "Finance_Analysis/datos_json/bolsa_mexicana_de_valores_ind_trading.parquet"
+              "contribucion/test/dataBases/indicadores_de_trading/bolsa_estados_unidos/bolsa_estados_unidos_ind_trading.json": 
+              "datos_json/bolsa_estados_unidos_ind_trading.parquet",
+              "contribucion/test/dataBases/indicadores_de_trading/bolsa_mexicana_de_valores/bolsa_mexicana_de_valores_ind_trading.json": 
+              "datos_json/bolsa_mexicana_de_valores_ind_trading.parquet"
           }
 
           for src, dst in files.items():
@@ -41,7 +41,7 @@ jobs:
               df.to_parquet(dst, engine="pyarrow", index=False)
               print(f"Convertido {src} -> {dst}")
           EOF
-
+          
       - name: Create or Update Release
         id: create_release
         uses: softprops/action-gh-release@v2
@@ -51,6 +51,6 @@ jobs:
           draft: false
           prerelease: false
           files: |
-            Finance_Analysis/datos_json/*.parquet
+            datos_json/*.parquet
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
