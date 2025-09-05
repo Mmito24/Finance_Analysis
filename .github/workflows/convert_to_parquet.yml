@@ -54,6 +54,3 @@ jobs:
         with:
           commit_message: "Actualización automática de archivos Parquet"
           file_pattern: datos_json/*.parquet
-
-        with:
-          packages-dir: dist/
