@@ -1,0 +1,59 @@
+name: Convert JSON to Parquet
+
+on:
+  schedule:
+    - cron: "0 6 * * *"   # Todos los días a las 06:00 UTC (medianoche CDMX)
+  workflow_dispatch:       # Opción para lanzarlo manualmente
+
+jobs:
+  convert:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo (con LFS)
+        uses: actions/checkout@v3
+        with:
+          lfs: true   # Necesario para traer los archivos reales y no solo punteros
+
+      - name: Configurar Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.10"
+
+      - name: Instalar dependencias
+        run: pip install pandas pyarrow fastparquet
+
+      - name: Convertir JSON a Parquet
+        run: |
+          import pandas as pd
+          import json
+          import os
+
+          rutas = {
+              "contribucion/test/dataBases/indicadores_de_trading/bolsa_estados_unidos/bolsa_estados_unidos_ind_trading.json":
+              "datos_json/bolsa_estados_unidos_ind_trading.parquet",
+
+              "contribucion/test/dataBases/indicadores_de_trading/bolsa_mexicana_de_valores/bolsa_mexicana_de_valores_ind_trading.json":
+              "datos_json/bolsa_mexicana_de_valores_ind_trading.parquet"
+          }
+
+          os.makedirs("datos_json", exist_ok=True)
+
+          for origen, destino in rutas.items():
+              with open(origen, "r") as f:
+                  data = json.load(f)
+
+              df = pd.DataFrame(data)
+              df.to_parquet(destino, index=False)
+              print(f"Convertido {origen} -> {destino}")
+
+        shell: python
+
+      - name: Commit y push de archivos Parquet
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Actualización automática de archivos Parquet"
+          file_pattern: datos_json/*.parquet
+
+        with:
+          packages-dir: dist/
