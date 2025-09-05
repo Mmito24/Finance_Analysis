@@ -1,56 +1,56 @@
-name: Convert JSON to Parquet
+name: Convert JSON to Parquet and Release
 
 on:
   schedule:
-    - cron: "0 6 * * *"   # Todos los días a las 06:00 UTC (medianoche CDMX)
-  workflow_dispatch:       # Opción para lanzarlo manualmente
+    - cron: "0 6 * * *"   # medianoche CDMX (UTC-6 = 06:00 UTC)
+  workflow_dispatch:
 
 jobs:
-  convert:
+  convert-and-release:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repo (con LFS)
-        uses: actions/checkout@v3
+      - name: Checkout repo with LFS
+        uses: actions/checkout@v4
         with:
-          lfs: true   # Necesario para traer los archivos reales y no solo punteros
+          lfs: true
 
-      - name: Configurar Python
-        uses: actions/setup-python@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
         with:
-          python-version: "3.10"
+          python-version: "3.x"
 
-      - name: Instalar dependencias
+      - name: Install dependencies
         run: pip install pandas pyarrow fastparquet
 
-      - name: Convertir JSON a Parquet
+      - name: Convert JSON to Parquet
         run: |
+          mkdir -p Finance_Analysis/datos_json
+          python - <<EOF
           import pandas as pd
-          import json
-          import os
 
-          rutas = {
-              "contribucion/test/dataBases/indicadores_de_trading/bolsa_estados_unidos/bolsa_estados_unidos_ind_trading.json":
-              "datos_json/bolsa_estados_unidos_ind_trading.parquet",
-
-              "contribucion/test/dataBases/indicadores_de_trading/bolsa_mexicana_de_valores/bolsa_mexicana_de_valores_ind_trading.json":
-              "datos_json/bolsa_mexicana_de_valores_ind_trading.parquet"
+          files = {
+              "Finance_Analysis/contribucion/test/dataBases/indicadores_de_trading/bolsa_estados_unidos/bolsa_estados_unidos_ind_trading.json": 
+              "Finance_Analysis/datos_json/bolsa_estados_unidos_ind_trading.parquet",
+              "Finance_Analysis/contribucion/test/dataBases/indicadores_de_trading/bolsa_mexicana_de_valores/bolsa_mexicana_de_valores_ind_trading.json": 
+              "Finance_Analysis/datos_json/bolsa_mexicana_de_valores_ind_trading.parquet"
           }
 
-          os.makedirs("datos_json", exist_ok=True)
+          for src, dst in files.items():
+              df = pd.read_json(src, lines=False)
+              df.to_parquet(dst, engine="pyarrow", index=False)
+              print(f"Convertido {src} -> {dst}")
+          EOF
 
-          for origen, destino in rutas.items():
-              with open(origen, "r") as f:
-                  data = json.load(f)
-
-              df = pd.DataFrame(data)
-              df.to_parquet(destino, index=False)
-              print(f"Convertido {origen} -> {destino}")
-
-        shell: python
-
-      - name: Commit y push de archivos Parquet
-        uses: stefanzweifel/git-auto-commit-action@v5
+      - name: Create or Update Release
+        id: create_release
+        uses: softprops/action-gh-release@v2
         with:
-          commit_message: "Actualización automática de archivos Parquet"
-          file_pattern: datos_json/*.parquet
+          tag_name: daily-parquet
+          name: Daily Parquet Release
+          draft: false
+          prerelease: false
+          files: |
+            Finance_Analysis/datos_json/*.parquet
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
