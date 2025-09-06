@@ -1,4 +1,4 @@
-name: Convert JSON to Parquet and Release
+name: Convert JSON to Parquet and Upload to OneDrive
 
 on:
   schedule:
@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  convert-and-release:
+  convert-and-upload:
     runs-on: ubuntu-latest
 
     steps:
@@ -41,16 +41,15 @@ jobs:
               df.to_parquet(dst, engine="pyarrow", index=False)
               print(f"Convertido {src} -> {dst}")
           EOF
-          
-      - name: Create or Update Release
-        id: create_release
-        uses: softprops/action-gh-release@v2
-        with:
-          tag_name: daily-parquet
-          name: Daily Parquet Release
-          draft: false
-          prerelease: false
-          files: |
-            datos_json/*.parquet
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Install rclone
+        run: curl https://rclone.org/install.sh | sudo bash
+
+      - name: Configure rclone
+        run: |
+          mkdir -p ~/.config/rclone
+          echo "${{ secrets.RCLONE_CONF }}" > ~/.config/rclone/rclone.conf
+
+      - name: Upload to OneDrive
+        run: |
+          rclone copy datos_json/ "onedrive:EmVM6J5YfU5OlWFdgnPKquoBA_Rn7-T1GkEcd5OhohyxaQ" --progress
