@@ -55,4 +55,4 @@ jobs:
           git commit -m "Commit único generado por workflow"
 
           git branch -M main
-          git push origin main --forc
+          git push origin main --force
