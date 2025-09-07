@@ -1,5 +1,5 @@
 # Este workflow ejecuta main.py automáticamente o manualmente
-name: Ejecutar main.py
+name: Ejecutar_main.py
 
 on:
   workflow_dispatch: # Permite ejecutarlo manualmente desde GitHub
