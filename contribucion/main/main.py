@@ -10,7 +10,7 @@ def main():
     dictBMV = readJson("bolsa_mexicana_de_valores.json").readTickers()
 
     # Almacenamiento de las acciones en carpeta rawData
-    storage(dictBEU,"rawData/bolsa_estados_unidos").downloadAssetsPrices()
+    #storage(dictBEU,"rawData/bolsa_estados_unidos").downloadAssetsPrices()
     storage(dictBMV,"rawData/bolsa_mexicana_de_valores").downloadAssetsPrices()
 
     # Cálculo del PER
