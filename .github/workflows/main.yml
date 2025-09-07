@@ -41,8 +41,6 @@ jobs:
           cd main
           python main.py
 
-      
-
       # 🔹 Crear commit único (borra historial y deja solo el actual)
       - name: Commit único y Push forzado
         run: |
