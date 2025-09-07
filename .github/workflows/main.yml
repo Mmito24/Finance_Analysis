@@ -33,6 +33,12 @@ jobs:
           cd main
           python main.py
 
+      # Limpiar versiones antiguas de archivos LFS (solo la más reciente y una previa)
+      - name: Limpiar versiones antiguas de LFS
+        run: |
+          git lfs install
+          git lfs prune --recent=2
+
       # (Opcional) Si main.py genera archivos y quieres guardarlos en el repo:
       - name: Commit y Push resultados
         run: |
