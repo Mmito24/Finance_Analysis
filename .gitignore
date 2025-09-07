@@ -4,3 +4,7 @@ __pycache__/
 
 # Ignorar notebooks temporales
 *.ipynb_checkpoints/
+
+# Ignorar CSV y Json
+*.json
+*.csv
