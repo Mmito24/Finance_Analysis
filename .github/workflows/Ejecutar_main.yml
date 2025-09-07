@@ -1,0 +1,56 @@
+# Este workflow ejecuta main.py automáticamente o manualmente
+name: Ejecutar_main
+
+on:
+  workflow_dispatch: # Permite ejecutarlo manualmente desde GitHub
+  schedule:
+    - cron: "0 0 * * *" # Ejemplo: corre todos los días a medianoche UTC
+
+jobs:
+  run-main:
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - name: Checkout repo
+        uses: actions/checkout@v3
+        with:
+          lfs: true
+
+      - name: Configurar y limpiar LFS
+        run: |
+          git lfs install
+          git lfs fetch --all
+          git lfs pull
+          git lfs prune --recent=1
+
+      - name: Configurar Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.10"  # ajusta si usas otra versión
+
+      - name: Instalar dependencias
+        run: |
+          
+          python -m pip install --upgrade pip
+          pip install -r contribucion/requirements.txt
+
+      - name: Ejecutar main.py
+        run: |
+          cd contribucion
+          cd main
+          python main.py
+
+      # 🔹 Crear commit único (borra historial y deja solo el actual)
+      - name: Commit único y Push forzado
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          
+          # Borrar historial y re-crear repo con solo un commit
+          git checkout --orphan temp_branch
+          git add -A
+          git commit -m "Commit único generado por workflow"
+
+          git branch -M main
+          git push origin main --force
