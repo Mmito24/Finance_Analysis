@@ -17,11 +17,12 @@ jobs:
         with:
           lfs: true
 
-      # Limpiar versiones antiguas de archivos LFS (solo la más reciente y una previa)
-      - name: Limpiar versiones antiguas de LFS
+      - name: Configurar y limpiar LFS
         run: |
           git lfs install
-          git lfs prune --recent=2
+          git lfs fetch --all
+          git lfs pull
+          git lfs prune --recent=1
 
       - name: Configurar Python
         uses: actions/setup-python@v4
@@ -42,11 +43,16 @@ jobs:
 
       
 
-      # (Opcional) Si main.py genera archivos y quieres guardarlos en el repo:
-      - name: Commit y Push resultados
+      # 🔹 Crear commit único (borra historial y deja solo el actual)
+      - name: Commit único y Push forzado
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add resultados/ || true
-          git commit -m "Actualizar resultados desde main.py" || echo "No hay cambios"
-          git push
+          
+          # Borrar historial y re-crear repo con solo un commit
+          git checkout --orphan temp_branch
+          git add -A
+          git commit -m "Commit único generado por workflow"
+
+          git branch -M main
+          git push origin main --forc
