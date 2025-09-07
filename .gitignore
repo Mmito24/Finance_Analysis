@@ -1,0 +1,9 @@
+# Ignorar archivos temporales de Python
+__pycache__/
+*.pyc
+
+# Ignorar notebooks temporales
+*.ipynb_checkpoints/
+
+# Ignorar CSV y Json
+*.csv
