@@ -1,5 +1,5 @@
-contribucion/**/*.json filter=lfs diff=lfs merge=lfs -text
-contribucion/**/*.csv filter=lfs diff=lfs merge=lfs -text
-contribucion/**/*.zip filter=lfs diff=lfs merge=lfs -text
-contribucion/**/*.ipynb filter=lfs diff=lfs merge=lfs -text
+# contribucion/**/*.json filter=lfs diff=lfs merge=lfs -text
+# contribucion/**/*.csv filter=lfs diff=lfs merge=lfs -text
+# contribucion/**/*.zip filter=lfs diff=lfs merge=lfs -text
+# contribucion/**/*.ipynb filter=lfs diff=lfs merge=lfs -text
 # *.json filter=lfs diff=lfs merge=lfs -text
