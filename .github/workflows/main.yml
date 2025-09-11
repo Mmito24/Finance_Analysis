@@ -15,13 +15,6 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v3
 
-      - name: Configurar y limpiar LFS
-        run: |
-          git lfs install
-          git lfs fetch --all
-          git lfs pull
-          git lfs prune --recent=1
-
       - name: Configurar Python
         uses: actions/setup-python@v4
         with:
