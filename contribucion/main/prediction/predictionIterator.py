@@ -25,14 +25,20 @@ def predictionIterator(empresas_bmv,bolsa):
 
         df["Ticker"] = ticker
 
+        # Validación del DF generado tras la lectura
         for col in df.columns:
             if col not in ["Date", "Ticker"]:
                 df[col] = pd.to_numeric(df[col], errors="coerce")
 
+        # Generación del modelo SARIMAX
         prediccion = SARIMAXmodel(df, nombre)
 
         pronostico = prediccion.pronosticar_sarimax(60)
         evaluacion = prediccion.evaluar_modelo()
+
+        # Generación del modelo
+
+        # Almacenamieno de predicciones
         almacenamientoPronosticos = savePredictions(pronostico, ticker, nombre,bolsa)
         almacenamientoPronosticos.storagePredictions()
 
