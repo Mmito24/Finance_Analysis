@@ -13,7 +13,7 @@ empresas_EEUU = {
     "META": "Meta Platforms Inc.",
     "AVGO": "Broadcom Inc.",
     "TSLA": "Tesla Inc.",
-    "BRK.B": "Berkshire Hathaway Inc.",
+    "BRK-B": "Berkshire Hathaway Inc.",
     "TSM": "Taiwan Semiconductor Manufacturing Company Limited",
     "JPM": "JPMorgan Chase & Co.",
     "WMT": "Walmart Inc.",
