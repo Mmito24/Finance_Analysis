@@ -11,15 +11,6 @@ def main():
     # dictBMV = readJson("bolsa_mexicana_de_valores.json").readTickers()
 
     dictBEU = {
-        "NVDA": "NVIDIA Corporation"
-    }
-
-    dictBMV = {
-        "AMXB.MX": "AmericaMovil"
-    }
-
-    """
-    dictBEU = {
         "NVDA": "NVIDIA Corporation",
         "MSFT": "Microsoft Corporation",
         "AAPL": "Apple Inc.",
@@ -158,7 +149,7 @@ def main():
 
     tecnicalAnalysis(dictBEU,None).calculateTradingIndicators("bolsa_estados_unidos")
     tecnicalAnalysis(dictBMV,None).calculateTradingIndicators("bolsa_mexicana_de_valores")
-    """
+
     # Pronóstico de las acciones
 
     predictionIterator(dictBEU,"bolsa_estados_unidos")
@@ -166,7 +157,7 @@ def main():
 
     # Eliminación de archivos intermedios para calculo
 
-    #deleteFiles(dictBEU,"bolsa_estados_unidos").iteratorDeleteFile()
-    #deleteFiles(dictBMV,"bolsa_mexicana_de_valores").iteratorDeleteFile()
+    deleteFiles(dictBEU,"bolsa_estados_unidos").iteratorDeleteFile()
+    deleteFiles(dictBMV,"bolsa_mexicana_de_valores").iteratorDeleteFile()
 
 main()
