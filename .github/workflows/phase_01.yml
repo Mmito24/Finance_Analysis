@@ -58,9 +58,7 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git status
-          git add contribucion/main/test/dataBases/bolsa_estados_unidos/us_stock_data.json
-          git add contribucion/main/test/dataBases/bolsa_mexicana_de_valores/bmv_stock_data.json
-          git add contribucion/main/test/rawData/bolsa_estados_unidos/*.csv
-          git add contribucion/main/test/rawData/bolsa_mexicana_de_valores/*.csv
+          git add **/*.json
+          git add **/*.csv
           git commit -m "Phase 01 - Commit #$NEW_COUNT"
           git push
