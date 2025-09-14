@@ -1,5 +1,5 @@
 # Este workflow ejecuta main.py automáticamente o manualmente
-name: Ejecutar phase_01_SavingAssetsAndPert
+name: Ejecutar phase_02_TransformationsAndPredictions
 
 on:
   workflow_dispatch: # Permite ejecutarlo manualmente desde GitHub
@@ -25,11 +25,11 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r contribucion/requirements.txt
 
-      - name: Ejecutar phase_01_SavingAssetsAndPert
+      - name: Ejecutar phase_02_TransformationsAndPredictions
         run: |
           cd contribucion
           cd main
-          python phase_01_SavingAssetsAndPert.py
+          python phase_02_TransformationsAndPredictions.py
 
       # (Opcional) Si main.py genera archivos y quieres guardarlos en el repo:
       - name: Commit y Push resultados
