@@ -30,12 +30,34 @@ jobs:
           cd contribucion
           cd main
           python main.py
+      
+            - name: Leer y actualizar el contador
+        id: counter # Esto asigna un ID al paso para que podamos referirnos a él después
+        run: |
+          # Define la ruta para el archivo del contador
+          COUNT_FILE="contribucion/commit_count.txt"
+          
+          # Lee el valor actual del contador, si existe. Si no, usa 0.
+          if [ -f "$COUNT_FILE" ]; then
+            current_count=$(cat $COUNT_FILE)
+          else
+            current_count=0
+          fi
+          
+          # Incrementa el contador
+          new_count=$((current_count + 1))
+          
+          # Guarda el nuevo contador en el archivo y en una variable de entorno para usarla más tarde
+          echo "$new_count" > "$COUNT_FILE"
+          echo "NEW_COUNT=$new_count" >> $GITHUB_ENV
 
       # (Opcional) Si main.py genera archivos y quieres guardarlos en el repo:
-      - name: Commit y Push resultados
+      - name: Commit y Push main
         run: |
+          cd $GITHUB_WORKSPACE
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add resultados/ || true
-          git commit -m "Actualizar resultados desde main.py" || echo "No hay cambios"
+          git status
+          git add .
+          git commit -am "main - Commit #$NEW_COUNT"
           git push
