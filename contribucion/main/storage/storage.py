@@ -100,7 +100,7 @@ class storage():
         # ruta_principal = f"test"
 
         carpeta_origen = [ruta_principal / listaOrigen[0], ruta_principal / listaOrigen[1]]
-        # carpeta_destino = [f"{ruta_principal}/{listaDestino[0]}", f"{ruta_principal}/{listaDestino[1]}"]
+        carpeta_destino = [ruta_principal / listaDestino[0], ruta_principal / listaDestino[1]]
 
         # Carpetas fuente y carpeta destino
 
