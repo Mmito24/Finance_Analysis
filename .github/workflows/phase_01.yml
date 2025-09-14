@@ -54,9 +54,11 @@ jobs:
       # (Opcional) Si main.py genera archivos y quieres guardarlos en el repo:
       - name: Commit y Push phase_01
         run: |
+          cd $GITHUB_WORKSPACE
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git status
-          git add .
+          git add contribucion/test/**/*.csv
+          git add contribucion/test/**/*.json
           git commit -m "Phase 01 - Commit #$NEW_COUNT"
           git push
