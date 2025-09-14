@@ -59,4 +59,4 @@ jobs:
           git status
           git add .
           git commit -am "Phase 02 - Commit #$NEW_COUNT"
-          git push
+          git push 
