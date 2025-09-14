@@ -1,4 +1,4 @@
-# Este workflow phase_01_SavingAssetsAndPert main.py automáticamente o manualmente
+# Este workflow phase_01_SavingAssetsAndPert automáticamente o manualmente
 name: Ejecutar phase_01_SavingAssetsAndPert
 
 on:
