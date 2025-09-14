@@ -144,7 +144,7 @@ def main():
 
     # Eliminación de archivos intermedios para calculo
 
-    # deleteFiles(dictBEU,"bolsa_estados_unidos").iteratorDeleteFile()
-    # deleteFiles(dictBMV,"bolsa_mexicana_de_valores").iteratorDeleteFile()
+    deleteFiles(dictBEU,"bolsa_estados_unidos").iteratorDeleteFile()
+    deleteFiles(dictBMV,"bolsa_mexicana_de_valores").iteratorDeleteFile()
 
 main()
