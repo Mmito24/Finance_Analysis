@@ -1,4 +1,4 @@
-# Este workflow ejecuta main.py automáticamente o manualmente
+# Este workflow main automáticamente o manualmente
 name: Ejecutar main
 
 on:
@@ -30,8 +30,8 @@ jobs:
           cd contribucion
           cd main
           python main.py
-      
-            - name: Leer y actualizar el contador
+
+      - name: Leer y actualizar el contador
         id: counter # Esto asigna un ID al paso para que podamos referirnos a él después
         run: |
           # Define la ruta para el archivo del contador
@@ -51,8 +51,7 @@ jobs:
           echo "$new_count" > "$COUNT_FILE"
           echo "NEW_COUNT=$new_count" >> $GITHUB_ENV
 
-      # (Opcional) Si main.py genera archivos y quieres guardarlos en el repo:
-      - name: Commit y Push main
+      - name: Commit y Push phase_01
         run: |
           cd $GITHUB_WORKSPACE
           git config --global user.name "github-actions[bot]"
