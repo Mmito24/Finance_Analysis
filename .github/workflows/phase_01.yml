@@ -1,4 +1,4 @@
-# Este workflow ejecuta phase_01_SavingAssetsAndPert.py automáticamente o manualmente
+# Este workflow phase_01_SavingAssetsAndPert main.py automáticamente o manualmente
 name: Ejecutar phase_01_SavingAssetsAndPert
 
 on:
@@ -13,9 +13,6 @@ jobs:
     steps:
       - name: Checkout repo
         uses: actions/checkout@v3
-        with:
-          # Necesario para el "git push" en los siguientes pasos
-          fetch-depth: 0
 
       - name: Configurar Python
         uses: actions/setup-python@v4
@@ -24,15 +21,15 @@ jobs:
 
       - name: Instalar dependencias
         run: |
+          
           python -m pip install --upgrade pip
           pip install -r contribucion/requirements.txt
 
       - name: Ejecutar phase_01_SavingAssetsAndPert
         run: |
-          cd contribucion/main
+          cd contribucion
+          cd main
           python phase_01_SavingAssetsAndPert.py
-
-      # --- PASOS PARA AGREGAR EL CONTADOR AL COMMIT ---
 
       - name: Leer y actualizar el contador
         id: counter # Esto asigna un ID al paso para que podamos referirnos a él después
@@ -54,29 +51,11 @@ jobs:
           echo "$new_count" > "$COUNT_FILE"
           echo "NEW_COUNT=$new_count" >> $GITHUB_ENV
 
-      - name: Commit y Push con el contador
-        run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add . # Incluye el archivo de contador y cualquier otro cambio
-          git commit -m "Phase 01 - Commit #$NEW_COUNT"
-          git pushe: Instalar dependencias
-        run: |
-          
-          python -m pip install --upgrade pip
-          pip install -r contribucion/requirements.txt
-
-      - name: Ejecutar phase_01_SavingAssetsAndPert
-        run: |
-          cd contribucion
-          cd main
-          python phase_01_SavingAssetsAndPert.py
-
       # (Opcional) Si main.py genera archivos y quieres guardarlos en el repo:
       - name: Commit y Push phase_01
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add .
-          git commit -m "Phase 01"
+          git commit -m "Phase 01 - Commit #$NEW_COUNT"
           git push
