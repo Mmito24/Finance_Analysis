@@ -15,7 +15,7 @@ class tecnicalAnalysis:
     def calculateTradingIndicators(self,bolsa):
 
         for ticker, nombre in self.dicAsset.items():
-            ruta = Path(__file__).parent.parent.parent / "test" / "rawData" / bolsa / f"{nombre}_{ticker}.csv"
+            ruta = Path(__file__).parent.parent.parent / "main" / "test" / "rawData" / bolsa / f"{nombre}_{ticker}.csv"
 
             df_raw = pd.read_csv(ruta, header=None)
 
@@ -202,7 +202,7 @@ class tecnicalAnalysis:
         datos_trabajo = data.copy()
 
         if not datos_trabajo.empty:
-            ruta_archivo = Path(__file__).parent.parent.parent / "test" / "rawData" / "indicadores_de_trading" / f"{bolsa}" / f"{nombre}_{ticker}.json"
+            ruta_archivo = Path(__file__).parent.parent.parent / "main" / "test" / "rawData" / "indicadores_de_trading" / f"{bolsa}" / f"{nombre}_{ticker}.json"
 
             df_total = datos_trabajo
 

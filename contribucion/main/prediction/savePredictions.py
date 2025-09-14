@@ -7,7 +7,7 @@ import os
 class savePredictions:
     def __init__(self, datos: pd.DataFrame = None, ticker: str = None, nombre: str = None,bolsa:str = None):
         self._data_original = datos
-        self.rutaSalida = Path(__file__).parent.parent.parent / "test" / "rawData" / "pronostico_de_acciones" / f"{bolsa}"
+        self.rutaSalida = Path(__file__).parent.parent.parent / "main" / "test" / "rawData" / "pronostico_de_acciones" / f"{bolsa}"
         self.ticker = ticker
         self.nombre = nombre
 
