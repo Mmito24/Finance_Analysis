@@ -7,8 +7,6 @@ from pathlib import Path
 import json
 import os
 
-from Descarga_datos_us import ruta_archivo
-
 
 class tecnicalAnalysis:
     def __init__(self, dictAssets=None, routeFile=None):
