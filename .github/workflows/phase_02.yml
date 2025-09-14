@@ -2,9 +2,10 @@
 name: Ejecutar phase_02_TransformationsAndPredictions
 
 on:
-  workflow_dispatch: # Permite ejecutarlo manualmente desde GitHub
-  schedule:
-    - cron: "0 0 * * *" # Ejemplo: corre todos los días a medianoche UTC
+  workflow_run:
+    workflows: ["Ejecutar phase_01_SavingAssetsAndPert"]
+    types:
+      - completed
 
 jobs:
   run-main:
