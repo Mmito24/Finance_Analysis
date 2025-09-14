@@ -51,7 +51,6 @@ jobs:
           echo "$new_count" > "$COUNT_FILE"
           echo "NEW_COUNT=$new_count" >> $GITHUB_ENV
 
-      # (Opcional) Si main.py genera archivos y quieres guardarlos en el repo:
       - name: Commit y Push phase_01
         run: |
           cd $GITHUB_WORKSPACE
