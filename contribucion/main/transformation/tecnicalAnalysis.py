@@ -7,6 +7,9 @@ from pathlib import Path
 import json
 import os
 
+from Descarga_datos_us import ruta_archivo
+
+
 class tecnicalAnalysis:
     def __init__(self, dictAssets=None, routeFile=None):
         self.dicAsset = dictAssets
@@ -15,8 +18,8 @@ class tecnicalAnalysis:
     def calculateTradingIndicators(self,bolsa):
 
         for ticker, nombre in self.dicAsset.items():
-            ruta = Path(__file__).parent.parent.parent / "main" / "test" / "rawData" / bolsa / f"{nombre}_{ticker}.csv"
-
+            # ruta = Path(__file__).parent.parent.parent / "main" / "test" / "rawData" / bolsa / f"{nombre}_{ticker}.csv"
+            ruta = f"test/rawData/{bolsa}/{nombre}_{ticker}.csv"
             df_raw = pd.read_csv(ruta, header=None)
 
             # --- Paso 1: usar la primera fila como encabezado ---
@@ -202,8 +205,8 @@ class tecnicalAnalysis:
         datos_trabajo = data.copy()
 
         if not datos_trabajo.empty:
-            ruta_archivo = Path(__file__).parent.parent.parent / "main" / "test" / "rawData" / "indicadores_de_trading" / f"{bolsa}" / f"{nombre}_{ticker}.json"
-
+            # ruta_archivo = Path(__file__).parent.parent.parent / "main" / "test" / "rawData" / "indicadores_de_trading" / f"{bolsa}" / f"{nombre}_{ticker}.json"
+            ruta_archivo = f"test/rawData/indicadores_de_trading/{bolsa}/{nombre}_{ticker}.json"
             df_total = datos_trabajo
 
             # Crear lista documentos para guardar como NDJSON
@@ -276,7 +279,9 @@ class tecnicalAnalysis:
 
     def saveInJsonAssets(self, listaOrigen, listaDestino,bolsa):
 
-        ruta_principal = Path(__file__).parent.parent.parent / "test"
+        # ruta_principal = Path(__file__).parent.parent.parent / "test"
+
+        ruta_principal = "test"
 
         carpeta_origen = [ruta_principal / listaOrigen[0]]
         carpeta_destino = [ruta_principal / listaDestino[0]]

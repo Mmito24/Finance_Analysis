@@ -10,7 +10,8 @@ class readJson():
         """
         Lee el ticker y el nombre de la empresa, regresa un diccionario para iterar
         """
-        ruta = Path(__file__).parent.parent.parent / "main" / "test" / "empresas" / f"{self.name}"
+        # ruta = Path(__file__).parent.parent.parent / "main" / "test" / "empresas" / f"{self.name}"
+        ruta = f"test/empresas/{self.name}"
 
         diccionario_empresas = {}
         print(f"\nLeyendo desde '{ruta}'...")
