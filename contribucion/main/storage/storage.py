@@ -21,8 +21,6 @@ class storage():
 
         os.makedirs(carpeta_salida, exist_ok=True)
 
-        print(carpeta_salida)
-
         for ticker, nombre in self.dicAsset.items():
             print(f"Descargando datos de {nombre} ({ticker})...")
 

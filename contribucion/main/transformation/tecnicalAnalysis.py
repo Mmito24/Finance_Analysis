@@ -283,7 +283,7 @@ class tecnicalAnalysis:
 
         # Carpetas fuente y carpeta destino
 
-        # os.makedirs(carpeta_destino[0], exist_ok=True)
+        os.makedirs(carpeta_destino[0], exist_ok=True)
 
         def convertir_numero(valor):
             """Convierte strings a float o int si es posible, o retorna None si es 'nan' o vacío."""
@@ -370,6 +370,7 @@ class tecnicalAnalysis:
             for archivo in os.listdir(carpeta_origen):
                 if archivo.endswith(".json"):
                     ruta = os.path.join(carpeta_origen, archivo)
+                    os.makedirs(ruta.parent, exist_ok=True)
                     print(f"Procesando: {ruta}")
                     registros = procesar_archivo(ruta)
                     registros_totales.extend(registros)
