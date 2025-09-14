@@ -137,4 +137,9 @@ def main():
     tecnicalAnalysis(dictBEU,None).calculateTradingIndicators("bolsa_estados_unidos")
     tecnicalAnalysis(dictBMV,None).calculateTradingIndicators("bolsa_mexicana_de_valores")
 
+    # Eliminación de archivos intermedios para calculo
+
+    deleteFiles(dictBEU, "bolsa_estados_unidos").iteratorPhase02DeleteFile()
+    deleteFiles(dictBMV, "bolsa_mexicana_de_valores").iteratorPhase02DeleteFile()
+
 main()
