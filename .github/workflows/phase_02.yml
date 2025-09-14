@@ -55,6 +55,9 @@ jobs:
       - name: Commit y Push phase_01
         run: |
           cd $GITHUB_WORKSPACE
+          git config --global http.postBuffer 524288000
+          git config --global http.lowSpeedLimit 0
+          git config --global http.lowSpeedTime 999999
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git status
