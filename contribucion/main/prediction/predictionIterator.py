@@ -7,8 +7,8 @@ from prediction.savePredictions import savePredictions
 
 def predictionIterator(empresas_bmv,bolsa):
     for ticker, nombre in empresas_bmv.items():
-        # ruta = Path(__file__).parent.parent.parent / "main" / "test" / "rawData" / bolsa / f"{nombre}_{ticker}.csv"
-        ruta = f"test/rawData/{bolsa}/{nombre}_{ticker}.csv"
+        ruta = Path(__file__).parent.parent.parent / "main" / "test" / "rawData" / bolsa / f"{nombre}_{ticker}.csv"
+        # ruta = f"test/rawData/{bolsa}/{nombre}_{ticker}.csv"
         df_raw = pd.read_csv(ruta, header=None)
 
         # Obtener Ticker desde celda B2 (fila 1, columna 1)

@@ -9,20 +9,20 @@ class deleteFiles:
     def iteratorDeleteFile(self):
         try:
             for ticker, nombre in self.empresas_bmv.items():
-                # ruta = Path(__file__).parent.parent.parent / "main" / "test" / "rawData" / self.bolsa / f"{nombre}_{ticker}.csv"
-                ruta = f"test/rawData/{self.bolsa}/{nombre}_{ticker}.csv"
+                ruta = Path(__file__).parent.parent.parent / "main" / "test" / "rawData" / self.bolsa / f"{nombre}_{ticker}.csv"
+                # ruta = f"test/rawData/{self.bolsa}/{nombre}_{ticker}.csv"
                 if ruta.is_file():
                     os.remove(ruta)
                     print(f"Archivo eliminado: {ruta.name}")
 
-                # ruta = Path(__file__).parent.parent.parent / "main" / "test" / "rawData" / "indicadores_de_trading" / self.bolsa / f"{nombre}_{ticker}.json"
-                ruta = f"test/rawData/indicadores_de_trading/{self.bolsa}/{nombre}_{ticker}.json"
+                ruta = Path(__file__).parent.parent.parent / "main" / "test" / "rawData" / "indicadores_de_trading" / self.bolsa / f"{nombre}_{ticker}.json"
+                # ruta = f"test/rawData/indicadores_de_trading/{self.bolsa}/{nombre}_{ticker}.json"
                 if ruta.is_file():
                     os.remove(ruta)
                     print(f"Archivo eliminado: {ruta.name}")
 
-                # ruta = Path(__file__).parent.parent.parent / "main" / "test" / "rawData" / "pronostico_de_acciones" / self.bolsa / f"{nombre}_{ticker}.json"
-                ruta = f"test/rawData/pronostico_de_acciones/{self.bolsa}/{nombre}_{ticker}.json"
+                ruta = Path(__file__).parent.parent.parent / "main" / "test" / "rawData" / "pronostico_de_acciones" / self.bolsa / f"{nombre}_{ticker}.json"
+                # ruta = f"test/rawData/pronostico_de_acciones/{self.bolsa}/{nombre}_{ticker}.json"
                 if ruta.is_file():
                     os.remove(ruta)
                     print(f"Archivo eliminado: {ruta.name}")

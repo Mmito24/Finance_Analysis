@@ -16,8 +16,8 @@ class storage():
         hoy = date.today()
         hace_05_anios = hoy - timedelta(days=365 * 5)
 
-        #carpeta_salida = Path(__file__).parent.parent.parent / "main" / "test" / f"{self.routeFile}"
-        carpeta_salida = f"test/{self.routeFile}"
+        carpeta_salida = Path(__file__).parent.parent.parent / "main" / "test" / f"{self.routeFile}"
+        # carpeta_salida = f"test/{self.routeFile}"
 
         os.makedirs(carpeta_salida, exist_ok=True)
 
@@ -45,10 +45,10 @@ class storage():
     def downloadPertIndicator(self,nameFile):
         resultados = []
 
-        # carpeta_salida = Path(__file__).parent.parent.parent / "main" / "test" / f"{self.routeFile}"
-        carpeta_salida = f"test/{self.routeFile}"
-        # fichero = Path(__file__).parent.parent.parent / "main" / "test" / f"{self.routeFile}" / f"{nameFile}"
-        fichero = f"test/{self.routeFile}/{nameFile}"
+        carpeta_salida = Path(__file__).parent.parent.parent / "main" / "test" / f"{self.routeFile}"
+        # carpeta_salida = f"test/{self.routeFile}"
+        fichero = Path(__file__).parent.parent.parent / "main" / "test" / f"{self.routeFile}" / f"{nameFile}"
+        # fichero = f"test/{self.routeFile}/{nameFile}"
         for ticker_symbol, nombre in self.dicAsset.items():
             ticker = yf.Ticker(ticker_symbol)
             info = ticker.info
@@ -96,11 +96,11 @@ class storage():
 
     def saveInJsonAssets(self,listaOrigen,listaDestino):
 
-        # ruta_principal = Path(__file__).parent.parent.parent / "main" /"test"
-        ruta_principal = f"test"
+        ruta_principal = Path(__file__).parent.parent.parent / "main" /"test"
+        # ruta_principal = f"test"
 
         carpeta_origen = [ruta_principal / listaOrigen[0], ruta_principal / listaOrigen[1]]
-        carpeta_destino = [ruta_principal / listaDestino[0], ruta_principal / listaDestino[1]]
+        # carpeta_destino = [f"{ruta_principal}/{listaDestino[0]}", f"{ruta_principal}/{listaDestino[1]}"]
 
         # Carpetas fuente y carpeta destino
 
