@@ -25,7 +25,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r contribucion/requirements.txt
 
-      - name: Ejecutar phase_01_SavingAssetsAndPert
+      - name: Ejecutar main
         run: |
           cd contribucion
           cd main
