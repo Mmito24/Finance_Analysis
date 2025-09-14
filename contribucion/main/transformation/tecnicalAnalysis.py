@@ -58,9 +58,6 @@ class tecnicalAnalysis:
             bolsa
         )
 
-
-
-
     def indctr_01_roi(self, data: Optional[pd.DataFrame] = None) -> pd.DataFrame:
 
         datos_trabajo = data.copy() if data is not None else self.data_original.copy()
@@ -209,7 +206,7 @@ class tecnicalAnalysis:
 
             # Crear lista documentos para guardar como NDJSON
 
-            data.head(5)
+            os.makedirs(ruta_archivo.parent, exist_ok=True)
 
             with open(ruta_archivo, 'w', encoding='utf-8') as f:
                 for _, row in data.iterrows():
