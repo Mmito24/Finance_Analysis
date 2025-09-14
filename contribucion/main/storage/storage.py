@@ -96,7 +96,7 @@ class storage():
 
     def saveInJsonAssets(self,listaOrigen,listaDestino):
 
-        ruta_principal = Path(__file__).parent.parent.parent / "main" /"test"
+        ruta_principal = Path(__file__).parent.parent.parent / "main" / "test"
         # ruta_principal = f"test"
 
         carpeta_origen = [ruta_principal / listaOrigen[0], ruta_principal / listaOrigen[1]]
