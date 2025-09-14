@@ -1,10 +1,11 @@
-# Este workflow phase_01_SavingAssetsAndPert automáticamente o manualmente
-name: Ejecutar phase_01_SavingAssetsAndPert
+# Este workflow phase_03_Predictions automáticamente o manualmente
+name: Ejecutar phase_03_Predictions
 
 on:
-  workflow_dispatch: # Permite ejecutarlo manualmente desde GitHub
-  schedule:
-    - cron: "0 0 * * *" # Ejemplo: corre todos los días a medianoche UTC
+  workflow_run:
+    workflows: ["Ejecutar phase_02_Transformations"]
+    types:
+      - completed
 
 jobs:
   run-main:
@@ -25,11 +26,11 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r contribucion/requirements.txt
 
-      - name: Ejecutar phase_01_SavingAssetsAndPert
+      - name: Ejecutar phase_03_Predictions
         run: |
           cd contribucion
           cd main
-          python phase_01_SavingAssetsAndPert.py
+          python phase_03_Predictions.py
 
       - name: Leer y actualizar el contador
         id: counter # Esto asigna un ID al paso para que podamos referirnos a él después
@@ -58,5 +59,5 @@ jobs:
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git status
           git add .
-          git commit -am "Phase 01 Saving Assets And Pert - Commit #$NEW_COUNT"
+          git commit -am "Phase 03 Predictions - Commit #$NEW_COUNT"
           git push
