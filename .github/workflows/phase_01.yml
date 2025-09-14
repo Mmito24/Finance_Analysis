@@ -25,11 +25,11 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r contribucion/requirements.txt
 
-      - name: Ejecutar main.py
+      - name: Ejecutar phase_01_SavingAssetsAndPert
         run: |
           cd contribucion
           cd main
-          python main.py
+          python phase_01_SavingAssetsAndPert.py
 
       # (Opcional) Si main.py genera archivos y quieres guardarlos en el repo:
       - name: Commit y Push resultados
