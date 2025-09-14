@@ -286,7 +286,7 @@ class tecnicalAnalysis:
 
         # Carpetas fuente y carpeta destino
 
-        os.makedirs(carpeta_destino[0], exist_ok=True)
+        # os.makedirs(carpeta_destino[0], exist_ok=True)
 
         def convertir_numero(valor):
             """Convierte strings a float o int si es posible, o retorna None si es 'nan' o vacío."""
