@@ -132,7 +132,7 @@ def main():
         "BOLSAA.MX": "BolsaMexicanaValores"
     }
 
-    """# Almacenamiento de las acciones en carpeta rawData
+    # Almacenamiento de las acciones en carpeta rawData
     storage(dictBEU,"rawData/bolsa_estados_unidos").downloadAssetsPrices()
     storage(dictBMV,"rawData/bolsa_mexicana_de_valores").downloadAssetsPrices()
 
@@ -144,7 +144,7 @@ def main():
     storage().saveInJsonAssets(
         ["rawData/bolsa_estados_unidos","rawData/bolsa_mexicana_de_valores"],
         ["dataBases/bolsa_estados_unidos","dataBases/bolsa_mexicana_de_valores"]
-    )"""
+    )
 
     # Transformaciones para cálculo de indicadores de trading
 
