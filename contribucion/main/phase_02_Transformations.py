@@ -137,14 +137,4 @@ def main():
     tecnicalAnalysis(dictBEU,None).calculateTradingIndicators("bolsa_estados_unidos")
     tecnicalAnalysis(dictBMV,None).calculateTradingIndicators("bolsa_mexicana_de_valores")
 
-    # Pronóstico de las acciones
-
-    predictionIterator(dictBEU,"bolsa_estados_unidos")
-    predictionIterator(dictBMV, "bolsa_mexicana_de_valores")
-
-    # Eliminación de archivos intermedios para calculo
-
-    deleteFiles(dictBEU,"bolsa_estados_unidos").iteratorDeleteFile()
-    deleteFiles(dictBMV,"bolsa_mexicana_de_valores").iteratorDeleteFile()
-
 main()

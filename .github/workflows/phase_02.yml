@@ -1,5 +1,5 @@
-# Este workflow phase_02_TransformationsAndPredictions automáticamente o manualmente
-name: Ejecutar phase_02_TransformationsAndPredictions
+# Este workflow phase_02_Transformations automáticamente o manualmente
+name: Ejecutar phase_02_Transformations
 
 on:
   workflow_run:
@@ -26,11 +26,11 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r contribucion/requirements.txt
 
-      - name: Ejecutar phase_02_TransformationsAndPredictions
+      - name: Ejecutar phase_02_Transformations
         run: |
           cd contribucion
           cd main
-          python phase_02_TransformationsAndPredictions.py
+          python phase_02_Transformations.py
 
       - name: Leer y actualizar el contador
         id: counter # Esto asigna un ID al paso para que podamos referirnos a él después
@@ -59,5 +59,5 @@ jobs:
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git status
           git add .
-          git commit -am "Phase 01 - Commit #$NEW_COUNT"
+          git commit -am "Phase 02 Transformations - Commit #$NEW_COUNT"
           git push
