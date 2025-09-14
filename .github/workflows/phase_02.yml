@@ -1,0 +1,62 @@
+# Este workflow ejecuta phase_02_TransformationsAndPredictions automáticamente o manualmente
+name: Ejecutar phase_02_TransformationsAndPredictions
+
+on:
+  workflow_dispatch: # Permite ejecutarlo manualmente desde GitHub
+  schedule:
+    - cron: "0 0 * * *" # Ejemplo: corre todos los días a medianoche UTC
+
+jobs:
+  run-main:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Configurar Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.10"  # ajusta si usas otra versión
+
+      - name: Instalar dependencias
+        run: |
+          
+          python -m pip install --upgrade pip
+          pip install -r contribucion/requirements.txt
+
+      - name: Ejecutar phase_02_TransformationsAndPredictions
+        run: |
+          cd contribucion
+          cd main
+          python phase_02_TransformationsAndPredictions.py
+      
+            - name: Leer y actualizar el contador
+        id: counter # Esto asigna un ID al paso para que podamos referirnos a él después
+        run: |
+          # Define la ruta para el archivo del contador
+          COUNT_FILE="contribucion/commit_count.txt"
+          
+          # Lee el valor actual del contador, si existe. Si no, usa 0.
+          if [ -f "$COUNT_FILE" ]; then
+            current_count=$(cat $COUNT_FILE)
+          else
+            current_count=0
+          fi
+          
+          # Incrementa el contador
+          new_count=$((current_count + 1))
+          
+          # Guarda el nuevo contador en el archivo y en una variable de entorno para usarla más tarde
+          echo "$new_count" > "$COUNT_FILE"
+          echo "NEW_COUNT=$new_count" >> $GITHUB_ENV
+
+      - name: Commit y Push phase_02
+        run: |
+          cd $GITHUB_WORKSPACE
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git status
+          git add .
+          git commit -am "Phase 02 - Commit #$NEW_COUNT"
+          git push 
