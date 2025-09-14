@@ -370,11 +370,10 @@ class tecnicalAnalysis:
             for archivo in os.listdir(carpeta_origen):
                 if archivo.endswith(".json"):
                     ruta = os.path.join(carpeta_origen, archivo)
-                    os.makedirs(ruta.parent, exist_ok=True)
                     print(f"Procesando: {ruta}")
                     registros = procesar_archivo(ruta)
                     registros_totales.extend(registros)
-
+                os.makedirs(carpeta_destino, exist_ok=True)
                 # Guardar resultados en JSON
                 ruta_salida = os.path.join(carpeta_destino, nombre)
                 with open(ruta_salida, "w", encoding="utf-8") as f:
