@@ -132,6 +132,16 @@ def main():
         "BOLSAA.MX": "BolsaMexicanaValores"
     }
 
+    # Cálculo del PER
+    storage(dictBEU, "dataBases/indicadores_de_acciones").downloadPertIndicator("FinanzPER_BEU.json")
+    storage(dictBMV, "dataBases/indicadores_de_acciones").downloadPertIndicator("FinanzPER_BMV.json")
+
+    # Unión de precios de activos
+    storage().saveInJsonAssets(
+        ["rawData/bolsa_estados_unidos", "rawData/bolsa_mexicana_de_valores"],
+        ["dataBases/bolsa_estados_unidos", "dataBases/bolsa_mexicana_de_valores"]
+    )
+
     # Transformaciones para cálculo de indicadores de trading
 
     tecnicalAnalysis(dictBEU,None).calculateTradingIndicators("bolsa_estados_unidos")
