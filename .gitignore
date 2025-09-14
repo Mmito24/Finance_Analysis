@@ -6,5 +6,5 @@ __pycache__/
 *.ipynb_checkpoints/
 
 # Ignorar CSV y Json
-#*.csv
-#*.json
+*.csv
+*.json
