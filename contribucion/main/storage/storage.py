@@ -16,8 +16,8 @@ class storage():
         hoy = date.today()
         hace_05_anios = hoy - timedelta(days=365 * 5)
 
-        # carpeta_salida = Path(__file__).parent.parent.parent / "test" / f"{self.routeFile}"
-        carpeta_salida = f"contribucion/test/rawData/{self.routeFile}"
+        carpeta_salida = Path(__file__).parent.parent.parent / "test" / f"{self.routeFile}"
+        # carpeta_salida = f"contribucion/test/rawData/{self.routeFile}"
 
         os.makedirs(carpeta_salida, exist_ok=True)
 
