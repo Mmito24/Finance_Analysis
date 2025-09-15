@@ -52,7 +52,7 @@ jobs:
           echo "$new_count" > "$COUNT_FILE"
           echo "NEW_COUNT=$new_count" >> $GITHUB_ENV
 
-      - name: Commit y Push phase_01
+      - name: Commit y Push phase_02
         run: |
           cd $GITHUB_WORKSPACE
           git config --global http.postBuffer 524288000

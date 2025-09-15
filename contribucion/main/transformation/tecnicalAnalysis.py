@@ -302,16 +302,19 @@ class tecnicalAnalysis:
             df = pd.read_json(ruta_json, lines=True, convert_dates=['Date'])
 
             registros = []
+            registros_p01 = []
+            registros_p02 = []
+            registros_p03 = []
             for _, row in df.iterrows():
                 date_obj = pd.to_datetime(row['Date'], utc=True)
 
                 try:
-                    registro = {
+                    """registro = {
                         "Date": date_obj.strftime('%Y-%m-%d'),
                         "ticker": row["ticker"],
-                        # "Open": float(row['Open']) if pd.notna(row['Open']) else None,
-                        # "High": float(row['High']) if pd.notna(row['High']) else None,
-                        # "Low": float(row['Low']) if pd.notna(row['Low']) else None,
+                        "Open": float(row['Open']) if pd.notna(row['Open']) else None,
+                        "High": float(row['High']) if pd.notna(row['High']) else None,
+                        "Low": float(row['Low']) if pd.notna(row['Low']) else None,
                         "Close": float(row['Close']) if pd.notna(row['Close']) else None,
                         "Adj Close": float(row['Adj Close']) if pd.notna(row['Adj Close']) else None,
                         "Volume": int(row['Volume']) if pd.notna(row['Volume']) else None,
@@ -320,26 +323,26 @@ class tecnicalAnalysis:
                         "rendimiento_acumulado_arit": float(row["rendimiento_acumulado_arit"]) if pd.notna(row["rendimiento_acumulado_arit"]) else None,
                         "rendimiento_acumulado_log": float(row["rendimiento_acumulado_log"]) if pd.notna(row["rendimiento_acumulado_log"]) else None,
                         "volatilidad_005d": float(row["volatilidad_005d"]) if pd.notna(row["volatilidad_005d"]) else None,
-                        # "volatilidad_010d": float(row["volatilidad_010d"]) if pd.notna(row["volatilidad_010d"]) else None,
+                        "volatilidad_010d": float(row["volatilidad_010d"]) if pd.notna(row["volatilidad_010d"]) else None,
                         "volatilidad_015d": float(row["volatilidad_015d"]) if pd.notna(row["volatilidad_015d"]) else None,
                         "volatilidad_020d": float(row["volatilidad_020d"]) if pd.notna(row["volatilidad_020d"]) else None,
-                        # "volatilidad_030d": float(row["volatilidad_030d"]) if pd.notna(row["volatilidad_030d"]) else None,
+                        "volatilidad_030d": float(row["volatilidad_030d"]) if pd.notna(row["volatilidad_030d"]) else None,
                         "volatilidad_060d": float(row["volatilidad_060d"]) if pd.notna(row["volatilidad_060d"]) else None,
-                        # "volatilidad_090d": float(row["volatilidad_090d"]) if pd.notna(row["volatilidad_090d"]) else None,
+                        "volatilidad_090d": float(row["volatilidad_090d"]) if pd.notna(row["volatilidad_090d"]) else None,
                         "volatilidad_252d": float(row["volatilidad_252d"]) if pd.notna(row["volatilidad_252d"]) else None,
                         "MA005": float(row["MA005"]) if pd.notna(row["MA005"]) else None,
-                        # "MA010": float(row["MA010"]) if pd.notna(row["MA010"]) else None,
+                        "MA010": float(row["MA010"]) if pd.notna(row["MA010"]) else None,
                         "MA012": float(row["MA012"]) if pd.notna(row["MA012"]) else None,
-                        # "MA020": float(row["MA020"]) if pd.notna(row["MA020"]) else None,
-                        # "MA050": float(row["MA050"]) if pd.notna(row["MA050"]) else None,
+                        "MA020": float(row["MA020"]) if pd.notna(row["MA020"]) else None,
+                        "MA050": float(row["MA050"]) if pd.notna(row["MA050"]) else None,
                         "MA060": float(row["MA060"]) if pd.notna(row["MA060"]) else None,
                         "MA100": float(row["MA100"]) if pd.notna(row["MA100"]) else None,
                         "MA200": float(row["MA200"]) if pd.notna(row["MA200"]) else None,
                         "EMA005": float(row["EMA005"]) if pd.notna(row["EMA005"]) else None,
-                        # "EMA010": float(row["EMA010"]) if pd.notna(row["EMA010"]) else None,
+                        "EMA010": float(row["EMA010"]) if pd.notna(row["EMA010"]) else None,
                         "EMA012": float(row["EMA012"]) if pd.notna(row["EMA012"]) else None,
-                        # "EMA020": float(row["EMA020"]) if pd.notna(row["EMA020"]) else None,
-                        # "EMA026": float(row["EMA026"]) if pd.notna(row["EMA026"]) else None,
+                        "EMA020": float(row["EMA020"]) if pd.notna(row["EMA020"]) else None,
+                        "EMA026": float(row["EMA026"]) if pd.notna(row["EMA026"]) else None,
                         "EMA050": float(row["EMA050"]) if pd.notna(row["EMA050"]) else None,
                         "EMA060": float(row["EMA060"]) if pd.notna(row["EMA060"]) else None,
                         "EMA100": float(row["EMA100"]) if pd.notna(row["EMA100"]) else None,
@@ -357,27 +360,105 @@ class tecnicalAnalysis:
                         "bb_upper": float(row["bb_upper"]) if pd.notna(row["bb_upper"]) else None,
                         "bb_lower": float(row["bb_lower"]) if pd.notna(row["bb_lower"]) else None,
                         "bb_middle": float(row["bb_middle"]) if pd.notna(row["bb_middle"]) else None
+                    }"""
+
+                    registro01 = {
+                        "Date": date_obj.strftime('%Y-%m-%d'),
+                        "ticker": row["ticker"],
+                        "rendimiento_aritmetico": float(row["rendimiento_aritmetico"]) if pd.notna(row["rendimiento_aritmetico"]) else None,
+                        "rendimiento_logaritmico": float(row["rendimiento_logaritmico"]) if pd.notna(row["rendimiento_logaritmico"]) else None,
+                        "rendimiento_acumulado_arit": float(row["rendimiento_acumulado_arit"]) if pd.notna(row["rendimiento_acumulado_arit"]) else None,
+                        "rendimiento_acumulado_log": float(row["rendimiento_acumulado_log"]) if pd.notna(row["rendimiento_acumulado_log"]) else None,
+                        "volatilidad_005d": float(row["volatilidad_005d"]) if pd.notna(row["volatilidad_005d"]) else None,
+                        "volatilidad_010d": float(row["volatilidad_010d"]) if pd.notna(row["volatilidad_010d"]) else None,
+                        "volatilidad_015d": float(row["volatilidad_015d"]) if pd.notna(row["volatilidad_015d"]) else None,
+                        "volatilidad_020d": float(row["volatilidad_020d"]) if pd.notna(row["volatilidad_020d"]) else None,
+                        "volatilidad_030d": float(row["volatilidad_030d"]) if pd.notna(row["volatilidad_030d"]) else None,
+                        "volatilidad_060d": float(row["volatilidad_060d"]) if pd.notna(row["volatilidad_060d"]) else None,
+                        "volatilidad_090d": float(row["volatilidad_090d"]) if pd.notna(row["volatilidad_090d"]) else None,
+                        "volatilidad_252d": float(row["volatilidad_252d"]) if pd.notna(row["volatilidad_252d"]) else None
                     }
-                    registros.append(registro)
+
+                    registro02 = {
+                        "Date": date_obj.strftime('%Y-%m-%d'),
+                        "ticker": row["ticker"],
+                        "MA005": float(row["MA005"]) if pd.notna(row["MA005"]) else None,
+                        "MA010": float(row["MA010"]) if pd.notna(row["MA010"]) else None,
+                        "MA012": float(row["MA012"]) if pd.notna(row["MA012"]) else None,
+                        "MA020": float(row["MA020"]) if pd.notna(row["MA020"]) else None,
+                        "MA050": float(row["MA050"]) if pd.notna(row["MA050"]) else None,
+                        "MA060": float(row["MA060"]) if pd.notna(row["MA060"]) else None,
+                        "MA100": float(row["MA100"]) if pd.notna(row["MA100"]) else None,
+                        "MA200": float(row["MA200"]) if pd.notna(row["MA200"]) else None,
+                        "EMA005": float(row["EMA005"]) if pd.notna(row["EMA005"]) else None,
+                        "EMA010": float(row["EMA010"]) if pd.notna(row["EMA010"]) else None,
+                        "EMA012": float(row["EMA012"]) if pd.notna(row["EMA012"]) else None,
+                        "EMA020": float(row["EMA020"]) if pd.notna(row["EMA020"]) else None,
+                        "EMA026": float(row["EMA026"]) if pd.notna(row["EMA026"]) else None,
+                        "EMA050": float(row["EMA050"]) if pd.notna(row["EMA050"]) else None,
+                        "EMA060": float(row["EMA060"]) if pd.notna(row["EMA060"]) else None,
+                        "EMA100": float(row["EMA100"]) if pd.notna(row["EMA100"]) else None,
+                        "EMA200": float(row["EMA200"]) if pd.notna(row["EMA200"]) else None
+                    }
+
+                    registro03 = {
+                        "Date": date_obj.strftime('%Y-%m-%d'),
+                        "ticker": row["ticker"],
+                        "MACD": float(row["MACD"]) if pd.notna(row["MACD"]) else None,
+                        "Signal_MACD": float(row["Signal_MACD"]) if pd.notna(row["Signal_MACD"]) else None,
+                        "ADX": float(row["ADX"]) if pd.notna(row["ADX"]) else None,
+                        "ADX_DI_plus": float(row["ADX_DI_plus"]) if pd.notna(row["ADX_DI_plus"]) else None,
+                        "ADX_DI_less": float(row["ADX_DI_less"]) if pd.notna(row["ADX_DI_less"]) else None,
+                        "RSI": float(row["RSI"]) if pd.notna(row["RSI"]) else None,
+                        "stoch_k": float(row["stoch_k"]) if pd.notna(row["stoch_k"]) else None,
+                        "stoch_d": float(row["stoch_d"]) if pd.notna(row["stoch_d"]) else None,
+                        "stoch_diff": float(row["stoch_diff"]) if pd.notna(row["stoch_diff"]) else None,
+                        "cci": float(row["cci"]) if pd.notna(row["cci"]) else None,
+                        "bb_upper": float(row["bb_upper"]) if pd.notna(row["bb_upper"]) else None,
+                        "bb_lower": float(row["bb_lower"]) if pd.notna(row["bb_lower"]) else None,
+                        "bb_middle": float(row["bb_middle"]) if pd.notna(row["bb_middle"]) else None
+                    }
+
+                    registros_p01.append(registro01)
+                    registros_p02.append(registro02)
+                    registros_p03.append(registro03)
                 except Exception as e:
                     print(f"Error procesando fila en {ruta_json}: {e}")
-            return registros
+            return [registros_p01,registros_p02,registros_p03]
 
         # Procesar carpetas
 
         def almacenarJson(carpeta_origen, carpeta_destino, nombre):
             registros_totales = []
+            registros_totales_01 = []
+            registros_totales_02 = []
+            registros_totales_03 = []
             for archivo in os.listdir(carpeta_origen):
                 if archivo.endswith(".json"):
                     ruta = os.path.join(carpeta_origen, archivo)
                     print(f"Procesando: {ruta}")
-                    registros = procesar_archivo(ruta)
-                    registros_totales.extend(registros)
+                    registrosFull = procesar_archivo(ruta)
+                    registros01 = registrosFull[0]
+                    registros02 = registrosFull[1]
+                    registros03 = registrosFull[2]
+                    registros_totales_01.extend(registros01)
+                    registros_totales_02.extend(registros02)
+                    registros_totales_03.extend(registros03)
                 os.makedirs(carpeta_destino, exist_ok=True)
                 # Guardar resultados en JSON
-                ruta_salida = os.path.join(carpeta_destino, nombre)
-                with open(ruta_salida, "w", encoding="utf-8") as f:
-                    json.dump(registros_totales, f, indent=4, ensure_ascii=False)
-                print(f"Guardado en: {ruta_salida}")
+                ruta_salida_01 = os.path.join(carpeta_destino, f"{nombre}_parte_01.json")
+                ruta_salida_02 = os.path.join(carpeta_destino, f"{nombre}_parte_02.json")
+                ruta_salida_03 = os.path.join(carpeta_destino, f"{nombre}_parte_03.json")
+                with open(ruta_salida_01, "w", encoding="utf-8") as f:
+                    json.dump(registros_totales_01, f, indent=4, ensure_ascii=False)
+                print(f"Guardado Parte 01 en: {ruta_salida_01}")
 
-        almacenarJson(carpeta_origen[0], carpeta_destino[0], f"{bolsa}_ind_trading.json")
+                with open(ruta_salida_02, "w", encoding="utf-8") as f:
+                    json.dump(registros_totales_02, f, indent=4, ensure_ascii=False)
+                print(f"Guardado Parte 02 en: {ruta_salida_02}")
+
+                with open(ruta_salida_03, "w", encoding="utf-8") as f:
+                    json.dump(registros_totales_03, f, indent=4, ensure_ascii=False)
+                print(f"Guardado Parte 03 en: {ruta_salida_03}")
+
+        almacenarJson(carpeta_origen[0], carpeta_destino[0], f"{bolsa}_ind_trading")
