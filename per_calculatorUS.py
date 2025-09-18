@@ -74,7 +74,7 @@ resultados = []
 
 for ticker_symbol, nombre in empresas_EEUU.items():
     ticker = yf.Ticker(ticker_symbol)
-    info = ticker.info
+    info = ticker.fast_info
     
     precio = info.get('currentPrice') #p=precio
     shares = info.get('sharesOutstanding') #s=shares
