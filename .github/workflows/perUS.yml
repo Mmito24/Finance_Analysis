@@ -30,6 +30,11 @@ jobs:
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          
           git add datos_json/FinanzPER_US.json
-          git commit -m "Actualizar FinanzPER_US.json"
-          git push
+          if git diff --cached --quiet; then
+            echo "✅ No hay cambios en FinanzPER_US.json"
+          else
+            git commit -m "Actualizar FinanzPER_US.json [skip ci]"
+            git push
+          fi
