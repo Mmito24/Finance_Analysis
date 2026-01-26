@@ -2,14 +2,14 @@
     {
         "Empresa": "NVIDIA Corporation",
         "Ticker": "NVDA",
-        "Price": 187.67,
+        "Price": 187.68,
         "Shares": 24305000000,
         "Net Income TTM": 99198001152,
         "EPS TTM": 4.081382478996091,
-        "PER TTM": 45.981968356506904,
+        "PER TTM": 45.9844185066831,
         "Net Income Fiscal": 72880000000.0,
         "EPS Fiscal": 2.998559967084962,
-        "PER Fiscal": 62.58670897365532
+        "PER Fiscal": 62.590043907793635
     },
     {
         "Empresa": "Microsoft Corporation",
@@ -50,14 +50,14 @@
     {
         "Empresa": "Alphabet Inc.",
         "Ticker": "GOOGL",
-        "Price": 327.93,
+        "Price": 327.935,
         "Shares": 5818000000,
         "Net Income TTM": 124250996736,
         "EPS TTM": 21.35630744860777,
-        "PER TTM": 15.35518257494359,
+        "PER TTM": 15.355416697813942,
         "Net Income Fiscal": 100118000000.0,
         "EPS Fiscal": 17.208319009969063,
-        "PER Fiscal": 19.0564807527118
+        "PER Fiscal": 19.05677130985437
     },
     {
         "Empresa": "Meta Platforms Inc.",
@@ -74,14 +74,14 @@
     {
         "Empresa": "Broadcom Inc.",
         "Ticker": "AVGO",
-        "Price": 320.05,
+        "Price": 319.955,
         "Shares": 4741273799,
         "Net Income TTM": 23125999616,
         "EPS TTM": 4.877592097903646,
-        "PER TTM": 65.61639300210348,
+        "PER TTM": 65.59691617868464,
         "Net Income Fiscal": 23126000000.0,
         "EPS Fiscal": 4.877592178894539,
-        "PER Fiscal": 65.61639191256378
+        "PER Fiscal": 65.59691508946835
     },
     {
         "Empresa": "Tesla Inc.",
@@ -182,11 +182,11 @@
     {
         "Empresa": "Netflix Inc.",
         "Ticker": "NFLX",
-        "Price": 86.12,
+        "Price": 86.085,
         "Shares": 4237323340,
         "Net Income TTM": 10981200896,
         "EPS TTM": 2.591541880304088,
-        "PER TTM": 33.23118204437228,
+        "PER TTM": 33.21767657094505,
         "Net Income Fiscal": NaN,
         "EPS Fiscal": NaN,
         "PER Fiscal": NaN
@@ -243,13 +243,13 @@
         "Empresa": "The Procter & Gamble Company",
         "Ticker": "PG",
         "Price": 150.15,
-        "Shares": 2324000685,
+        "Shares": 2336733549,
         "Net Income TTM": 16161999872,
-        "EPS TTM": 6.954386879623488,
-        "PER TTM": 21.59068838116311,
+        "EPS TTM": 6.916492416910987,
+        "PER TTM": 21.70898064355275,
         "Net Income Fiscal": 15974000000.0,
-        "EPS Fiscal": 6.873491949938905,
-        "PER Fiscal": 21.84479171483348
+        "EPS Fiscal": 6.836038283798355,
+        "PER Fiscal": 21.96447617267748
     },
     {
         "Empresa": "Palantir Technologies Inc.",
