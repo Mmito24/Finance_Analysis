@@ -50,14 +50,14 @@
     {
         "Empresa": "Alphabet Inc.",
         "Ticker": "GOOGL",
-        "Price": 338.0,
+        "Price": 338.233,
         "Shares": 5818000000,
         "Net Income TTM": 124250996736,
         "EPS TTM": 21.35630744860777,
-        "PER TTM": 15.826706035833663,
+        "PER TTM": 15.837616161592093,
         "Net Income Fiscal": 100118000000.0,
         "EPS Fiscal": 17.208319009969063,
-        "PER Fiscal": 19.641662837851335
+        "PER Fiscal": 19.65520280069518
     },
     {
         "Empresa": "Meta Platforms Inc.",
@@ -172,9 +172,9 @@
         "Ticker": "V",
         "Price": 321.83,
         "Shares": 1683000000,
-        "Net Income TTM": 20586999808,
-        "EPS TTM": 12.232323118241236,
-        "PER TTM": 26.309802062052846,
+        "Net Income TTM": 20592001024,
+        "EPS TTM": 12.235294726084373,
+        "PER TTM": 26.303412153521073,
         "Net Income Fiscal": 20058000000.0,
         "EPS Fiscal": 11.918003565062389,
         "PER Fiscal": 27.0036838169309
@@ -182,14 +182,14 @@
     {
         "Empresa": "Netflix Inc.",
         "Ticker": "NFLX",
-        "Price": 83.49,
+        "Price": 83.497,
         "Shares": 4237323340,
         "Net Income TTM": 10981200896,
         "EPS TTM": 2.591541880304088,
-        "PER TTM": 32.2163421839833,
+        "PER TTM": 32.21904327866875,
         "Net Income Fiscal": 10981201000.0,
         "EPS Fiscal": 2.5915419048478845,
-        "PER Fiscal": 32.216341878870985
+        "PER Fiscal": 32.219042973530854
     },
     {
         "Empresa": "Mastercard Incorporated",
@@ -568,9 +568,9 @@
         "Ticker": "AXP",
         "Price": 352.17,
         "Shares": 686000000,
-        "Net Income TTM": 10410999808,
-        "EPS TTM": 15.176384559766763,
-        "PER TTM": 23.20513153927435,
+        "Net Income TTM": 10700999680,
+        "EPS TTM": 15.599124897959184,
+        "PER TTM": 22.576266444669216,
         "Net Income Fiscal": 10129000000.0,
         "EPS Fiscal": 14.76530612244898,
         "PER Fiscal": 23.85118175535591
