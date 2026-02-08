@@ -39,13 +39,13 @@
         "Empresa": "Amazon.com Inc.",
         "Ticker": "AMZN",
         "Price": 210.32,
-        "Shares": 10690216011,
-        "Net Income TTM": 76482002944,
-        "EPS TTM": 7.154392658230823,
-        "PER TTM": 29.397324140161054,
-        "Net Income Fiscal": 59248000000.0,
-        "EPS Fiscal": 5.5422640608043,
-        "PER Fiscal": 37.948390349607074
+        "Shares": 10734920870,
+        "Net Income TTM": 77669998592,
+        "EPS TTM": 7.2352651251541085,
+        "PER TTM": 29.068734367286957,
+        "Net Income Fiscal": NaN,
+        "EPS Fiscal": NaN,
+        "PER Fiscal": NaN
     },
     {
         "Empresa": "Alphabet Inc.",
@@ -55,9 +55,9 @@
         "Net Income TTM": 132169998336,
         "EPS TTM": 22.701820394366198,
         "PER TTM": 14.221766994514793,
-        "Net Income Fiscal": NaN,
-        "EPS Fiscal": NaN,
-        "PER Fiscal": NaN
+        "Net Income Fiscal": 132170000000.0,
+        "EPS Fiscal": 22.70182068017863,
+        "PER Fiscal": 14.221766815464933
     },
     {
         "Empresa": "Meta Platforms Inc.",
@@ -243,13 +243,13 @@
         "Empresa": "The Procter & Gamble Company",
         "Ticker": "PG",
         "Price": 159.17,
-        "Shares": 2336733549,
+        "Shares": 2324000685,
         "Net Income TTM": 16161999872,
-        "EPS TTM": 6.916492416910987,
-        "PER TTM": 23.01310988367826,
+        "EPS TTM": 6.954386879623488,
+        "PER TTM": 22.88771141944543,
         "Net Income Fiscal": 15974000000.0,
-        "EPS Fiscal": 6.836038283798355,
-        "PER Fiscal": 23.283953862171654
+        "EPS Fiscal": 6.873491949938905,
+        "PER Fiscal": 23.157079568764864
     },
     {
         "Empresa": "Palantir Technologies Inc.",
@@ -375,13 +375,13 @@
         "Empresa": "Philip Morris International Inc.",
         "Ticker": "PM",
         "Price": 182.81,
-        "Shares": 1556638749,
-        "Net Income TTM": 8600999936,
-        "EPS TTM": 5.5253667182095825,
-        "PER TTM": 33.08558677155767,
+        "Shares": 1556679579,
+        "Net Income TTM": 11347999744,
+        "EPS TTM": 7.289875127217815,
+        "PER TTM": 25.077247114625067,
         "Net Income Fiscal": 7057000000.0,
-        "EPS Fiscal": 4.533486015643312,
-        "PER Fiscal": 40.324377172267255
+        "EPS Fiscal": 4.533367107271599,
+        "PER Fiscal": 40.325434864246844
     },
     {
         "Empresa": "Alibaba Group Holding Limited",
@@ -532,9 +532,9 @@
         "Ticker": "LIN",
         "Price": 448.24,
         "Shares": 466948930,
-        "Net Income TTM": 7093000192,
-        "EPS TTM": 15.190098394700252,
-        "PER TTM": 29.508696280492078,
+        "Net Income TTM": 6897999872,
+        "EPS TTM": 14.772493154658262,
+        "PER TTM": 30.342880873744384,
         "Net Income Fiscal": 6565000000.0,
         "EPS Fiscal": 14.059353342987636,
         "PER Fiscal": 31.881978428514852
@@ -643,9 +643,9 @@
         "Net Income TTM": 17838000128,
         "EPS TTM": 6.310486487212071,
         "PER TTM": 11.930934350714791,
-        "Net Income Fiscal": 16094000000.0,
-        "EPS Fiscal": 5.6935177035778,
-        "PER Fiscal": 13.223810642177831
+        "Net Income Fiscal": NaN,
+        "EPS Fiscal": NaN,
+        "PER Fiscal": NaN
     },
     {
         "Empresa": "Blackstone Inc.",
