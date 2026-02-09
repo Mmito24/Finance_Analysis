@@ -74,14 +74,14 @@
     {
         "Empresa": "Broadcom Inc.",
         "Ticker": "AVGO",
-        "Price": 332.92,
+        "Price": 332.495,
         "Shares": 4741273799,
         "Net Income TTM": 23125999616,
         "EPS TTM": 4.877592097903646,
-        "PER TTM": 68.25499002737163,
+        "PER TTM": 68.16785686997154,
         "Net Income Fiscal": 23126000000.0,
         "EPS Fiscal": 4.877592178894539,
-        "PER Fiscal": 68.25498889401887
+        "PER Fiscal": 68.1678557380656
     },
     {
         "Empresa": "Tesla Inc.",
@@ -243,13 +243,13 @@
         "Empresa": "The Procter & Gamble Company",
         "Ticker": "PG",
         "Price": 159.17,
-        "Shares": 2324000685,
+        "Shares": 2336733549,
         "Net Income TTM": 16161999872,
-        "EPS TTM": 6.954386879623488,
-        "PER TTM": 22.88771141944543,
+        "EPS TTM": 6.916492416910987,
+        "PER TTM": 23.01310988367826,
         "Net Income Fiscal": 15974000000.0,
-        "EPS Fiscal": 6.873491949938905,
-        "PER Fiscal": 23.157079568764864
+        "EPS Fiscal": 6.836038283798355,
+        "PER Fiscal": 23.283953862171654
     },
     {
         "Empresa": "Palantir Technologies Inc.",
@@ -376,9 +376,9 @@
         "Ticker": "PM",
         "Price": 182.81,
         "Shares": 1556679579,
-        "Net Income TTM": 11347999744,
-        "EPS TTM": 7.289875127217815,
-        "PER TTM": 25.077247114625067,
+        "Net Income TTM": 11315999744,
+        "EPS TTM": 7.269318552549728,
+        "PER TTM": 25.148161918957182,
         "Net Income Fiscal": 7057000000.0,
         "EPS Fiscal": 4.533367107271599,
         "PER Fiscal": 40.325434864246844
@@ -520,9 +520,9 @@
         "Ticker": "TM",
         "Price": 244.22,
         "Shares": 1303338673,
-        "Net Income TTM": 4631399235584,
-        "EPS TTM": 3553.4886914109084,
-        "PER TTM": 0.06872682628491292,
+        "Net Income TTM": 3695587885056,
+        "EPS TTM": 2835.4778091173853,
+        "PER TTM": 0.08613010449763304,
         "Net Income Fiscal": NaN,
         "EPS Fiscal": NaN,
         "PER Fiscal": NaN
@@ -700,9 +700,9 @@
         "Ticker": "TXN",
         "Price": 221.44,
         "Shares": 907000000,
-        "Net Income TTM": 5000999936,
-        "EPS TTM": 5.513781627342889,
-        "PER TTM": 40.16118427720772,
+        "Net Income TTM": 4973000192,
+        "EPS TTM": 5.482910906284454,
+        "PER TTM": 40.387305900992814,
         "Net Income Fiscal": NaN,
         "EPS Fiscal": NaN,
         "PER Fiscal": NaN
