@@ -3,13 +3,13 @@
         "Empresa": "AmericaMovil",
         "Ticker": "AMXB.MX",
         "Price": 20.41,
-        "Shares": 60238450000,
+        "Shares": 60237250000,
         "Net Income TTM": 82818998272,
-        "EPS TTM": 1.3748527439202038,
-        "PER TTM": 14.845226218048404,
+        "EPS TTM": 1.3748801326753795,
+        "PER TTM": 14.84493048880136,
         "Net Income Fiscal": 22902025000.0,
-        "EPS Fiscal": 0.3801894803070132,
-        "PER Fiscal": 53.68375785547348
+        "EPS Fiscal": 0.3801970541483882,
+        "PER Fiscal": 53.682688430389895
     },
     {
         "Empresa": "WalmartMexico",
@@ -112,9 +112,9 @@
         "Ticker": "KIMBERA.MX",
         "Price": 42.3,
         "Shares": 1566714737,
-        "Net Income TTM": 7177589248,
-        "EPS TTM": 4.581299376645871,
-        "PER TTM": 9.233188342947651,
+        "Net Income TTM": 7581467136,
+        "EPS TTM": 4.839085863529475,
+        "PER TTM": 8.741320404913775,
         "Net Income Fiscal": 7830290000.0,
         "EPS Fiscal": 4.997904095160114,
         "PER Fiscal": 8.463547758141779
@@ -280,9 +280,9 @@
         "Ticker": "KIMBERB.MX",
         "Price": 36.89,
         "Shares": 1443994697,
-        "Net Income TTM": 7177589248,
-        "EPS TTM": 4.970647927524903,
-        "PER TTM": 7.4215676784754905,
+        "Net Income TTM": 7581467136,
+        "EPS TTM": 5.250342782941675,
+        "PER TTM": 7.026207911577762,
         "Net Income Fiscal": 7830290000.0,
         "EPS Fiscal": 5.422658418530189,
         "PER Fiscal": 6.802936337265925
@@ -603,12 +603,12 @@
         "Empresa": "BolsaMexicanaValores",
         "Ticker": "BOLSAA.MX",
         "Price": 36.98,
-        "Shares": 556263752,
+        "Shares": 555766146,
         "Net Income TTM": 1601954048,
-        "EPS TTM": 2.8798461920991754,
-        "PER TTM": 12.84096355612817,
+        "EPS TTM": 2.882424666435152,
+        "PER TTM": 12.829476666162149,
         "Net Income Fiscal": 1637193000.0,
-        "EPS Fiscal": 2.943195550876017,
-        "PER Fiscal": 12.564574579148577
+        "EPS Fiscal": 2.9458307451494177,
+        "PER Fiscal": 12.55333493307142
     }
 ]
