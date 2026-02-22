@@ -136,9 +136,9 @@
         "Ticker": "WMT",
         "Price": 122.99,
         "Shares": 7970166964,
-        "Net Income TTM": 22909999104,
-        "EPS TTM": 2.874469155725456,
-        "PER TTM": 42.78703069574594,
+        "Net Income TTM": 21892999168,
+        "EPS TTM": 2.7468683236985196,
+        "PER TTM": 44.774625321100274,
         "Net Income Fiscal": 19436000000.0,
         "EPS Fiscal": 2.438593832198168,
         "PER Fiscal": 50.434803195223296
@@ -243,13 +243,13 @@
         "Empresa": "The Procter & Gamble Company",
         "Ticker": "PG",
         "Price": 160.78,
-        "Shares": 2336733549,
+        "Shares": 2324000685,
         "Net Income TTM": 16161999872,
-        "EPS TTM": 6.916492416910987,
-        "PER TTM": 23.24588683230377,
+        "EPS TTM": 6.954386879623488,
+        "PER TTM": 23.11921996618984,
         "Net Income Fiscal": 15974000000.0,
-        "EPS Fiscal": 6.836038283798355,
-        "PER Fiscal": 23.519470389897336
+        "EPS Fiscal": 6.873491949938905,
+        "PER Fiscal": 23.391312766639537
     },
     {
         "Empresa": "Palantir Technologies Inc.",
@@ -463,9 +463,9 @@
         "Net Income TTM": 12056000512,
         "EPS TTM": 13.309214517702944,
         "PER TTM": 21.78941511644156,
-        "Net Income Fiscal": 14405000000.0,
-        "EPS Fiscal": 15.902391090368834,
-        "PER Fiscal": 18.23625128774731
+        "Net Income Fiscal": NaN,
+        "EPS Fiscal": NaN,
+        "PER Fiscal": NaN
     },
     {
         "Empresa": "Advanced Micro Devices Inc.",
