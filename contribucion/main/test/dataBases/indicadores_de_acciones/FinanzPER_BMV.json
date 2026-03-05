@@ -2,71 +2,71 @@
     {
         "Empresa": "AmericaMovil",
         "Ticker": "AMXB.MX",
-        "Price": 21.66,
+        "Price": 22.05,
         "Shares": 60228000000,
         "Net Income TTM": 82819080192,
         "EPS TTM": 1.3750926511257222,
-        "PER TTM": 15.75166588394462,
+        "PER TTM": 16.035283136702628,
         "Net Income Fiscal": 22902025000.0,
         "EPS Fiscal": 0.3802554459719732,
-        "PER Fiscal": 56.96170884452357
+        "PER Fiscal": 57.987335181059315
     },
     {
         "Empresa": "WalmartMexico",
         "Ticker": "WALMEX.MX",
-        "Price": 55.69,
+        "Price": 56.76,
         "Shares": 17292211803,
         "Net Income TTM": 49890742272,
         "EPS TTM": 2.885156788522827,
-        "PER TTM": 19.302243892441197,
+        "PER TTM": 19.673107619589917,
         "Net Income Fiscal": 49890741000.0,
         "EPS Fiscal": 2.8851567149637,
-        "PER Fiscal": 19.302244384565665
+        "PER Fiscal": 19.673108121169818
     },
     {
         "Empresa": "Banorte",
         "Ticker": "GFNORTEO.MX",
-        "Price": 189.44,
+        "Price": 197.41,
         "Shares": 2776579302,
         "Net Income TTM": 60975001600,
         "EPS TTM": 21.960475451242846,
-        "PER TTM": 8.626407038435897,
+        "PER TTM": 8.989331785566037,
         "Net Income Fiscal": 58788000000.0,
         "EPS Fiscal": 21.172815038149412,
-        "PER Fiscal": 8.947322293170036
+        "PER Fiscal": 9.323748384156971
     },
     {
         "Empresa": "Bimbo",
         "Ticker": "BIMBOA.MX",
-        "Price": 61.15,
+        "Price": 64.51,
         "Shares": 4304744119,
         "Net Income TTM": 11132962816,
         "EPS TTM": 2.5862077996371613,
-        "PER TTM": 23.64465841011662,
+        "PER TTM": 24.943857956445186,
         "Net Income Fiscal": 12544000000.0,
         "EPS Fiscal": 2.913994340484515,
-        "PER Fiscal": 20.984941236993784
+        "PER Fiscal": 22.137997697440213
     },
     {
         "Empresa": "Televisa",
         "Ticker": "TLEVISACPO.MX",
-        "Price": 9.81,
+        "Price": 10.21,
         "Shares": 2693300000,
-        "Net Income TTM": -8819600384,
-        "EPS TTM": -3.2746446307503807,
-        "PER TTM": -2.995744914693858,
+        "Net Income TTM": -8819555328,
+        "EPS TTM": -3.2746279018304683,
+        "PER TTM": -3.117911502034403,
         "Net Income Fiscal": -8265520000.0,
         "EPS Fiscal": -3.0689191697917053,
-        "PER Fiscal": -3.1965651283887766
+        "PER Fiscal": -3.326904175417881
     },
     {
         "Empresa": "Alsea",
         "Ticker": "ALSEA.MX",
-        "Price": 58.84,
+        "Price": 59.41,
         "Shares": 800000000,
         "Net Income TTM": 2402944000,
         "EPS TTM": 3.00368,
-        "PER TTM": 19.58930378735418,
+        "PER TTM": 19.779071006232353,
         "Net Income Fiscal": NaN,
         "EPS Fiscal": NaN,
         "PER Fiscal": NaN
@@ -74,7 +74,7 @@
     {
         "Empresa": "Cemex",
         "Ticker": "CEMEXCPO.MX",
-        "Price": 20.27,
+        "Price": 21.05,
         "Shares": 0,
         "Net Income TTM": 394000000,
         "EPS TTM": null,
@@ -86,50 +86,50 @@
     {
         "Empresa": "Femsa",
         "Ticker": "FEMSAUBD.MX",
-        "Price": 193.36,
+        "Price": 196.54,
         "Shares": 2022672509,
         "Net Income TTM": 17856999424,
         "EPS TTM": 8.828418512905195,
-        "PER TTM": 21.901997477504093,
+        "PER TTM": 22.262197891128743,
         "Net Income Fiscal": 26735000000.0,
         "EPS Fiscal": 13.21766122841985,
-        "PER Fiscal": 14.62891177633215
+        "PER Fiscal": 14.86949896835085
     },
     {
         "Empresa": "Peñoles",
         "Ticker": "PE&OLES.MX",
-        "Price": 980.67,
+        "Price": 1000.61,
         "Shares": 397475747,
         "Net Income TTM": 916035968,
         "EPS TTM": 2.3046336157964373,
-        "PER TTM": 425.52099964102064,
+        "PER TTM": 434.17313413360426,
         "Net Income Fiscal": 73253000.0,
         "EPS Fiscal": 0.18429552130636037,
-        "PER Fiscal": 5321.181942179705
+        "PER Fiscal": 5429.377734777688
     },
     {
         "Empresa": "KimberlyClark",
         "Ticker": "KIMBERA.MX",
-        "Price": 42.0,
+        "Price": 43.22,
         "Shares": 1566714737,
         "Net Income TTM": 7581467136,
         "EPS TTM": 4.839085863529475,
-        "PER TTM": 8.679325224737083,
+        "PER TTM": 8.931438957455635,
         "Net Income Fiscal": 7830290000.0,
         "EPS Fiscal": 4.997904095160114,
-        "PER Fiscal": 8.403522596736519
+        "PER Fiscal": 8.64762491978458
     },
     {
         "Empresa": "GrupoMexico",
         "Ticker": "GMEXICOB.MX",
-        "Price": 204.98,
+        "Price": 212.96,
         "Shares": 7785000000,
         "Net Income TTM": 5039591936,
         "EPS TTM": 0.6473464272318561,
-        "PER TTM": 316.64653016858864,
+        "PER TTM": 328.97377824520754,
         "Net Income Fiscal": 5039592000.0,
         "EPS Fiscal": 0.6473464354527938,
-        "PER Fiscal": 316.6465261473548
+        "PER Fiscal": 328.97377406742453
     },
     {
         "Empresa": "CocaColaFEMSAUB",
@@ -146,59 +146,59 @@
     {
         "Empresa": "CocaColaFEMSAL",
         "Ticker": "KOFUBL.MX",
-        "Price": 187.0,
+        "Price": 190.14,
         "Shares": 525208065,
         "Net Income TTM": 23844999168,
         "EPS TTM": 45.40105294841579,
-        "PER TTM": 4.11884720410488,
+        "PER TTM": 4.188008595660438,
         "Net Income Fiscal": 23729000000.0,
         "EPS Fiscal": 45.18018968349239,
-        "PER Fiscal": 4.138982180243584
+        "PER Fiscal": 4.2084816671204015
     },
     {
         "Empresa": "ArcaContinental",
         "Ticker": "AC.MX",
-        "Price": 201.23,
+        "Price": 206.67,
         "Shares": 1698192061,
         "Net Income TTM": 19580454912,
         "EPS TTM": 11.530176922667877,
-        "PER TTM": 17.452464203249967,
+        "PER TTM": 17.92426962622706,
         "Net Income Fiscal": 19580455000.0,
         "EPS Fiscal": 11.530176974487693,
-        "PER Fiscal": 17.452464124813748
+        "PER Fiscal": 17.924269545670413
     },
     {
         "Empresa": "GrupoCarsoA1",
         "Ticker": "GCARSOA1.MX",
-        "Price": 125.02,
+        "Price": 128.48,
         "Shares": 2253533644,
         "Net Income TTM": 7272177152,
         "EPS TTM": 3.2270106866884656,
-        "PER TTM": 38.7417372107604,
+        "PER TTM": 39.8139369447968,
         "Net Income Fiscal": 8026683000.0,
         "EPS Fiscal": 3.5618207970273374,
-        "PER Fiscal": 35.100025274809035
+        "PER Fiscal": 36.07143854829199
     },
     {
         "Empresa": "GpoFinbursa",
         "Ticker": "GFINBURO.MX",
-        "Price": 42.04,
+        "Price": 44.18,
         "Shares": 6076842400,
         "Net Income TTM": 30931169280,
         "EPS TTM": 5.090006823280459,
-        "PER TTM": 8.2593209517361,
+        "PER TTM": 8.679752608175567,
         "Net Income Fiscal": 30931168440.0,
         "EPS Fiscal": 5.090006685050776,
-        "PER Fiscal": 8.259321176035082
+        "PER Fiscal": 8.679752843892242
     },
     {
         "Empresa": "GrupoAeroportuarioPacificoB",
         "Ticker": "GAPB.MX",
-        "Price": 425.88,
+        "Price": 439.49,
         "Shares": 429485845,
         "Net Income TTM": 10000609280,
         "EPS TTM": 23.28507306218672,
-        "PER TTM": 18.289828804170618,
+        "PER TTM": 18.87432342712723,
         "Net Income Fiscal": NaN,
         "EPS Fiscal": NaN,
         "PER Fiscal": NaN
@@ -206,14 +206,14 @@
     {
         "Empresa": "AsurB",
         "Ticker": "ASURB.MX",
-        "Price": 595.79,
+        "Price": 609.3,
         "Shares": 277050000,
         "Net Income TTM": -225056000,
         "EPS TTM": -0.8123299043493954,
-        "PER TTM": -733.433543207024,
+        "PER TTM": -750.0647172259348,
         "Net Income Fiscal": 13551429000.0,
         "EPS Fiscal": 48.913297238765566,
-        "PER Fiscal": 12.180532363044517
+        "PER Fiscal": 12.456735374549798
     },
     {
         "Empresa": "GMexicoTransportes",
@@ -230,14 +230,14 @@
     {
         "Empresa": "ChedrauiB",
         "Ticker": "CHDRAUIB.MX",
-        "Price": 109.28,
+        "Price": 113.61,
         "Shares": 959787146,
         "Net Income TTM": 6535090176,
         "EPS TTM": 6.80889528812256,
-        "PER TTM": 16.049593271118162,
+        "PER TTM": 16.685526093811625,
         "Net Income Fiscal": 6720640000.0,
         "EPS Fiscal": 7.002219219135073,
-        "PER Fiscal": 15.60648082844491
+        "PER Fiscal": 16.224856212661294
     },
     {
         "Empresa": "ElPuertodeLiverpool",
@@ -254,26 +254,26 @@
     {
         "Empresa": "ElPuertodeLiverpoolC",
         "Ticker": "LIVEPOLC-1.MX",
-        "Price": 109.63,
+        "Price": 110.95,
         "Shares": 197446100,
         "Net Income TTM": 17150060544,
         "EPS TTM": 86.85945452455125,
-        "PER TTM": 1.26215390828885,
+        "PER TTM": 1.277350872248909,
         "Net Income Fiscal": 17150061000.0,
         "EPS Fiscal": 86.8594568340423,
-        "PER Fiscal": 1.2621538747296583
+        "PER Fiscal": 1.277350838285648
     },
     {
         "Empresa": "PrologisPropertyMexico",
         "Ticker": "FIBRAPL14.MX",
-        "Price": 80.96,
+        "Price": 79.23,
         "Shares": 3658207412,
         "Net Income TTM": 11117280256,
         "EPS TTM": 3.038996700824573,
-        "PER TTM": 26.640371138946303,
+        "PER TTM": 26.071104314954496,
         "Net Income Fiscal": 11117280000.0,
         "EPS Fiscal": 3.0389966308449434,
-        "PER Fiscal": 26.640371752399865
+        "PER Fiscal": 26.071104915299426
     },
     {
         "Empresa": "Kimberly-ClarkMexicoB",
@@ -290,62 +290,62 @@
     {
         "Empresa": "VistaOilGas",
         "Ticker": "VISTAA.MX",
-        "Price": 1056.69,
+        "Price": 1043.47,
         "Shares": 104301055,
         "Net Income TTM": 719062976,
         "EPS TTM": 6.89411028488638,
-        "PER TTM": 153.2743104380749,
+        "PER TTM": 151.35673159849912,
         "Net Income Fiscal": 477521000.0,
         "EPS Fiscal": 4.578295013410938,
-        "PER Fiscal": 230.8042616093324
+        "PER Fiscal": 227.91672378984381
     },
     {
         "Empresa": "FibraUnoAdministracion",
         "Ticker": "FUNO11.MX",
-        "Price": 29.0,
+        "Price": 29.07,
         "Shares": 3810649852,
         "Net Income TTM": 24456013824,
         "EPS TTM": 6.417806614051508,
-        "PER TTM": 4.518677757679043,
+        "PER TTM": 4.529584910887234,
         "Net Income Fiscal": 9673804000.0,
         "EPS Fiscal": 2.5386231681514255,
-        "PER Fiscal": 11.423515062740572
+        "PER Fiscal": 11.451089064616152
     },
     {
         "Empresa": "GrupoAeroportuarioDelCentroNorte",
         "Ticker": "OMAB.MX",
-        "Price": 249.0,
+        "Price": 255.01,
         "Shares": 336403425,
         "Net Income TTM": 5341704192,
         "EPS TTM": 15.878863873041722,
-        "PER TTM": 15.681222661196735,
+        "PER TTM": 16.059713216191884,
         "Net Income Fiscal": 4928804000.0,
         "EPS Fiscal": 14.651467951017443,
-        "PER Fiscal": 16.9948841189465
+        "PER Fiscal": 17.40508192438774
     },
     {
         "Empresa": "PromotorayOperadoraInfraestrL",
         "Ticker": "PINFRAL.MX",
-        "Price": 196.0,
+        "Price": 200.94,
         "Shares": 49416058,
         "Net Income TTM": 14643300352,
         "EPS TTM": 296.32675985607756,
-        "PER TTM": 0.6614319951906973,
+        "PER TTM": 0.6781027811919322,
         "Net Income Fiscal": 9187961000.0,
         "EPS Fiscal": 185.93067459974245,
-        "PER Fiscal": 1.0541563430667589
+        "PER Fiscal": 1.0807253855909924
     },
     {
         "Empresa": "PromotorayOperadoraInfraestr",
         "Ticker": "PINFRA.MX",
-        "Price": 277.66,
+        "Price": 286.37,
         "Shares": 325485879,
         "Net Income TTM": 14643300352,
         "EPS TTM": 44.9890495925324,
-        "PER TTM": 6.171724064295147,
+        "PER TTM": 6.365326731586117,
         "Net Income Fiscal": 9187961000.0,
         "EPS Fiscal": 28.22844735454714,
-        "PER Fiscal": 9.83617683652989
+        "PER Fiscal": 10.144730824306938
     },
     {
         "Empresa": "GrupoElektra",
@@ -362,14 +362,14 @@
     {
         "Empresa": "QualitasControladora",
         "Ticker": "Q.MX",
-        "Price": 161.57,
+        "Price": 168.82,
         "Shares": 394400000,
         "Net Income TTM": 5082097664,
         "EPS TTM": 12.885643164300204,
-        "PER TTM": 12.538761002448927,
+        "PER TTM": 13.10140268882483,
         "Net Income Fiscal": 5082097808.0,
         "EPS Fiscal": 12.885643529411764,
-        "PER Fiscal": 12.538760647166198
+        "PER Fiscal": 13.101402317599787
     },
     {
         "Empresa": "Alfa_A",
@@ -410,91 +410,91 @@
     {
         "Empresa": "Moctezuma",
         "Ticker": "CMOCTEZ.MX",
-        "Price": 79.0,
+        "Price": 79.1,
         "Shares": 850222257,
-        "Net Income TTM": 6151347200,
-        "EPS TTM": 7.234987262865785,
-        "PER TTM": 10.919162277655209,
+        "Net Income TTM": 6260634112,
+        "EPS TTM": 7.363526490226896,
+        "PER TTM": 10.74213559290973,
         "Net Income Fiscal": 6521427000.0,
         "EPS Fiscal": 7.6702614478839735,
-        "PER Fiscal": 10.299518541417392
+        "PER Fiscal": 10.312555906659693
     },
     {
         "Empresa": "Gentera",
         "Ticker": "GENTERA.MX",
-        "Price": 48.49,
+        "Price": 50.32,
         "Shares": 1579243876,
         "Net Income TTM": 8071695360,
         "EPS TTM": 5.111113921457435,
-        "PER TTM": 9.487168696520282,
+        "PER TTM": 9.845211977910921,
         "Net Income Fiscal": 6005000000.0,
         "EPS Fiscal": 3.802452611188723,
-        "PER Fiscal": 12.75229567814155
+        "PER Fiscal": 13.233564003383847
     },
     {
         "Empresa": "GCC",
         "Ticker": "GCC.MX",
-        "Price": 192.81,
+        "Price": 199.49,
         "Shares": 327497897,
         "Net Income TTM": 299432000,
         "EPS TTM": 0.9143020542815883,
-        "PER TTM": 210.882168641194,
+        "PER TTM": 218.18828806717386,
         "Net Income Fiscal": 299432000.0,
         "EPS Fiscal": 0.9143020542815883,
-        "PER Fiscal": 210.882168641194
+        "PER Fiscal": 218.18828806717386
     },
     {
         "Empresa": "BancodelBajio",
         "Ticker": "BBAJIOO.MX",
-        "Price": 55.52,
+        "Price": 55.16,
         "Shares": 1189931687,
         "Net Income TTM": 9079339008,
         "EPS TTM": 7.63013465999078,
-        "PER TTM": 7.276411554192294,
+        "PER TTM": 7.229230211261651,
         "Net Income Fiscal": 9079337738.0,
         "EPS Fiscal": 7.63013359270262,
-        "PER Fiscal": 7.276412572002507
+        "PER Fiscal": 7.22923122247223
     },
     {
         "Empresa": "FRAGUAB",
         "Ticker": "FRAGUAB.MX",
-        "Price": 533.16,
+        "Price": 533.0,
         "Shares": 95741677,
         "Net Income TTM": 4960675840,
         "EPS TTM": 51.81312877985206,
-        "PER TTM": 10.29005606407856,
+        "PER TTM": 10.286968043652697,
         "Net Income Fiscal": 4902005000.0,
         "EPS Fiscal": 51.2003252251368,
-        "PER Fiscal": 10.413215104701035
+        "PER Fiscal": 10.410090124551077
     },
     {
         "Empresa": "Regional",
         "Ticker": "RA.MX",
-        "Price": 151.4,
+        "Price": 158.19,
         "Shares": 327931333,
         "Net Income TTM": 6618569728,
         "EPS TTM": 20.182791523614487,
-        "PER TTM": 7.5014400174949705,
+        "PER TTM": 7.837865233603233,
         "Net Income Fiscal": 6619000000.0,
         "EPS Fiscal": 20.184103603177192,
-        "PER Fiscal": 7.500952381961022
+        "PER Fiscal": 7.83735572854963
     },
     {
         "Empresa": "OrganizacionSoriana",
         "Ticker": "SORIANAB.MX",
-        "Price": 37.46,
+        "Price": 36.35,
         "Shares": 1769365000,
         "Net Income TTM": 3307000064,
         "EPS TTM": 1.8690321465610544,
-        "PER TTM": 20.042458910578357,
+        "PER TTM": 19.448568643874086,
         "Net Income Fiscal": 5021000000.0,
         "EPS Fiscal": 2.8377412235463004,
-        "PER Fiscal": 13.200639892451704
+        "PER Fiscal": 12.809483718382793
     },
     {
         "Empresa": "MegacableCpo",
         "Ticker": "MEGACPO.MX",
-        "Price": 61.17,
+        "Price": 64.26,
         "Shares": 0,
         "Net Income TTM": null,
         "EPS TTM": null,
@@ -506,26 +506,26 @@
     {
         "Empresa": "CorporacionInmobiliariaVesta",
         "Ticker": "VESTA.MX",
-        "Price": 58.97,
+        "Price": 60.04,
         "Shares": 846017932,
         "Net Income TTM": 241902320,
         "EPS TTM": 0.28593048781854896,
-        "PER TTM": 206.23893747707754,
+        "PER TTM": 209.98110575078405,
         "Net Income Fiscal": 223346346.0,
         "EPS Fiscal": 0.26399717730805733,
-        "PER Fiscal": 223.37360043508392
+        "PER Fiscal": 227.42667407363808
     },
     {
         "Empresa": "LaComercial",
         "Ticker": "LACOMERUBC.MX",
-        "Price": 37.59,
+        "Price": 38.82,
         "Shares": 1086000000,
-        "Net Income TTM": 2586413056,
-        "EPS TTM": 2.3815958158379376,
-        "PER TTM": 15.783534615748554,
+        "Net Income TTM": 2684721920,
+        "EPS TTM": 2.472119631675875,
+        "PER TTM": 15.703123547335583,
         "Net Income Fiscal": 2357545000.0,
         "EPS Fiscal": 2.1708517495395947,
-        "PER Fiscal": 17.315784004122936
+        "PER Fiscal": 17.882381884545154
     },
     {
         "Empresa": "Lamosa",
@@ -578,37 +578,37 @@
     {
         "Empresa": "Herdez",
         "Ticker": "HERDEZ.MX",
-        "Price": 83.65,
+        "Price": 83.28,
         "Shares": 321608184,
         "Net Income TTM": 1786382976,
         "EPS TTM": 5.5545320824298425,
-        "PER TTM": 15.059774389386032,
+        "PER TTM": 14.993162117729453,
         "Net Income Fiscal": 1786383000.0,
         "EPS Fiscal": 5.554532157054809,
-        "PER Fiscal": 15.059774187058432
+        "PER Fiscal": 14.993161916296785
     },
     {
         "Empresa": "GenommaLabB",
         "Ticker": "LABB.MX",
-        "Price": 17.49,
+        "Price": 17.63,
         "Shares": 973792666,
         "Net Income TTM": 1655062016,
         "EPS TTM": 1.6996041085402875,
-        "PER TTM": 10.290631748955562,
+        "PER TTM": 10.373003872732223,
         "Net Income Fiscal": 1493122000.0,
         "EPS Fiscal": 1.533305858764806,
-        "PER Fiscal": 11.406726127094771
+        "PER Fiscal": 11.498032110959452
     },
     {
         "Empresa": "BolsaMexicanaValores",
         "Ticker": "BOLSAA.MX",
-        "Price": 37.15,
+        "Price": 38.99,
         "Shares": 555766146,
         "Net Income TTM": 1601954048,
         "EPS TTM": 2.882424666435152,
-        "PER TTM": 12.888454790371116,
+        "PER TTM": 13.526806252397574,
         "Net Income Fiscal": 1637193000.0,
         "EPS Fiscal": 2.9458307451494177,
-        "PER Fiscal": 12.61104361177943
+        "PER Fiscal": 13.235655193089636
     }
 ]
