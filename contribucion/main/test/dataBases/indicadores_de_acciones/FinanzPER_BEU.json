@@ -99,13 +99,13 @@
         "Empresa": "Berkshire Hathaway Inc.",
         "Ticker": "BRK-B",
         "Price": 498.98,
-        "Shares": 1372820139,
+        "Shares": 1389605139,
         "Net Income TTM": 66967998464,
-        "EPS TTM": 48.78133454013964,
-        "PER TTM": 10.228912445792462,
-        "Net Income Fiscal": 88995000000.0,
-        "EPS Fiscal": 64.8264091353048,
-        "PER Fiscal": 7.69717167209641
+        "EPS TTM": 48.19210622104644,
+        "PER TTM": 10.353977842580486,
+        "Net Income Fiscal": 66968000000.0,
+        "EPS Fiscal": 48.19210732639641,
+        "PER Fiscal": 10.353977605098256
     },
     {
         "Empresa": "Taiwan Semiconductor Manufacturing Company Limited",
@@ -220,9 +220,9 @@
         "Ticker": "COST",
         "Price": 998.1,
         "Shares": 443869411,
-        "Net Income TTM": 8302000128,
-        "EPS TTM": 18.70369960681972,
-        "PER TTM": 53.36377406510924,
+        "Net Income TTM": 8549000192,
+        "EPS TTM": 19.260169725910668,
+        "PER TTM": 51.8219732330426,
         "Net Income Fiscal": 8099000000.0,
         "EPS Fiscal": 18.246357598181056,
         "PER Fiscal": 54.701328450314854
@@ -459,10 +459,10 @@
         "Empresa": "UnitedHealth Group Incorporated",
         "Ticker": "UNH",
         "Price": 286.48,
-        "Shares": 905838620,
+        "Shares": 907675839,
         "Net Income TTM": 12056000512,
-        "EPS TTM": 13.309214517702944,
-        "PER TTM": 21.524936698476477,
+        "EPS TTM": 13.282275448999805,
+        "PER TTM": 21.568593506436642,
         "Net Income Fiscal": NaN,
         "EPS Fiscal": NaN,
         "PER Fiscal": NaN
@@ -487,9 +487,9 @@
         "Net Income TTM": 7456999936,
         "EPS TTM": 8.079089854821236,
         "PER TTM": 25.01643175553864,
-        "Net Income Fiscal": 6197000000.0,
-        "EPS Fiscal": 6.71397616468039,
-        "PER Fiscal": 30.102877198644507
+        "Net Income Fiscal": 7457000000.0,
+        "EPS Fiscal": 8.079089924160346,
+        "PER Fiscal": 25.01643154083412
     },
     {
         "Empresa": "Morgan Stanley",
