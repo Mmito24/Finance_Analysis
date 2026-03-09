@@ -2,14 +2,14 @@
     {
         "Empresa": "NVIDIA Corporation",
         "Ticker": "NVDA",
-        "Price": 177.82,
+        "Price": 177.885,
         "Shares": 24300000000,
         "Net Income TTM": 120066998272,
         "EPS TTM": 4.941028735473251,
-        "PER TTM": 35.98845696309605,
+        "PER TTM": 36.00161211832381,
         "Net Income Fiscal": 120067000000.0,
         "EPS Fiscal": 4.941028806584362,
-        "PER Fiscal": 35.988456445151456
+        "PER Fiscal": 36.00161160018989
     },
     {
         "Empresa": "Microsoft Corporation",
@@ -38,26 +38,26 @@
     {
         "Empresa": "Amazon.com Inc.",
         "Ticker": "AMZN",
-        "Price": 213.21,
+        "Price": 213.12,
         "Shares": 10734920870,
         "Net Income TTM": 77669998592,
         "EPS TTM": 7.2352651251541085,
-        "PER TTM": 29.468166862158863,
+        "PER TTM": 29.455727787924097,
         "Net Income Fiscal": 77670000000.0,
         "EPS Fiscal": 7.235265256314833,
-        "PER Fiscal": 29.468166327960603
+        "PER Fiscal": 29.45572725395133
     },
     {
         "Empresa": "Alphabet Inc.",
         "Ticker": "GOOGL",
-        "Price": 298.52,
+        "Price": 298.48,
         "Shares": 5822000000,
         "Net Income TTM": 132169998336,
         "EPS TTM": 22.701820394366198,
-        "PER TTM": 13.149606278890404,
+        "PER TTM": 13.14784430565191,
         "Net Income Fiscal": 132170000000.0,
         "EPS Fiscal": 22.70182068017863,
-        "PER Fiscal": 13.149606113338882
+        "PER Fiscal": 13.14784414012257
     },
     {
         "Empresa": "Meta Platforms Inc.",
@@ -74,14 +74,14 @@
     {
         "Empresa": "Broadcom Inc.",
         "Ticker": "AVGO",
-        "Price": 330.48,
+        "Price": 330.45,
         "Shares": 4741273799,
         "Net Income TTM": 24971999232,
         "EPS TTM": 5.266938862983812,
-        "PER TTM": 62.74612419039498,
+        "PER TTM": 62.74042828224407,
         "Net Income Fiscal": 23126000000.0,
         "EPS Fiscal": 4.877592178894539,
-        "PER Fiscal": 67.75474206925193
+        "PER Fiscal": 67.74859149353757
     },
     {
         "Empresa": "Tesla Inc.",
@@ -463,21 +463,21 @@
         "Net Income TTM": 12056000512,
         "EPS TTM": 13.282275448999805,
         "PER TTM": 21.568593506436642,
-        "Net Income Fiscal": NaN,
-        "EPS Fiscal": NaN,
-        "PER Fiscal": NaN
+        "Net Income Fiscal": 12056000000.0,
+        "EPS Fiscal": 13.282274884921774,
+        "PER Fiscal": 21.56859442242203
     },
     {
         "Empresa": "Advanced Micro Devices Inc.",
         "Ticker": "AMD",
-        "Price": 192.43,
+        "Price": 192.44,
         "Shares": 1630410843,
         "Net Income TTM": 4268999936,
         "EPS TTM": 2.6183584059984075,
-        "PER TTM": 73.49261260764048,
+        "PER TTM": 73.49643179449323,
         "Net Income Fiscal": 4335000000.0,
         "EPS Fiscal": 2.6588390396272654,
-        "PER Fiscal": 72.37369285316954
+        "PER Fiscal": 72.37745389317647
     },
     {
         "Empresa": "Salesforce Inc.",
@@ -698,14 +698,14 @@
     {
         "Empresa": "Texas Instruments Incorporated",
         "Ticker": "TXN",
-        "Price": 193.23,
+        "Price": 193.21,
         "Shares": 907550774,
         "Net Income TTM": 4973000192,
         "EPS TTM": 5.479583439813142,
-        "PER TTM": 35.26362945694815,
+        "PER TTM": 35.2599795444649,
         "Net Income Fiscal": 5001000000.0,
         "EPS Fiscal": 5.510435496581924,
-        "PER Fiscal": 35.06619397320936
+        "PER Fiscal": 35.062564496008804
     },
     {
         "Empresa": "PepsiCo Inc.",
