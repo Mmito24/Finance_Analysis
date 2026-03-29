@@ -3,13 +3,13 @@
         "Empresa": "AmericaMovil",
         "Ticker": "AMXB.MX",
         "Price": 22.46,
-        "Shares": 60202000000,
+        "Shares": 60201500000,
         "Net Income TTM": 82819080192,
-        "EPS TTM": 1.3756865252317199,
-        "PER TTM": 16.32639383177563,
+        "EPS TTM": 1.3756979509148444,
+        "PER TTM": 16.326258235002832,
         "Net Income Fiscal": 22902025000.0,
-        "EPS Fiscal": 0.3804196704428424,
-        "PER Fiscal": 59.040059558052185
+        "EPS Fiscal": 0.38042282999593036,
+        "PER Fiscal": 59.03956920839969
     },
     {
         "Empresa": "WalmartMexico",
@@ -103,9 +103,9 @@
         "Net Income TTM": 1372648960,
         "EPS TTM": 3.4534156369545737,
         "PER TTM": 216.79985229355364,
-        "Net Income Fiscal": 73253000.0,
-        "EPS Fiscal": 0.18429552130636037,
-        "PER Fiscal": 4062.496986866067
+        "Net Income Fiscal": 1372649000.0,
+        "EPS Fiscal": 3.4534157375896446,
+        "PER Fiscal": 216.79984597584672
     },
     {
         "Empresa": "KimberlyClark",
@@ -403,9 +403,9 @@
         "Net Income TTM": 4847077888,
         "EPS TTM": 3.9480471538442945,
         "PER TTM": 12.347876836407874,
-        "Net Income Fiscal": 3607769000.0,
-        "EPS Fiscal": 2.938603930306324,
-        "PER Fiscal": 16.589510242340904
+        "Net Income Fiscal": 4847078000.0,
+        "EPS Fiscal": 3.9480472450706565,
+        "PER Fiscal": 12.34787655108913
     },
     {
         "Empresa": "Moctezuma",
@@ -511,9 +511,9 @@
         "Net Income TTM": 241902320,
         "EPS TTM": 0.28593322609502064,
         "PER TTM": 207.74081001786178,
-        "Net Income Fiscal": NaN,
-        "EPS Fiscal": NaN,
-        "PER Fiscal": NaN
+        "Net Income Fiscal": 241902323.0,
+        "EPS Fiscal": 0.28593322964107876,
+        "PER Fiscal": 207.74080744152258
     },
     {
         "Empresa": "LaComercial",
@@ -603,12 +603,12 @@
         "Empresa": "BolsaMexicanaValores",
         "Ticker": "BOLSAA.MX",
         "Price": 36.84,
-        "Shares": 554517046,
+        "Shares": 554469646,
         "Net Income TTM": 1601954048,
-        "EPS TTM": 2.8889175897398833,
-        "PER TTM": 12.752181000537664,
+        "EPS TTM": 2.8891645549159604,
+        "PER TTM": 12.751090946798495,
         "Net Income Fiscal": 1601954000.0,
-        "EPS Fiscal": 2.888917503178072,
-        "PER Fiscal": 12.752181382636456
+        "EPS Fiscal": 2.8891644683467486,
+        "PER Fiscal": 12.751091328864627
     }
 ]
