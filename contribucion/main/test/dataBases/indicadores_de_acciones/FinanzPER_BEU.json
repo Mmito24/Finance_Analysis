@@ -2,527 +2,527 @@
     {
         "Empresa": "NVIDIA Corporation",
         "Ticker": "NVDA",
-        "Price": 174.4,
+        "Price": 175.75,
         "Shares": 24300000000,
         "Net Income TTM": 120066998272,
         "EPS TTM": 4.941028735473251,
-        "PER TTM": 35.29629341111209,
+        "PER TTM": 35.5695158658426,
         "Net Income Fiscal": 120067000000.0,
         "EPS Fiscal": 4.941028806584362,
-        "PER Fiscal": 35.296292903129086
+        "PER Fiscal": 35.56951535392739
     },
     {
         "Empresa": "Microsoft Corporation",
         "Ticker": "MSFT",
-        "Price": 370.17,
+        "Price": 369.37,
         "Shares": 7425629076,
         "Net Income TTM": 119262003200,
         "EPS TTM": 16.06086191208509,
-        "PER TTM": 23.047953592170753,
+        "PER TTM": 22.99814306491642,
         "Net Income Fiscal": 101832000000.0,
         "EPS Fiscal": 13.713585604366646,
-        "PER Fiscal": 26.99294048101697
+        "PER Fiscal": 26.934604169633516
     },
     {
         "Empresa": "Apple Inc.",
         "Ticker": "AAPL",
-        "Price": 253.79,
+        "Price": 255.63,
         "Shares": 14681140000,
         "Net Income TTM": 117776998400,
         "EPS TTM": 8.02233330654159,
-        "PER TTM": 31.63543451791687,
+        "PER TTM": 31.86479422284207,
         "Net Income Fiscal": 112010000000.0,
         "EPS Fiscal": 7.6295165089359545,
-        "PER Fiscal": 33.2642310561557
+        "PER Fiscal": 33.50539968038568
     },
     {
         "Empresa": "Amazon.com Inc.",
         "Ticker": "AMZN",
-        "Price": 208.27,
+        "Price": 210.57,
         "Shares": 10734920870,
         "Net Income TTM": 77669998592,
         "EPS TTM": 7.2352651251541085,
-        "PER TTM": 28.785399898606194,
+        "PER TTM": 29.103287351272414,
         "Net Income Fiscal": 77670000000.0,
         "EPS Fiscal": 7.235265256314833,
-        "PER Fiscal": 28.785399376785115
+        "PER Fiscal": 29.10328682368868
     },
     {
         "Empresa": "Alphabet Inc.",
         "Ticker": "GOOGL",
-        "Price": 287.56,
+        "Price": 297.39,
         "Shares": 5822000000,
         "Net Income TTM": 132169998336,
         "EPS TTM": 22.701820394366198,
-        "PER TTM": 12.666825611542693,
+        "PER TTM": 13.099830534902912,
         "Net Income Fiscal": 132170000000.0,
         "EPS Fiscal": 22.70182068017863,
-        "PER Fiscal": 12.666825452069306
+        "PER Fiscal": 13.09983036997806
     },
     {
         "Empresa": "Meta Platforms Inc.",
         "Ticker": "META",
-        "Price": 572.13,
+        "Price": 579.23,
         "Shares": 2187177748,
         "Net Income TTM": 60458000384,
         "EPS TTM": 27.642015121671765,
-        "PER TTM": 20.697839773318165,
+        "PER TTM": 20.95469514253593,
         "Net Income Fiscal": 60458000000.0,
         "EPS Fiscal": 27.642014946103046,
-        "PER Fiscal": 20.69783990478084
+        "PER Fiscal": 20.954695275630023
     },
     {
         "Empresa": "Broadcom Inc.",
         "Ticker": "AVGO",
-        "Price": 309.51,
+        "Price": 313.49,
         "Shares": 4734668184,
         "Net Income TTM": 24971999232,
         "EPS TTM": 5.274287080220024,
-        "PER TTM": 58.682812537972126,
+        "PER TTM": 59.43741689292392,
         "Net Income Fiscal": 23126000000.0,
         "EPS Fiscal": 4.884397195594478,
-        "PER Fiscal": 63.36708248853411
+        "PER Fiscal": 64.18192203589726
     },
     {
         "Empresa": "Tesla Inc.",
         "Ticker": "TSLA",
-        "Price": 371.75,
+        "Price": 381.26,
         "Shares": 3752431984,
         "Net Income TTM": 3793999872,
         "EPS TTM": 1.011077585996826,
-        "PER TTM": 367.67702612405355,
+        "PER TTM": 377.08283249510873,
         "Net Income Fiscal": 3794000000.0,
         "EPS Fiscal": 1.0110776201080371,
-        "PER Fiscal": 367.6770137195572
+        "PER Fiscal": 377.0828197732841
     },
     {
         "Empresa": "Berkshire Hathaway Inc.",
         "Ticker": "BRK-B",
-        "Price": 479.2,
+        "Price": 478.5,
         "Shares": 1390722404,
         "Net Income TTM": 66967998464,
         "EPS TTM": 48.153390116810115,
-        "PER TTM": 9.951531944844598,
+        "PER TTM": 9.936995065960225,
         "Net Income Fiscal": 66968000000.0,
         "EPS Fiscal": 48.15339122127208,
-        "PER Fiscal": 9.951531716593
+        "PER Fiscal": 9.936994838042049
     },
     {
         "Empresa": "Taiwan Semiconductor Manufacturing Company Limited",
         "Ticker": "TSM",
-        "Price": 337.95,
+        "Price": 341.49,
         "Shares": 5186504904,
         "Net Income TTM": 1717882585088,
         "EPS TTM": 331.2216255234066,
-        "PER TTM": 1.0203138139484733,
+        "PER TTM": 1.031001521897512,
         "Net Income Fiscal": 1717882627000.0,
         "EPS Fiscal": 331.22163360437844,
-        "PER Fiscal": 1.0203137890553915
+        "PER Fiscal": 1.0310014967436771
     },
     {
         "Empresa": "JPMorgan Chase & Co.",
         "Ticker": "JPM",
-        "Price": 294.16,
+        "Price": 295.38,
         "Shares": 2697032375,
         "Net Income TTM": 55680999424,
         "EPS TTM": 20.645284031490352,
-        "PER TTM": 14.248290289991475,
+        "PER TTM": 14.307383688664949,
         "Net Income Fiscal": 57048000000.0,
         "EPS Fiscal": 21.15213763423956,
-        "PER Fiscal": 13.906868662003928
+        "PER Fiscal": 13.964546047670384
     },
     {
         "Empresa": "Walmart Inc.",
         "Ticker": "WMT",
-        "Price": 124.28,
+        "Price": 124.74,
         "Shares": 7972402501,
         "Net Income TTM": 21892999168,
         "EPS TTM": 2.746098075862816,
-        "PER TTM": 45.25694150998288,
+        "PER TTM": 45.42445191467062,
         "Net Income Fiscal": 21893000000.0,
         "EPS Fiscal": 2.746098180222825,
-        "PER Fiscal": 45.256939790082676
+        "PER Fiscal": 45.42445018840451
     },
     {
         "Empresa": "Eli Lilly and Company",
         "Ticker": "LLY",
-        "Price": 919.77,
+        "Price": 954.52,
         "Shares": 893357420,
         "Net Income TTM": 20640000000,
         "EPS TTM": 23.10385466994834,
-        "PER TTM": 39.810240028749995,
+        "PER TTM": 41.31431804934108,
         "Net Income Fiscal": 20640000000.0,
         "EPS Fiscal": 23.10385466994834,
-        "PER Fiscal": 39.810240028749995
+        "PER Fiscal": 41.31431804934108
     },
     {
         "Empresa": "Oracle Corporation",
         "Ticker": "ORCL",
-        "Price": 147.11,
+        "Price": 145.23,
         "Shares": 2876046000,
         "Net Income TTM": 16188000256,
         "EPS TTM": 5.6285609673836925,
-        "PER TTM": 26.13634299290192,
+        "PER TTM": 25.802332219829687,
         "Net Income Fiscal": 12443000000.0,
         "EPS Fiscal": 4.326425933382151,
-        "PER Fiscal": 34.002662304910395
+        "PER Fiscal": 33.56812348951217
     },
     {
         "Empresa": "Visa Inc.",
         "Ticker": "V",
-        "Price": 302.24,
+        "Price": 298.51,
         "Shares": 1681093942,
         "Net Income TTM": 20592001024,
         "EPS TTM": 12.249167348436021,
-        "PER TTM": 24.674330213848382,
+        "PER TTM": 24.369819719877846,
         "Net Income Fiscal": 20058000000.0,
         "EPS Fiscal": 11.931516436337262,
-        "PER Fiscal": 25.331231081368035
+        "PER Fiscal": 25.01861365173098
     },
     {
         "Empresa": "Netflix Inc.",
         "Ticker": "NFLX",
-        "Price": 96.15,
+        "Price": 95.55,
         "Shares": 4237323340,
         "Net Income TTM": 10981200896,
         "EPS TTM": 2.591541880304088,
-        "PER TTM": 37.10146485794699,
+        "PER TTM": 36.86994245633734,
         "Net Income Fiscal": 10981201000.0,
         "EPS Fiscal": 2.5915419048478845,
-        "PER Fiscal": 37.101464506569
+        "PER Fiscal": 36.86994210715203
     },
     {
         "Empresa": "Mastercard Incorporated",
         "Ticker": "MA",
-        "Price": 499.66,
+        "Price": 491.65,
         "Shares": 885216386,
         "Net Income TTM": 14968000512,
         "EPS TTM": 16.90886064551453,
-        "PER TTM": 29.550187352957252,
+        "PER TTM": 29.076471224595586,
         "Net Income Fiscal": 14968000000.0,
         "EPS Fiscal": 16.908860067124877,
-        "PER Fiscal": 29.55018836376002
+        "PER Fiscal": 29.07647221919428
     },
     {
         "Empresa": "Exxon Mobil Corporation",
         "Ticker": "XOM",
-        "Price": 169.66,
+        "Price": 160.78,
         "Shares": 4166763453,
         "Net Income TTM": 28843999232,
         "EPS TTM": 6.922399017211501,
-        "PER TTM": 24.50884434401513,
+        "PER TTM": 23.226052066667176,
         "Net Income Fiscal": 28844000000.0,
         "EPS Fiscal": 6.922399201527219,
-        "PER Fiscal": 24.508843691442934
+        "PER Fiscal": 23.22605144825059
     },
     {
         "Empresa": "Costco Wholesale Corporation",
         "Ticker": "COST",
-        "Price": 996.43,
+        "Price": 996.56,
         "Shares": 443652540,
         "Net Income TTM": 8549000192,
         "EPS TTM": 19.26958468895501,
-        "PER TTM": 51.70998836166595,
+        "PER TTM": 51.71673474474054,
         "Net Income Fiscal": 8099000000.0,
         "EPS Fiscal": 18.255276978691477,
-        "PER Fiscal": 54.58312142637363
+        "PER Fiscal": 54.59024265494506
     },
     {
         "Empresa": "Johnson & Johnson",
         "Ticker": "JNJ",
-        "Price": 244.44,
+        "Price": 244.12,
         "Shares": 2408613219,
         "Net Income TTM": 26804000768,
         "EPS TTM": 11.128395608128562,
-        "PER TTM": 21.96543047242611,
+        "PER TTM": 21.93667520425733,
         "Net Income Fiscal": 26804000000.0,
         "EPS Fiscal": 11.128395289272886,
-        "PER Fiscal": 21.965431101789285
+        "PER Fiscal": 21.936675832796595
     },
     {
         "Empresa": "The Procter & Gamble Company",
         "Ticker": "PG",
-        "Price": 144.44,
+        "Price": 144.09,
         "Shares": 2336733549,
         "Net Income TTM": 16161999872,
         "EPS TTM": 6.916492416910987,
-        "PER TTM": 20.88341767668837,
+        "PER TTM": 20.832813992204567,
         "Net Income Fiscal": 15974000000.0,
         "EPS Fiscal": 6.836038283798355,
-        "PER Fiscal": 21.12919705881808
+        "PER Fiscal": 21.077997813660325
     },
     {
         "Empresa": "Palantir Technologies Inc.",
         "Ticker": "PLTR",
-        "Price": 146.28,
+        "Price": 146.49,
         "Shares": 2291470751,
         "Net Income TTM": 1625032960,
         "EPS TTM": 0.7091659185659839,
-        "PER TTM": 206.27048786523076,
+        "PER TTM": 206.56661038677643,
         "Net Income Fiscal": 1625033000.0,
         "EPS Fiscal": 0.7091659360220217,
-        "PER Fiscal": 206.27048278790645
+        "PER Fiscal": 206.5666053021631
     },
     {
         "Empresa": "SAP SE",
         "Ticker": "SAP",
-        "Price": 171.21,
+        "Price": 171.36,
         "Shares": 1167559048,
         "Net Income TTM": 7160999936,
         "EPS TTM": 6.133308587918202,
-        "PER TTM": 27.914786537442584,
+        "PER TTM": 27.939243157853873,
         "Net Income Fiscal": 7161000000.0,
         "EPS Fiscal": 6.133308642733416,
-        "PER Fiscal": 27.914786287959785
+        "PER Fiscal": 27.939242908152497
     },
     {
         "Empresa": "The Home Depot Inc.",
         "Ticker": "HD",
-        "Price": 328.89,
+        "Price": 329.56,
         "Shares": 996011466,
         "Net Income TTM": 14156000256,
         "EPS TTM": 14.212688045500874,
-        "PER TTM": 23.14059092460785,
+        "PER TTM": 23.187731901589476,
         "Net Income Fiscal": 14156000000.0,
         "EPS Fiscal": 14.212687788475721,
-        "PER Fiscal": 23.140591343087028
+        "PER Fiscal": 23.187732320921164
     },
     {
         "Empresa": "Bank of America Corporation",
         "Ticker": "BAC",
-        "Price": 48.75,
+        "Price": 49.27,
         "Shares": 7145709181,
         "Net Income TTM": 29055000576,
         "EPS TTM": 4.06607655587992,
-        "PER TTM": 11.98944469687936,
+        "PER TTM": 12.117332106979408,
         "Net Income Fiscal": 30509000000.0,
         "EPS Fiscal": 4.269555229188665,
-        "PER Fiscal": 11.418051151258645
+        "PER Fiscal": 11.53984369687207
     },
     {
         "Empresa": "Interactive Brokers Group Inc.",
         "Ticker": "IBKR",
-        "Price": 67.07,
+        "Price": 67.91,
         "Shares": 445616477,
         "Net Income TTM": 984000000,
         "EPS TTM": 2.2081768758294813,
-        "PER TTM": 30.37347267519309,
+        "PER TTM": 30.753876984827237,
         "Net Income Fiscal": 984000000.0,
         "EPS Fiscal": 2.2081768758294813,
-        "PER Fiscal": 30.37347267519309
+        "PER Fiscal": 30.753876984827237
     },
     {
         "Empresa": "AbbVie Inc.",
         "Ticker": "ABBV",
-        "Price": 217.49,
+        "Price": 214.98,
         "Shares": 1768762377,
         "Net Income TTM": 4185999872,
         "EPS TTM": 2.366626476474403,
-        "PER TTM": 91.89874370204711,
+        "PER TTM": 90.8381623112147,
         "Net Income Fiscal": 4226000000.0,
         "EPS Fiscal": 2.3892412315823472,
-        "PER Fiscal": 91.02889952052296
+        "PER Fiscal": 89.97835679305726
     },
     {
         "Empresa": "The Coca-Cola Company",
         "Ticker": "KO",
-        "Price": 76.05,
+        "Price": 76.08,
         "Shares": 4304152877,
         "Net Income TTM": 13107000320,
         "EPS TTM": 3.045198601109075,
-        "PER TTM": 24.97374061984077,
+        "PER TTM": 24.98359219404978,
         "Net Income Fiscal": 13107000000.0,
         "EPS Fiscal": 3.0451985267622734,
-        "PER Fiscal": 24.973741229560538
+        "PER Fiscal": 24.98359280401007
     },
     {
         "Empresa": "Novo Nordisk A_S",
         "Ticker": "NVO",
-        "Price": 36.75,
-        "Shares": 3364890209,
+        "Price": 36.48,
+        "Shares": 3363575209,
         "Net Income TTM": 102433996800,
-        "EPS TTM": 30.442002691803133,
-        "PER TTM": 1.2072136111431122,
+        "EPS TTM": 30.453904085722495,
+        "PER TTM": 1.1978759733830868,
         "Net Income Fiscal": 102434000000.0,
-        "EPS Fiscal": 30.442003642799985,
-        "PER Fiscal": 1.2072135734302087
+        "EPS Fiscal": 30.453905037091143,
+        "PER Fiscal": 1.1978759359618876
     },
     {
         "Empresa": "ASML Holding N.V.",
         "Ticker": "ASML",
-        "Price": 1320.83,
+        "Price": 1359.76,
         "Shares": 385417665,
         "Net Income TTM": 9609400320,
         "EPS TTM": 24.93243354582619,
-        "PER TTM": 52.97637703805746,
+        "PER TTM": 54.53779702253053,
         "Net Income Fiscal": 9609400000.0,
         "EPS Fiscal": 24.93243271555807,
-        "PER Fiscal": 52.97637880220929
+        "PER Fiscal": 54.537798838678796
     },
     {
         "Empresa": "General Electric Company",
         "Ticker": "GE",
-        "Price": 283.77,
+        "Price": 292.68,
         "Shares": 1044829602,
         "Net Income TTM": 8600999936,
         "EPS TTM": 8.231964254779987,
-        "PER TTM": 34.47172402810491,
+        "PER TTM": 35.55409024402067,
         "Net Income Fiscal": 8704000000.0,
         "EPS Fiscal": 8.330544983927437,
-        "PER Fiscal": 34.06379781244715
+        "PER Fiscal": 35.133355688575364
     },
     {
         "Empresa": "Philip Morris International Inc.",
         "Ticker": "PM",
-        "Price": 165.34,
+        "Price": 157.33,
         "Shares": 1558530268,
         "Net Income TTM": 11315999744,
         "EPS TTM": 7.260686543175946,
-        "PER TTM": 22.7719512496235,
+        "PER TTM": 21.66874978893955,
         "Net Income Fiscal": 11348000000.0,
         "EPS Fiscal": 7.2812188720354065,
-        "PER Fiscal": 22.707736562488545
+        "PER Fiscal": 21.607646022597816
     },
     {
         "Empresa": "Alibaba Group Holding Limited",
         "Ticker": "BABA",
-        "Price": 125.46,
+        "Price": 123.73,
         "Shares": 2387412815,
         "Net Income TTM": 92810002432,
         "EPS TTM": 38.874719046860776,
-        "PER TTM": 3.2272902049469905,
+        "PER TTM": 3.182788275610483,
         "Net Income Fiscal": 130109000000.0,
         "EPS Fiscal": 54.497906345534965,
-        "PER Fiscal": 2.3021067856174438
+        "PER Fiscal": 2.270362446871085
     },
     {
         "Empresa": "Cisco Systems Inc.",
         "Ticker": "CSCO",
-        "Price": 77.59,
+        "Price": 77.93,
         "Shares": 3949893042,
         "Net Income TTM": 11075999744,
         "EPS TTM": 2.8041264981675926,
-        "PER TTM": 27.66993573603138,
+        "PER TTM": 27.791185615529393,
         "Net Income Fiscal": 10180000000.0,
         "EPS Fiscal": 2.5772849775307916,
-        "PER Fiscal": 30.10532427591159
+        "PER Fiscal": 30.23724604745187
     },
     {
         "Empresa": "International Business Machines Corporation",
         "Ticker": "IBM",
-        "Price": 242.39,
+        "Price": 243.14,
         "Shares": 938409072,
         "Net Income TTM": 10570999808,
         "EPS TTM": 11.264809903713292,
-        "PER TTM": 21.51745143254476,
+        "PER TTM": 21.58403045220072,
         "Net Income Fiscal": 10593000000.0,
         "EPS Fiscal": 11.288254041943022,
-        "PER Fiscal": 21.472762669883885
+        "PER Fiscal": 21.539203414148965
     },
     {
         "Empresa": "Chevron Corporation",
         "Ticker": "CVX",
-        "Price": 206.9,
+        "Price": 197.41,
         "Shares": 1981217539,
         "Net Income TTM": 12298999808,
         "EPS TTM": 6.207798773176518,
-        "PER TTM": 33.32904424898581,
+        "PER TTM": 31.80032201639579,
         "Net Income Fiscal": 12299000000.0,
         "EPS Fiscal": 6.207798870086623,
-        "PER Fiscal": 33.329043728685264
+        "PER Fiscal": 31.80032151996016
     },
     {
         "Empresa": "Wells Fargo & Company",
         "Ticker": "WFC",
-        "Price": 79.61,
+        "Price": 80.57,
         "Shares": 3074954752,
         "Net Income TTM": 20284999680,
         "EPS TTM": 6.5968449346470255,
-        "PER TTM": 12.067890148801816,
+        "PER TTM": 12.213414260632613,
         "Net Income Fiscal": 21338000000.0,
         "EPS Fiscal": 6.939289102098631,
-        "PER Fiscal": 11.472356725406318
+        "PER Fiscal": 11.610699426780391
     },
     {
         "Empresa": "T_Mobile US Inc.",
         "Ticker": "TMUS",
-        "Price": 210.03,
+        "Price": 204.25,
         "Shares": 1101862739,
         "Net Income TTM": 10992000000,
         "EPS TTM": 9.975834204154896,
-        "PER TTM": 21.05387837265011,
+        "PER TTM": 20.47447820603621,
         "Net Income Fiscal": 10992000000.0,
         "EPS Fiscal": 9.975834204154896,
-        "PER Fiscal": 21.05387837265011
+        "PER Fiscal": 20.47447820603621
     },
     {
         "Empresa": "UnitedHealth Group Incorporated",
         "Ticker": "UNH",
-        "Price": 270.59,
+        "Price": 273.98,
         "Shares": 907675839,
         "Net Income TTM": 12056000512,
         "EPS TTM": 13.282275448999805,
-        "PER TTM": 20.372262346085904,
+        "PER TTM": 20.62748969873468,
         "Net Income Fiscal": 12056000000.0,
         "EPS Fiscal": 13.282274884921774,
-        "PER Fiscal": 20.37226321126493
+        "PER Fiscal": 20.627490574752823
     },
     {
         "Empresa": "Advanced Micro Devices Inc.",
         "Ticker": "AMD",
-        "Price": 203.43,
+        "Price": 210.21,
         "Shares": 1630338779,
         "Net Income TTM": 4268999936,
         "EPS TTM": 2.6184741422997213,
-        "PER TTM": 77.69028409092252,
+        "PER TTM": 80.27957832548209,
         "Net Income Fiscal": 4335000000.0,
         "EPS Fiscal": 2.658956565247719,
-        "PER Fiscal": 76.50745508926643
+        "PER Fiscal": 79.05732750486504
     },
     {
         "Empresa": "Salesforce Inc.",
         "Ticker": "CRM",
-        "Price": 186.67,
+        "Price": 186.24,
         "Shares": 923000000,
         "Net Income TTM": 7456999936,
         "EPS TTM": 8.079089854821236,
-        "PER TTM": 23.105325396103098,
+        "PER TTM": 23.052101579098096,
         "Net Income Fiscal": 7457000000.0,
         "EPS Fiscal": 8.079089924160346,
-        "PER Fiscal": 23.105325197800724
+        "PER Fiscal": 23.052101381252516
     },
     {
         "Empresa": "Morgan Stanley",
         "Ticker": "MS",
-        "Price": 164.57,
+        "Price": 166.17,
         "Shares": 1587860206,
         "Net Income TTM": 16248999936,
         "EPS TTM": 10.23326856772428,
-        "PER TTM": 16.08186073793212,
+        "PER TTM": 16.23821351900213,
         "Net Income Fiscal": 16861000000.0,
         "EPS Fiscal": 10.618692965720687,
-        "PER Fiscal": 15.498140922923906
+        "PER Fiscal": 15.648818600973843
     },
     {
         "Empresa": "Novartis AG",
         "Ticker": "NVS",
-        "Price": 152.75,
+        "Price": 155.08,
         "Shares": 1908151679,
         "Net Income TTM": 13984000000,
         "EPS TTM": 7.328557867752189,
-        "PER TTM": 20.843118490220967,
+        "PER TTM": 21.161052801724832,
         "Net Income Fiscal": 13984000000.0,
         "EPS Fiscal": 7.328557867752189,
-        "PER Fiscal": 20.843118490220967
+        "PER Fiscal": 21.161052801724832
     },
     {
         "Empresa": "Toyota Motor Corporation",
         "Ticker": "TM",
-        "Price": 206.09,
+        "Price": 209.67,
         "Shares": 1303338515,
         "Net Income TTM": 3695587885056,
         "EPS TTM": 2835.478152854249,
-        "PER TTM": 0.072682626664764,
+        "PER TTM": 0.07394520031443091,
         "Net Income Fiscal": NaN,
         "EPS Fiscal": NaN,
         "PER Fiscal": NaN
@@ -530,83 +530,83 @@
     {
         "Empresa": "Linde plc",
         "Ticker": "LIN",
-        "Price": 495.76,
+        "Price": 493.83,
         "Shares": 463394156,
         "Net Income TTM": 6897999872,
         "EPS TTM": 14.885815418008853,
-        "PER TTM": 33.304188321469425,
+        "PER TTM": 33.17453469176869,
         "Net Income Fiscal": 6898000000.0,
         "EPS Fiscal": 14.885815694231587,
-        "PER Fiscal": 33.30418770347347
+        "PER Fiscal": 33.1745340761786
     },
     {
         "Empresa": "The Walt Disney Company",
         "Ticker": "DIS",
-        "Price": 96.38,
+        "Price": 96.56,
         "Shares": 1771519851,
         "Net Income TTM": 12252000256,
         "EPS TTM": 6.9160953793907,
-        "PER TTM": 13.935608853400597,
+        "PER TTM": 13.961635099443471,
         "Net Income Fiscal": 12404000000.0,
         "EPS Fiscal": 7.001897265220089,
-        "PER Fiscal": 13.764840635228959
+        "PER Fiscal": 13.790547953286037
     },
     {
         "Empresa": "HSBC Holdings plc",
         "Ticker": "HSBC",
-        "Price": 82.49,
+        "Price": 85.46,
         "Shares": 3427977105,
         "Net Income TTM": 21102000128,
         "EPS TTM": 6.155817113603505,
-        "PER TTM": 13.400333128433672,
+        "PER TTM": 13.882803602326847,
         "Net Income Fiscal": 22285000000.0,
         "EPS Fiscal": 6.500918564332126,
-        "PER Fiscal": 12.688976055259143
+        "PER Fiscal": 13.145834570038142
     },
     {
         "Empresa": "American Express Company",
         "Ticker": "AXP",
-        "Price": 302.48,
+        "Price": 301.45,
         "Shares": 685783466,
         "Net Income TTM": 10700999680,
         "EPS TTM": 15.604050273209706,
-        "PER TTM": 19.38471068113143,
+        "PER TTM": 19.31870217808473,
         "Net Income Fiscal": 10833000000.0,
         "EPS Fiscal": 15.796531320864478,
-        "PER Fiscal": 19.148507596758055
+        "PER Fiscal": 19.083303408631036
     },
     {
         "Empresa": "Abbott Laboratories",
         "Ticker": "ABT",
-        "Price": 102.67,
+        "Price": 102.38,
         "Shares": 1737674869,
         "Net Income TTM": 6499999744,
         "EPS TTM": 3.7406305747752633,
-        "PER TTM": 27.447243973342225,
+        "PER TTM": 27.369716937671924,
         "Net Income Fiscal": 6524000000.0,
         "EPS Fiscal": 3.754442281687852,
-        "PER Fiscal": 27.34627204172747
+        "PER Fiscal": 27.26903020972103
     },
     {
         "Empresa": "AstraZeneca PLC",
         "Ticker": "AZN",
-        "Price": 197.22,
+        "Price": 200.73,
         "Shares": 1550283527,
         "Net Income TTM": 10225000448,
         "EPS TTM": 6.595568017023766,
-        "PER TTM": 29.901897682043018,
+        "PER TTM": 30.43407322642985,
         "Net Income Fiscal": 10225000000.0,
         "EPS Fiscal": 6.595567728044368,
-        "PER Fiscal": 29.90189899217017
+        "PER Fiscal": 30.43407455987384
     },
     {
         "Empresa": "McDonald's Corporation",
         "Ticker": "MCD",
-        "Price": 310.79,
+        "Price": 307.29,
         "Shares": 712154350,
         "Net Income TTM": 8562999808,
         "EPS TTM": 12.02407849927477,
-        "PER TTM": 25.847302977832793,
+        "PER TTM": 25.556220380508506,
         "Net Income Fiscal": NaN,
         "EPS Fiscal": NaN,
         "PER Fiscal": NaN
@@ -614,145 +614,145 @@
     {
         "Empresa": "Intuit Inc.",
         "Ticker": "INTU",
-        "Price": 432.38,
+        "Price": 425.87,
         "Shares": 276550000,
         "Net Income TTM": 4339999744,
         "EPS TTM": 15.693363746158019,
-        "PER TTM": 27.551773284159896,
+        "PER TTM": 27.136948259690957,
         "Net Income Fiscal": 3869000000.0,
         "EPS Fiscal": 13.990236846863136,
-        "PER Fiscal": 30.90583845955027
+        "PER Fiscal": 30.440513957094854
     },
     {
         "Empresa": "The Goldman Sachs Group Inc.",
         "Ticker": "GS",
-        "Price": 845.99,
+        "Price": 860.21,
         "Shares": 294993942,
         "Net Income TTM": 16243999744,
         "EPS TTM": 55.06553671532685,
-        "PER TTM": 15.363329778723987,
+        "PER TTM": 15.621567523204956,
         "Net Income Fiscal": 17176000000.0,
         "EPS Fiscal": 58.224924496924075,
-        "PER Fiscal": 14.529688227327666
+        "PER Fiscal": 14.773913533291804
     },
     {
         "Empresa": "Shell plc",
         "Ticker": "SHEL",
-        "Price": 93.0,
-        "Shares": 2805746709,
+        "Price": 92.03,
+        "Shares": 2804237004,
         "Net Income TTM": 17837000704,
-        "EPS TTM": 6.357309676880031,
-        "PER TTM": 14.628829603537811,
+        "EPS TTM": 6.360732234314386,
+        "PER TTM": 14.468460015267373,
         "Net Income Fiscal": 17837000000.0,
-        "EPS Fiscal": 6.357309425966434,
-        "PER Fiscal": 14.628830180916074
+        "EPS Fiscal": 6.360731983265706,
+        "PER Fiscal": 14.468460586316084
     },
     {
         "Empresa": "Blackstone Inc.",
         "Ticker": "BX",
-        "Price": 114.99,
+        "Price": 114.33,
         "Shares": 742180737,
         "Net Income TTM": 3019214080,
         "EPS TTM": 4.068030776713624,
-        "PER TTM": 28.26674779803292,
+        "PER TTM": 28.10450713756939,
         "Net Income Fiscal": 3019214000.0,
         "EPS Fiscal": 4.068030668923169,
-        "PER Fiscal": 28.266748547015876
+        "PER Fiscal": 28.104507882253458
     },
     {
         "Empresa": "RTX Corporation",
         "Ticker": "RTX",
-        "Price": 192.9,
+        "Price": 194.72,
         "Shares": 1345974220,
         "Net Income TTM": 6732000256,
         "EPS TTM": 5.001581869822143,
-        "PER TTM": 38.56779815279912,
+        "PER TTM": 38.9316830290982,
         "Net Income Fiscal": 6732000000.0,
         "EPS Fiscal": 5.0015816796253345,
-        "PER Fiscal": 38.56779961942959
+        "PER Fiscal": 38.93168450956625
     },
     {
         "Empresa": "Merck & Co. Inc.",
         "Ticker": "MRK",
-        "Price": 120.29,
+        "Price": 120.84,
         "Shares": 2472392003,
         "Net Income TTM": 18254000128,
         "EPS TTM": 7.3831334617854285,
-        "PER TTM": 16.29254037227045,
+        "PER TTM": 16.367034488196538,
         "Net Income Fiscal": 18254000000.0,
         "EPS Fiscal": 7.383133410013703,
-        "PER Fiscal": 16.29254048651638
+        "PER Fiscal": 16.367034602964832
     },
     {
         "Empresa": "ServiceNow Inc.",
         "Ticker": "NOW",
-        "Price": 104.55,
+        "Price": 104.04,
         "Shares": 1046000000,
         "Net Income TTM": 1748000000,
         "EPS TTM": 1.6711281070745698,
-        "PER TTM": 62.56252860411899,
+        "PER TTM": 62.25734553775744,
         "Net Income Fiscal": 1748000000.0,
         "EPS Fiscal": 1.6711281070745698,
-        "PER Fiscal": 62.56252860411899
+        "PER Fiscal": 62.25734553775744
     },
     {
         "Empresa": "Texas Instruments Incorporated",
         "Ticker": "TXN",
-        "Price": 194.14,
+        "Price": 196.3,
         "Shares": 910463377,
         "Net Income TTM": 4973000192,
         "EPS TTM": 5.462054067881525,
-        "PER TTM": 35.54340502442112,
+        "PER TTM": 35.938860648469486,
         "Net Income Fiscal": 5001000000.0,
         "EPS Fiscal": 5.492807427881858,
-        "PER Fiscal": 35.34440312153169
+        "PER Fiscal": 35.73764465208958
     },
     {
         "Empresa": "PepsiCo Inc.",
         "Ticker": "PEP",
-        "Price": 155.29,
+        "Price": 154.65,
         "Shares": 1366940965,
         "Net Income TTM": 8240000000,
         "EPS TTM": 6.028058424600656,
-        "PER TTM": 25.761196899860437,
+        "PER TTM": 25.655026727821603,
         "Net Income Fiscal": 8240000000.0,
         "EPS Fiscal": 6.028058424600656,
-        "PER Fiscal": 25.761196899860437
+        "PER Fiscal": 25.655026727821603
     },
     {
         "Empresa": "Caterpillar Inc.",
         "Ticker": "CAT",
-        "Price": 708.46,
+        "Price": 730.32,
         "Shares": 465287332,
         "Net Income TTM": 8883999744,
         "EPS TTM": 19.093577522974556,
-        "PER TTM": 37.10462322461769,
+        "PER TTM": 38.24951081698726,
         "Net Income Fiscal": 8884000000.0,
         "EPS Fiscal": 19.093578073172214,
-        "PER Fiscal": 37.10462215541648
+        "PER Fiscal": 38.24950971479514
     },
     {
         "Empresa": "AT&T Inc.",
         "Ticker": "T",
-        "Price": 28.99,
+        "Price": 28.31,
         "Shares": 6982145528,
         "Net Income TTM": 21888999424,
         "EPS TTM": 3.13499616073886,
-        "PER TTM": 9.24722025597875,
+        "PER TTM": 9.030314089229334,
         "Net Income Fiscal": 21953000000.0,
         "EPS Fiscal": 3.1441624801378674,
-        "PER Fiscal": 9.220261415602423
+        "PER Fiscal": 9.003987605232998
     },
     {
         "Empresa": "Uber Technologies Inc.",
         "Ticker": "UBER",
-        "Price": 71.93,
+        "Price": 71.71,
         "Shares": 2036824858,
         "Net Income TTM": 10053000192,
         "EPS TTM": 4.935623282735879,
-        "PER TTM": 14.57364062844932,
+        "PER TTM": 14.529066724122071,
         "Net Income Fiscal": 10053000000.0,
         "EPS Fiscal": 4.9356231884715145,
-        "PER Fiscal": 14.573640906788025
+        "PER Fiscal": 14.52906700160947
     }
 ]
