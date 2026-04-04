@@ -3,13 +3,13 @@
         "Empresa": "AmericaMovil",
         "Ticker": "AMXB.MX",
         "Price": 22.8,
-        "Shares": 60197250000,
+        "Shares": 60196250000,
         "Net Income TTM": 82819080192,
-        "EPS TTM": 1.3757950768847413,
-        "PER TTM": 16.572235489915258,
+        "EPS TTM": 1.375817932047262,
+        "PER TTM": 16.57196019103549,
         "Net Income Fiscal": 22902025000.0,
-        "EPS Fiscal": 0.38044968831632675,
-        "PER Fiscal": 59.92908050707307
+        "EPS Fiscal": 0.38045600847228855,
+        "PER Fiscal": 59.92808496191931
     },
     {
         "Empresa": "WalmartMexico",
@@ -208,9 +208,9 @@
         "Ticker": "ASURB.MX",
         "Price": 613.48,
         "Shares": 277050000,
-        "Net Income TTM": -225056000,
-        "EPS TTM": -0.8123299043493954,
-        "PER TTM": -755.2104098535475,
+        "Net Income TTM": 9828052992,
+        "EPS TTM": 35.47393247428262,
+        "PER TTM": 17.293825556124965,
         "Net Income Fiscal": 13551429000.0,
         "EPS Fiscal": 48.913297238765566,
         "PER Fiscal": 12.542192708975563
@@ -603,12 +603,12 @@
         "Empresa": "BolsaMexicanaValores",
         "Ticker": "BOLSAA.MX",
         "Price": 38.13,
-        "Shares": 554330446,
+        "Shares": 554235646,
         "Net Income TTM": 1601954048,
-        "EPS TTM": 2.8898900638771696,
-        "PER TTM": 13.194273538849975,
+        "EPS TTM": 2.8903843691064215,
+        "PER TTM": 13.192017092103258,
         "Net Income Fiscal": 1601954000.0,
-        "EPS Fiscal": 2.8898899772862197,
-        "PER Fiscal": 13.194273934195365
+        "EPS Fiscal": 2.8903842825006603,
+        "PER Fiscal": 13.192017487381037
     }
 ]
