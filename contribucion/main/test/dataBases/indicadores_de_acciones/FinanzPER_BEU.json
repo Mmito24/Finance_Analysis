@@ -14,38 +14,38 @@
     {
         "Empresa": "Microsoft Corporation",
         "Ticker": "MSFT",
-        "Price": 414.44,
+        "Price": 414.195,
         "Shares": 7428434704,
         "Net Income TTM": 125215997952,
         "EPS TTM": 16.856309968582583,
-        "PER TTM": 24.58663852126881,
+        "PER TTM": 24.572103904828047,
         "Net Income Fiscal": 101832000000.0,
         "EPS Fiscal": 13.708406152532563,
-        "PER Fiscal": 30.23254457072197
+        "PER Fiscal": 30.214672325234503
     },
     {
         "Empresa": "Apple Inc.",
         "Ticker": "AAPL",
-        "Price": 280.14,
+        "Price": 280.25,
         "Shares": 14667688000,
         "Net Income TTM": 122575003648,
         "EPS TTM": 8.356804674874459,
-        "PER TTM": 33.5223821662684,
+        "PER TTM": 33.5355450920851,
         "Net Income Fiscal": 112010000000.0,
         "EPS Fiscal": 7.636513675502234,
-        "PER Fiscal": 36.684279227926076
+        "PER Fiscal": 36.69868370681189
     },
     {
         "Empresa": "Amazon.com Inc.",
         "Ticker": "AMZN",
-        "Price": 268.26,
+        "Price": 268.42,
         "Shares": 10754251799,
         "Net Income TTM": 90797998080,
         "EPS TTM": 8.442986065143367,
-        "PER TTM": 31.773118885924013,
+        "PER TTM": 31.7920695271741,
         "Net Income Fiscal": 77670000000.0,
         "EPS Fiscal": 7.222259758435474,
-        "PER Fiscal": 37.143499260972575
+        "PER Fiscal": 37.165652991986356
     },
     {
         "Empresa": "Alphabet Inc.",
@@ -208,9 +208,9 @@
         "Ticker": "XOM",
         "Price": 152.75,
         "Shares": 4156559415,
-        "Net Income TTM": 28843999232,
-        "EPS TTM": 6.939392981586912,
-        "PER TTM": 22.01201177182343,
+        "Net Income TTM": 25314000896,
+        "EPS TTM": 6.090133297420939,
+        "PER TTM": 25.081552823266914,
         "Net Income Fiscal": 28844000000.0,
         "EPS Fiscal": 6.939393166355112,
         "PER Fiscal": 22.01201118573187
@@ -614,23 +614,23 @@
     {
         "Empresa": "Intuit Inc.",
         "Ticker": "INTU",
-        "Price": 399.04,
+        "Price": 399.025,
         "Shares": 276550000,
         "Net Income TTM": 4339999744,
         "EPS TTM": 15.693363746158019,
-        "PER TTM": 25.427308412302065,
+        "PER TTM": 25.426352594273332,
         "Net Income Fiscal": 3869000000.0,
         "EPS Fiscal": 13.990236846863136,
-        "PER Fiscal": 28.522747996898424
+        "PER Fiscal": 28.521675820625482
     },
     {
         "Empresa": "The Goldman Sachs Group Inc.",
         "Ticker": "GS",
         "Price": 923.71,
         "Shares": 294993942,
-        "Net Income TTM": 17063999488,
-        "EPS TTM": 57.84525394762174,
-        "PER TTM": 15.968639377681868,
+        "Net Income TTM": 17064999936,
+        "EPS TTM": 57.848645366419085,
+        "PER TTM": 15.967703204614885,
         "Net Income Fiscal": 17176000000.0,
         "EPS Fiscal": 58.224924496924075,
         "PER Fiscal": 15.864511770192129
@@ -698,14 +698,14 @@
     {
         "Empresa": "Texas Instruments Incorporated",
         "Ticker": "TXN",
-        "Price": 281.02,
+        "Price": 280.95,
         "Shares": 910092791,
         "Net Income TTM": 5336000000,
         "EPS TTM": 5.863138410465664,
-        "PER TTM": 47.9299617928823,
+        "PER TTM": 47.91802279449962,
         "Net Income Fiscal": 5001000000.0,
         "EPS Fiscal": 5.49504407622541,
-        "PER Fiscal": 51.140627099944005
+        "PER Fiscal": 51.127888348620274
     },
     {
         "Empresa": "PepsiCo Inc.",
