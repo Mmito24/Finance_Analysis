@@ -63,10 +63,10 @@
         "Empresa": "Alsea",
         "Ticker": "ALSEA.MX",
         "Price": 53.52,
-        "Shares": 799214077,
+        "Shares": 798470349,
         "Net Income TTM": 2208143872,
-        "EPS TTM": 2.762894117541926,
-        "PER TTM": 19.370992055104644,
+        "EPS TTM": 2.7654675903312724,
+        "PER TTM": 19.352965909677827,
         "Net Income Fiscal": NaN,
         "EPS Fiscal": NaN,
         "PER Fiscal": NaN
@@ -76,7 +76,7 @@
         "Ticker": "CEMEXCPO.MX",
         "Price": 22.59,
         "Shares": 0,
-        "Net Income TTM": 502600992,
+        "Net Income TTM": 502603008,
         "EPS TTM": null,
         "PER TTM": null,
         "Net Income Fiscal": 960000000.0,
@@ -183,25 +183,25 @@
         "Empresa": "GpoFinbursa",
         "Ticker": "GFINBURO.MX",
         "Price": 43.22,
-        "Shares": 6076842400,
+        "Shares": 6048606935,
         "Net Income TTM": 30406381568,
-        "EPS TTM": 5.0036482051928814,
-        "PER TTM": 8.637697581365824,
+        "EPS TTM": 5.027005704744146,
+        "PER TTM": 8.597563348538058,
         "Net Income Fiscal": 30866000000.0,
-        "EPS Fiscal": 5.079282622172331,
-        "PER Fiscal": 8.509075634290157
+        "EPS Fiscal": 5.102993190282417,
+        "PER Fiscal": 8.46953903099527
     },
     {
         "Empresa": "GrupoAeroportuarioPacificoB",
         "Ticker": "GAPB.MX",
         "Price": 424.42,
-        "Shares": 429485845,
+        "Shares": 519226576,
         "Net Income TTM": 10019063808,
-        "EPS TTM": 23.328041947459294,
-        "PER TTM": 18.193554390715782,
+        "EPS TTM": 19.296130574025163,
+        "PER TTM": 21.995083334029605,
         "Net Income Fiscal": 9565171000.0,
-        "EPS Fiscal": 22.271213618227627,
-        "PER Fiscal": 19.056886942732127
+        "EPS Fiscal": 18.421959587831267,
+        "PER Fiscal": 23.03880854674945
     },
     {
         "Empresa": "AsurB",
@@ -271,9 +271,9 @@
         "Net Income TTM": 635854656,
         "EPS TTM": 0.3811611396687975,
         "PER TTM": 212.27242648687943,
-        "Net Income Fiscal": 11117280000.0,
-        "EPS Fiscal": 6.664219684218415,
-        "PER Fiscal": 12.140956306047883
+        "Net Income Fiscal": 617324863.400115,
+        "EPS Fiscal": 0.37005351185078467,
+        "PER Fiscal": 218.64405392435526
     },
     {
         "Empresa": "Kimberly-ClarkMexicoB",
