@@ -2,38 +2,38 @@
     {
         "Empresa": "NVIDIA Corporation",
         "Ticker": "NVDA",
-        "Price": 215.2,
+        "Price": 215.217,
         "Shares": 24300000000,
         "Net Income TTM": 120066998272,
         "EPS TTM": 4.941028735473251,
-        "PER TTM": 43.55368315407867,
+        "PER TTM": 43.55712373313825,
         "Net Income Fiscal": 120067000000.0,
         "EPS Fiscal": 4.941028806584362,
-        "PER Fiscal": 43.55368252725561
+        "PER Fiscal": 43.55712310626567
     },
     {
         "Empresa": "Microsoft Corporation",
         "Ticker": "MSFT",
-        "Price": 415.12,
+        "Price": 415.06,
         "Shares": 7428434704,
         "Net Income TTM": 125215997952,
         "EPS TTM": 16.856309968582583,
-        "PER TTM": 24.62697949751257,
+        "PER TTM": 24.623419999608707,
         "Net Income Fiscal": 101832000000.0,
         "EPS Fiscal": 13.708406152532563,
-        "PER Fiscal": 30.282149170442295
+        "PER Fiscal": 30.277772293996385
     },
     {
         "Empresa": "Apple Inc.",
         "Ticker": "AAPL",
-        "Price": 293.32,
+        "Price": 293.257,
         "Shares": 14687356000,
         "Net Income TTM": 122575003648,
         "EPS TTM": 8.345613985798398,
-        "PER TTM": 35.146605210729625,
+        "PER TTM": 35.13905633534344,
         "Net Income Fiscal": 112010000000.0,
         "EPS Fiscal": 7.626287536027587,
-        "PER Fiscal": 38.46170218659048
+        "PER Fiscal": 38.453441286420855
     },
     {
         "Empresa": "Amazon.com Inc.",
@@ -50,14 +50,14 @@
     {
         "Empresa": "Alphabet Inc.",
         "Ticker": "GOOGL",
-        "Price": 400.8,
+        "Price": 400.713,
         "Shares": 5823665113,
         "Net Income TTM": 160207994880,
         "EPS TTM": 27.509822726992372,
-        "PER TTM": 14.569341430424375,
+        "PER TTM": 14.566178923676754,
         "Net Income Fiscal": 132170000000.0,
         "EPS Fiscal": 22.69532973401247,
-        "PER Fiscal": 17.66002101301657
+        "PER Fiscal": 17.65618762522183
     },
     {
         "Empresa": "Meta Platforms Inc.",
@@ -182,14 +182,14 @@
     {
         "Empresa": "Netflix Inc.",
         "Ticker": "NFLX",
-        "Price": 87.49,
+        "Price": 87.477,
         "Shares": 4210798528,
         "Net Income TTM": 13373640704,
         "EPS TTM": 3.1760343353098084,
-        "PER TTM": 27.54693141296463,
+        "PER TTM": 27.542838258222734,
         "Net Income Fiscal": 10981201000.0,
         "EPS Fiscal": 2.6078666378787143,
-        "PER Fiscal": 33.548494669637684
+        "PER Fiscal": 33.54350975215334
     },
     {
         "Empresa": "Mastercard Incorporated",
