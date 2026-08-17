@@ -112,9 +112,9 @@
         "Ticker": "TSM",
         "Price": 426.35,
         "Shares": 5186474013,
-        "Net Income TTM": 2216808939520,
-        "EPS TTM": 427.4211986724554,
-        "PER TTM": 0.9974938101437588,
+        "Net Income TTM": 2216808415232,
+        "EPS TTM": 427.42109758489596,
+        "PER TTM": 0.9974940460568089,
         "Net Income Fiscal": 1697604000000.0,
         "EPS Fiscal": 327.31370016410415,
         "PER Fiscal": 1.3025730355504288
@@ -147,13 +147,13 @@
         "Empresa": "Eli Lilly and Company",
         "Ticker": "LLY",
         "Price": 1180.16,
-        "Shares": 891357065,
+        "Shares": 891741406,
         "Net Income TTM": 26710999040,
-        "EPS TTM": 29.966665535993705,
-        "PER TTM": 39.382426402513175,
+        "EPS TTM": 29.953749887890705,
+        "PER TTM": 39.39940756723415,
         "Net Income Fiscal": 20640000000.0,
-        "EPS Fiscal": 23.155703601227415,
-        "PER Fiscal": 50.966276832868225
+        "EPS Fiscal": 23.14572348118598,
+        "PER Fiscal": 50.988252795782955
     },
     {
         "Empresa": "Oracle Corporation",
@@ -243,13 +243,13 @@
         "Empresa": "The Procter & Gamble Company",
         "Ticker": "PG",
         "Price": 144.55,
-        "Shares": 2328598978,
+        "Shares": 2324433060,
         "Net Income TTM": 15754000384,
-        "EPS TTM": 6.765441595070562,
-        "PER TTM": 21.365937162966876,
+        "EPS TTM": 6.7775668205304225,
+        "PER TTM": 21.3277130019778,
         "Net Income Fiscal": 16046000000.0,
-        "EPS Fiscal": 6.890838719589956,
-        "PER Fiscal": 20.97712715130874
+        "EPS Fiscal": 6.90318868550252,
+        "PER Fiscal": 20.93959858051851
     },
     {
         "Empresa": "Palantir Technologies Inc.",
@@ -279,13 +279,13 @@
         "Empresa": "The Home Depot Inc.",
         "Ticker": "HD",
         "Price": 338.86,
-        "Shares": 997116682,
+        "Shares": null,
         "Net Income TTM": 14012000256,
-        "EPS TTM": 14.05251813448248,
-        "PER TTM": 24.113827625562386,
+        "EPS TTM": null,
+        "PER TTM": null,
         "Net Income Fiscal": 14156000000.0,
-        "EPS Fiscal": 14.196934276143221,
-        "PER Fiscal": 23.86853340368183
+        "EPS Fiscal": null,
+        "PER Fiscal": null
     },
     {
         "Empresa": "Bank of America Corporation",
@@ -483,13 +483,13 @@
         "Empresa": "Salesforce Inc.",
         "Ticker": "CRM",
         "Price": 196.21,
-        "Shares": 819000000,
+        "Shares": null,
         "Net Income TTM": 8023000064,
-        "EPS TTM": 9.796092874236875,
-        "PER TTM": 20.02941402444441,
+        "EPS TTM": null,
+        "PER TTM": null,
         "Net Income Fiscal": 7457000000.0,
-        "EPS Fiscal": 9.105006105006105,
-        "PER Fiscal": 21.54968351884136
+        "EPS Fiscal": null,
+        "PER Fiscal": null
     },
     {
         "Empresa": "Morgan Stanley",
@@ -579,13 +579,13 @@
         "Empresa": "Abbott Laboratories",
         "Ticker": "ABT",
         "Price": 111.25,
-        "Shares": 1741813154,
+        "Shares": 1730383296,
         "Net Income TTM": 5400999936,
-        "EPS TTM": 3.1007917948012005,
-        "PER TTM": 35.87793291588367,
+        "EPS TTM": 3.121273736567554,
+        "PER TTM": 35.642500270527684,
         "Net Income Fiscal": 6524000000.0,
-        "EPS Fiscal": 3.7455222938338197,
-        "PER Fiscal": 29.702132645999384
+        "EPS Fiscal": 3.770262932542779,
+        "PER Fiscal": 29.507225885959535
     },
     {
         "Empresa": "AstraZeneca PLC",
