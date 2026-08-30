@@ -27,13 +27,13 @@
         "Empresa": "Banorte",
         "Ticker": "GFNORTEO.MX",
         "Price": 190.56,
-        "Shares": 2774660273,
+        "Shares": null,
         "Net Income TTM": 61323620352,
-        "EPS TTM": 22.101307662323673,
-        "PER TTM": 8.622114261811285,
+        "EPS TTM": null,
+        "PER TTM": null,
         "Net Income Fiscal": 58788000000.0,
-        "EPS Fiscal": 21.187458721365417,
-        "PER Fiscal": 8.993999823482344
+        "EPS Fiscal": null,
+        "PER Fiscal": null
     },
     {
         "Empresa": "Bimbo",
@@ -111,13 +111,13 @@
         "Empresa": "KimberlyClark",
         "Ticker": "KIMBERA.MX",
         "Price": 40.1,
-        "Shares": 1560853973,
+        "Shares": 1553173973,
         "Net Income TTM": 7936536064,
-        "EPS TTM": 5.084739636947447,
-        "PER TTM": 7.8863428342760695,
+        "EPS TTM": 5.109882216652364,
+        "PER TTM": 7.847539003799329,
         "Net Income Fiscal": 7581467000.0,
-        "EPS Fiscal": 4.85725579147435,
-        "PER Fiscal": 8.255690398349028
+        "EPS Fiscal": 4.881273528783243,
+        "PER Fiscal": 8.21506923624412
     },
     {
         "Empresa": "GrupoMexico",
@@ -279,13 +279,13 @@
         "Empresa": "Kimberly-ClarkMexicoB",
         "Ticker": "KIMBERB.MX",
         "Price": 38.94,
-        "Shares": 1439994696,
+        "Shares": 1432994847,
         "Net Income TTM": 7936536064,
-        "EPS TTM": 5.511503678482994,
-        "PER TTM": 7.065222536641396,
+        "EPS TTM": 5.538426101542011,
+        "PER TTM": 7.03087831923194,
         "Net Income Fiscal": 7581467000.0,
-        "EPS Fiscal": 5.264927031370121,
-        "PER Fiscal": 7.396113900151514
+        "EPS Fiscal": 5.290644984433778,
+        "PER Fiscal": 7.36016121183143
     },
     {
         "Empresa": "VistaOilGas",
@@ -303,13 +303,13 @@
         "Empresa": "FibraUnoAdministracion",
         "Ticker": "FUNO11.MX",
         "Price": 29.45,
-        "Shares": 3810649852,
+        "Shares": 3838823784,
         "Net Income TTM": 22958639104,
-        "EPS TTM": 6.024861899066973,
-        "PER TTM": 4.888078846182467,
+        "EPS TTM": 5.980644175356605,
+        "PER TTM": 4.924218719005132,
         "Net Income Fiscal": 24456014000.0,
-        "EPS Fiscal": 6.417806660237856,
-        "PER Fiscal": 4.588795138136574
+        "EPS Fiscal": 6.370705032601726,
+        "PER Fiscal": 4.622722265320914
     },
     {
         "Empresa": "GrupoAeroportuarioDelCentroNorte",
@@ -423,13 +423,13 @@
         "Empresa": "Gentera",
         "Ticker": "GENTERA.MX",
         "Price": 42.45,
-        "Shares": 1579239112,
+        "Shares": null,
         "Net Income TTM": 8717313024,
-        "EPS TTM": 5.519944989812283,
-        "PER TTM": 7.690294029804018,
+        "EPS TTM": null,
+        "PER TTM": null,
         "Net Income Fiscal": 8216000000.0,
-        "EPS Fiscal": 5.202505394889181,
-        "PER Fiscal": 8.159530222054528
+        "EPS Fiscal": null,
+        "PER Fiscal": null
     },
     {
         "Empresa": "GCC",
@@ -495,7 +495,7 @@
         "Empresa": "MegacableCpo",
         "Ticker": "MEGACPO.MX",
         "Price": 54.34,
-        "Shares": 0,
+        "Shares": null,
         "Net Income TTM": null,
         "EPS TTM": null,
         "PER TTM": null,
@@ -531,13 +531,13 @@
         "Empresa": "Lamosa",
         "Ticker": "LAMOSA.MX",
         "Price": 96.5,
-        "Shares": 340900664,
+        "Shares": 340375664,
         "Net Income TTM": 2095692032,
-        "EPS TTM": 6.147515253886393,
-        "PER TTM": 15.697399032721998,
+        "EPS TTM": 6.15699726405822,
+        "PER TTM": 15.673224440641476,
         "Net Income Fiscal": 2008560000.0,
-        "EPS Fiscal": 5.891921642018274,
-        "PER Fiscal": 16.378357667184453
+        "EPS Fiscal": 5.901009421167078,
+        "PER Fiscal": 16.353134372884057
     },
     {
         "Empresa": "GrupoProfuturo",
