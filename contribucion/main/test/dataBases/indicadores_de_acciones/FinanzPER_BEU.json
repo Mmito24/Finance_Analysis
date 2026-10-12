@@ -135,25 +135,25 @@
         "Empresa": "Walmart Inc.",
         "Ticker": "WMT",
         "Price": 111.35,
-        "Shares": 7958079155,
+        "Shares": 7933746241,
         "Net Income TTM": 22076000256,
-        "EPS TTM": 2.774036275089048,
-        "PER TTM": 40.14006629975507,
+        "EPS TTM": 2.7825442843023747,
+        "PER TTM": 40.017332564364594,
         "Net Income Fiscal": 21893000000.0,
-        "EPS Fiscal": 2.7510407440776454,
-        "PER Fiscal": 40.47559100668022
+        "EPS Fiscal": 2.759478225666129,
+        "PER Fiscal": 40.351831358669436
     },
     {
         "Empresa": "Eli Lilly and Company",
         "Ticker": "LLY",
         "Price": 1179.27,
-        "Shares": 891741406,
+        "Shares": 891357065,
         "Net Income TTM": 26710999040,
-        "EPS TTM": 29.953749887890705,
-        "PER TTM": 39.369695093726456,
+        "EPS TTM": 29.966665535993705,
+        "PER TTM": 39.35272673509669,
         "Net Income Fiscal": 20640000000.0,
-        "EPS Fiscal": 23.14572348118598,
-        "PER Fiscal": 50.949800768101746
+        "EPS Fiscal": 23.155703601227415,
+        "PER Fiscal": 50.92784137803052
     },
     {
         "Empresa": "Oracle Corporation",
@@ -243,13 +243,13 @@
         "Empresa": "The Procter & Gamble Company",
         "Ticker": "PG",
         "Price": 151.23,
-        "Shares": 2322672312,
+        "Shares": 2324433060,
         "Net Income TTM": 15754000384,
-        "EPS TTM": 6.782704690027751,
-        "PER TTM": 22.296415207689254,
+        "EPS TTM": 6.7775668205304225,
+        "PER TTM": 22.3133174492501,
         "Net Income Fiscal": 16046000000.0,
-        "EPS Fiscal": 6.908421785156235,
-        "PER Fiscal": 21.890672675044247
+        "EPS Fiscal": 6.90318868550252,
+        "PER Fiscal": 21.907267335398227
     },
     {
         "Empresa": "Palantir Technologies Inc.",
@@ -579,13 +579,13 @@
         "Empresa": "Abbott Laboratories",
         "Ticker": "ABT",
         "Price": 99.6,
-        "Shares": 1730383296,
+        "Shares": 1741813154,
         "Net Income TTM": 5400999936,
-        "EPS TTM": 3.121273736567554,
-        "PER TTM": 31.910049680400515,
+        "EPS TTM": 3.1007917948012005,
+        "PER TTM": 32.120828030759675,
         "Net Income Fiscal": 6524000000.0,
-        "EPS Fiscal": 3.770262932542779,
-        "PER Fiscal": 26.41725571453096
+        "EPS Fiscal": 3.7455222938338197,
+        "PER Fiscal": 26.591752013856528
     },
     {
         "Empresa": "AstraZeneca PLC",
@@ -712,9 +712,9 @@
         "Ticker": "PEP",
         "Price": 125.97,
         "Shares": 1362741092,
-        "Net Income TTM": 10896000000,
-        "EPS TTM": 7.995649403958827,
-        "PER TTM": 15.754817856024228,
+        "Net Income TTM": 10451000320,
+        "EPS TTM": 7.669101916242796,
+        "PER TTM": 16.425652100567536,
         "Net Income Fiscal": 8240000000.0,
         "EPS Fiscal": 6.04663648023318,
         "PER Fiscal": 20.833069825150485
