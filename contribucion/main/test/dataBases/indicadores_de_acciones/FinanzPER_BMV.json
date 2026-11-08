@@ -3,13 +3,13 @@
         "Empresa": "AmericaMovil",
         "Ticker": "AMXB.MX",
         "Price": 23.97,
-        "Shares": 59712500000,
+        "Shares": 59709500000,
         "Net Income TTM": 91149033472,
-        "EPS TTM": 1.5264648686958342,
-        "PER TTM": 15.702949010860138,
+        "EPS TTM": 1.5265415632688266,
+        "PER TTM": 15.702160083130892,
         "Net Income Fiscal": 82819082000.0,
-        "EPS Fiscal": 1.386963902030563,
-        "PER Fiscal": 17.28235317797896
+        "EPS Fiscal": 1.3870335876200603,
+        "PER Fiscal": 17.28148489982055
     },
     {
         "Empresa": "WalmartMexico",
@@ -51,25 +51,25 @@
         "Empresa": "Televisa",
         "Ticker": "TLEVISACPO.MX",
         "Price": 8.84,
-        "Shares": 2635300000,
+        "Shares": 2616455556,
         "Net Income TTM": -6612867072,
-        "EPS TTM": -2.5093412787917884,
-        "PER TTM": -3.522836879428506,
+        "EPS TTM": -2.5274142558376407,
+        "PER TTM": -3.4976458566623974,
         "Net Income Fiscal": -9168271000.0,
-        "EPS Fiscal": -3.479023640572231,
-        "PER Fiscal": -2.5409427797236797
+        "EPS Fiscal": -3.504080540934669,
+        "PER Fiscal": -2.5227730632133363
     },
     {
         "Empresa": "Alsea",
         "Ticker": "ALSEA.MX",
         "Price": 57.49,
-        "Shares": 789064232,
+        "Shares": 788329119,
         "Net Income TTM": 1872568064,
-        "EPS TTM": 2.373150357168895,
-        "PER TTM": 24.225182288316546,
+        "EPS TTM": 2.375363308126133,
+        "PER TTM": 24.202613471095702,
         "Net Income Fiscal": 2232257000.0,
-        "EPS Fiscal": 2.82899276062991,
-        "PER Fiscal": 20.32172043706437
+        "EPS Fiscal": 2.8316307823712394,
+        "PER Fiscal": 20.30278818761012
     },
     {
         "Empresa": "Cemex",
@@ -412,9 +412,9 @@
         "Ticker": "CMOCTEZ.MX",
         "Price": 86.0,
         "Shares": 848590680,
-        "Net Income TTM": 6834661888,
-        "EPS TTM": 8.05413263317952,
-        "PER TTM": 10.67774817187855,
+        "Net Income TTM": 7148378112,
+        "EPS TTM": 8.423823499923426,
+        "PER TTM": 10.209140778030518,
         "Net Income Fiscal": 6260634000.0,
         "EPS Fiscal": 7.37768413860025,
         "PER Fiscal": 11.656774454472183
