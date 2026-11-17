@@ -27,13 +27,13 @@
         "Empresa": "Banorte",
         "Ticker": "GFNORTEO.MX",
         "Price": 205.44,
-        "Shares": 2774660273,
+        "Shares": null,
         "Net Income TTM": 63724793856,
-        "EPS TTM": 22.966701356595234,
-        "PER TTM": 8.945124369852303,
+        "EPS TTM": null,
+        "PER TTM": null,
         "Net Income Fiscal": 58788000000.0,
-        "EPS Fiscal": 21.187458721365417,
-        "PER Fiscal": 9.696302076701368
+        "EPS Fiscal": null,
+        "PER Fiscal": null
     },
     {
         "Empresa": "Bimbo",
@@ -303,13 +303,13 @@
         "Empresa": "FibraUnoAdministracion",
         "Ticker": "FUNO11.MX",
         "Price": 36.6,
-        "Shares": 3810649852,
+        "Shares": 3838823784,
         "Net Income TTM": 25449457664,
-        "EPS TTM": 6.678508562166368,
-        "PER TTM": 5.480265490312965,
+        "EPS TTM": 6.629493588653873,
+        "PER TTM": 5.520783678355087,
         "Net Income Fiscal": 24456014000.0,
-        "EPS Fiscal": 6.417806660237856,
-        "PER Fiscal": 5.702882922098426
+        "EPS Fiscal": 6.370705032601726,
+        "PER Fiscal": 5.745047025831765
     },
     {
         "Empresa": "GrupoAeroportuarioDelCentroNorte",
@@ -411,13 +411,13 @@
         "Empresa": "Moctezuma",
         "Ticker": "CMOCTEZ.MX",
         "Price": 85.0,
-        "Shares": 846979119,
+        "Shares": 848590680,
         "Net Income TTM": 7148378112,
-        "EPS TTM": 8.439851646448913,
-        "PER TTM": 10.07126707443536,
+        "EPS TTM": 8.423823499923426,
+        "PER TTM": 10.090429838751092,
         "Net Income Fiscal": 6260634000.0,
-        "EPS Fiscal": 7.391721778680591,
-        "PER Fiscal": 11.499350563377448
+        "EPS Fiscal": 7.37768413860025,
+        "PER Fiscal": 11.521230565466691
     },
     {
         "Empresa": "Gentera",
@@ -495,7 +495,7 @@
         "Empresa": "MegacableCpo",
         "Ticker": "MEGACPO.MX",
         "Price": 58.77,
-        "Shares": 0,
+        "Shares": null,
         "Net Income TTM": null,
         "EPS TTM": null,
         "PER TTM": null,
