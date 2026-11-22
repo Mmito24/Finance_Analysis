@@ -27,13 +27,13 @@
         "Empresa": "Banorte",
         "Ticker": "GFNORTEO.MX",
         "Price": 196.23,
-        "Shares": null,
+        "Shares": 2774660273,
         "Net Income TTM": 63724793856,
-        "EPS TTM": null,
-        "PER TTM": null,
+        "EPS TTM": 22.966701356595234,
+        "PER TTM": 8.544109010397769,
         "Net Income Fiscal": 58788000000.0,
-        "EPS Fiscal": null,
-        "PER Fiscal": null
+        "EPS Fiscal": 21.187458721365417,
+        "PER Fiscal": 9.261610964325882
     },
     {
         "Empresa": "Bimbo",
@@ -63,13 +63,13 @@
         "Empresa": "Alsea",
         "Ticker": "ALSEA.MX",
         "Price": 58.33,
-        "Shares": 787599679,
+        "Shares": 787427269,
         "Net Income TTM": 1872568064,
-        "EPS TTM": 2.377563264598537,
-        "PER TTM": 24.533521723069395,
+        "EPS TTM": 2.378083840528007,
+        "PER TTM": 24.528151197162572,
         "Net Income Fiscal": 2232257000.0,
-        "EPS Fiscal": 2.83425331360502,
-        "PER Fiscal": 20.58037639755189
+        "EPS Fiscal": 2.834873883444339,
+        "PER Fiscal": 20.57587123739336
     },
     {
         "Empresa": "Cemex",
@@ -291,25 +291,25 @@
         "Empresa": "VistaOilGas",
         "Ticker": "VISTAA.MX",
         "Price": 957.99,
-        "Shares": 110407402,
+        "Shares": 110377402,
         "Net Income TTM": 808600000,
-        "EPS TTM": 7.323784323808289,
-        "PER TTM": 130.80532654214693,
+        "EPS TTM": 7.325774890044975,
+        "PER TTM": 130.76978399948058,
         "Net Income Fiscal": 719063000.0,
-        "EPS Fiscal": 6.512815146216374,
-        "PER Fiscal": 147.09307396150268
+        "EPS Fiscal": 6.514585295276292,
+        "PER Fiscal": 147.05310569724767
     },
     {
         "Empresa": "FibraUnoAdministracion",
         "Ticker": "FUNO11.MX",
         "Price": 36.3,
-        "Shares": 3838823784,
+        "Shares": 3810649852,
         "Net Income TTM": 25449457664,
-        "EPS TTM": 6.629493588653873,
-        "PER TTM": 5.475531353122668,
+        "EPS TTM": 6.678508562166368,
+        "PER TTM": 5.435345281375972,
         "Net Income Fiscal": 24456014000.0,
-        "EPS Fiscal": 6.370705032601726,
-        "PER Fiscal": 5.697956476439701
+        "EPS Fiscal": 6.417806660237856,
+        "PER Fiscal": 5.6561379801140115
     },
     {
         "Empresa": "GrupoAeroportuarioDelCentroNorte",
@@ -495,7 +495,7 @@
         "Empresa": "MegacableCpo",
         "Ticker": "MEGACPO.MX",
         "Price": 56.4,
-        "Shares": null,
+        "Shares": 0,
         "Net Income TTM": null,
         "EPS TTM": null,
         "PER TTM": null,
