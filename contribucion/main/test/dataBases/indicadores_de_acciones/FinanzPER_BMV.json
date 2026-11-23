@@ -27,13 +27,13 @@
         "Empresa": "Banorte",
         "Ticker": "GFNORTEO.MX",
         "Price": 196.23,
-        "Shares": 2774660273,
+        "Shares": null,
         "Net Income TTM": 63724793856,
-        "EPS TTM": 22.966701356595234,
-        "PER TTM": 8.544109010397769,
+        "EPS TTM": null,
+        "PER TTM": null,
         "Net Income Fiscal": 58788000000.0,
-        "EPS Fiscal": 21.187458721365417,
-        "PER Fiscal": 9.261610964325882
+        "EPS Fiscal": null,
+        "PER Fiscal": null
     },
     {
         "Empresa": "Bimbo",
@@ -303,13 +303,13 @@
         "Empresa": "FibraUnoAdministracion",
         "Ticker": "FUNO11.MX",
         "Price": 36.3,
-        "Shares": 3810649852,
+        "Shares": 3838823784,
         "Net Income TTM": 25449457664,
-        "EPS TTM": 6.678508562166368,
-        "PER TTM": 5.435345281375972,
+        "EPS TTM": 6.629493588653873,
+        "PER TTM": 5.475531353122668,
         "Net Income Fiscal": 24456014000.0,
-        "EPS Fiscal": 6.417806660237856,
-        "PER Fiscal": 5.6561379801140115
+        "EPS Fiscal": 6.370705032601726,
+        "PER Fiscal": 5.697956476439701
     },
     {
         "Empresa": "GrupoAeroportuarioDelCentroNorte",
@@ -495,7 +495,7 @@
         "Empresa": "MegacableCpo",
         "Ticker": "MEGACPO.MX",
         "Price": 56.4,
-        "Shares": 0,
+        "Shares": null,
         "Net Income TTM": null,
         "EPS TTM": null,
         "PER TTM": null,
